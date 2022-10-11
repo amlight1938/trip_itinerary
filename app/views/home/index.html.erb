@@ -1,1 +1,45 @@
-<h1>Hello world</h1>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3500">
+      <%= image_tag "puerto rico cueva del indio.jpg", class:"d-block w-100" %>
+      <div class="carousel-caption">
+        <h1>Adventure is out there!</h1>
+        <h4>Explore new activities that will get your heart racing</h4>
+        <a href="/home/destinations" class="btn btn-primary">See Destinations</a>
+        </button>
+      </div>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="3500">
+      <%= image_tag "four pass loop cover.jpg", class:"d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>See what the world has to offer</h1>
+        <h4>Build lasting memories with family and friends</h4>
+        <a href="/home/destinations" class="btn btn-primary">See Destinations</a>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="3500">
+      <%= image_tag "biking into sun.jpg", class:"d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Find your dream destination</h1>
+        <h4>You'll never know whats out there until you see it for yourself</h4>
+        <a href="/home/destinations" class="btn btn-primary">See Destinations</a>
+      </div>
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
