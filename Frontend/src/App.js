@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
-import Destinations from "./Destinations";
+import TripList from "./Destinations/TripList";
 import About from "./About";
 import './index.css';
 
@@ -21,7 +21,7 @@ function App() {
                   <About/>
                 </Route>
                 <Route exact path='/destinations'>
-                  <Destinations />
+                  <TripList />
                 </Route>
               </Switch>
             
