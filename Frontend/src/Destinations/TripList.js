@@ -46,8 +46,9 @@ class TripList extends Component{
 
         return (
             <div>
-                <h1>Destinations...</h1>               
-                <TripCardList {...this.state.trips}/>
+                <div className="container">
+                    <TripCardList trips={this.state.trips}/>
+                </div>
             </div>
         )
     };

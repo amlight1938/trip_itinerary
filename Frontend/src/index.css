@@ -26,3 +26,7 @@
   background-color: rgb(46, 9, 157);
   opacity: .8;
 }
+
+.trip_cards_list{
+  padding:40px;
+}
