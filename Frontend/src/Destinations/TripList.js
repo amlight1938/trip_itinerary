@@ -44,6 +44,7 @@ class TripList extends Component{
             return <h3>Data failed to load :(</h3>
         }
 
+        console.log(this.state.trips)
         return (
             <div>
                 <div className="container">

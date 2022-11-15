@@ -5,12 +5,14 @@ class Api::V1::TripsController < ApplicationController
   def index
     @trips = Trip.all
 
-    render json: @trips
+    #render json: @trips, include: [:activities]
+    render json: TripSerializer.new(@trips, options)
   end
 
-  # GET /trips/1
+  # GET /trips/id number
   def show
-    render json: @trip
+    #render json: @trip
+    render json: TripSerializer.new(@trips, options)
   end
 
   # POST /trips
@@ -18,7 +20,8 @@ class Api::V1::TripsController < ApplicationController
     @trip = Trip.new(trip_params)
 
     if @trip.save
-      render json: @trip, status: :created, location: @trip
+      #render json: @trip, status: :created, location: @trip
+      render json: TripSerializer.new(@trips)
     else
       render json: @trip.errors, status: :unprocessable_entity
     end
@@ -27,7 +30,8 @@ class Api::V1::TripsController < ApplicationController
   # PATCH/PUT /trips/1
   def update
     if @trip.update(trip_params)
-      render json: @trip
+      #render json: @trip
+      render json: TripSerializer.new(@trip, options)
     else
       render json: @trip.errors, status: :unprocessable_entity
     end
@@ -47,5 +51,9 @@ class Api::V1::TripsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def trip_params
       params.require(:trip).permit(:name, :location, :date, :description)
+    end
+
+    def options
+      @options ||= {include: %i[activities]}
     end
 end
