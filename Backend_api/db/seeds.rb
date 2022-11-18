@@ -30,8 +30,13 @@ activities = Activity.create([
         trip: trips.first
     },
     {
+        trip_activity: "Sand dune surfing",
+        trip: trips.first
+    },
+    {
         trip_activity: "Backpacking",
         trip: trips.second
     }
+
 
 ])
