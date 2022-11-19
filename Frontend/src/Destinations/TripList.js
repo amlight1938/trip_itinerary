@@ -46,9 +46,6 @@ class TripList extends Component{
             return <h3>Data failed to load :(</h3>
         }
 
-        //console.log(this.state.api_package)
-        //console.log(this.state.trips)
-        //console.log(this.state.activities)
         return (
             <div>
                 <div className="container">
