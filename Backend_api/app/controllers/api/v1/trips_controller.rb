@@ -12,7 +12,7 @@ class Api::V1::TripsController < ApplicationController
   # GET /trips/id number
   def show
     #render json: @trip
-    render json: TripSerializer.new(@trips, options)
+    render json: TripSerializer.new(@trip, options)
   end
 
   # POST /trips

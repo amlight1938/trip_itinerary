@@ -9,7 +9,7 @@ const TripCardList = (props) => {
             {/* {console.log(props.state)} */}
             
             {props.state.trips.map(trip => {
-                //console.log(props.state)
+                console.log(props.state)
                 // console.log(trip.relationships.activities.data)
 
                 let trip_activity_list = getActivity(trip.id, state.activities)

@@ -9,115 +9,56 @@
 Activity.destroy_all
 Trip.destroy_all
 
-trips = Trip.create([
-    {
-        name: "West Texas Roadtrip",
-        location: "Big Bend National Park",
-        date: Date.new(2017, 3, 4),
-        description: "Go on a roadtrip in western Texas to go backpacking in Big Bend, climb the highet point in Texas, and surf down sand dunes"
-    },
-    {
-        name: "Buffalo River Backpacking",
-        location: "Buffalo River, Arkansas",
-        date: Date.new(2018, 3, 14),
-        description: "Spend a few nights exploring the Arkansas backcountry"       
-    },
-    {
-        name: "Hawaii Multisport",
-        location: "Big Island of Hawaii",
-        date: Date.new(2021, 6, 14),
-        description: "See Volcano National Park, black sand beaches, and explore the less traveled areas of Hawaii's Big Island by bike, foot, and kayak."
-    },
-    {
-        name: "Boundary Water Canoeing",
-        location: "Minnesota Boundary Waters",
-        date: Date.new(2016, 3, 20),
-        description: "Travel 50 miles canoeing, portaging, and camping out under the stars in the Minnesota wilderness",        
-    },
-    {
-        name: "Pacific Northwest Roadtrip",
-        location: "Olympic National Park and Seattle",
-        date: Date.new(2021, 7, 15),
-        description: "Explore Olympic National Park's backcountry, Seattle, Ruby Beach. Enjoy breathtaking views as you go skydiving over Olympic National Park"
-    },
-    {
-        name: "Puerto Rico Exploring",
-        location: "Puerto Rico",
-        date: Date.new(2022, 6, 27),
-        description: "Check out El Yunque rainforest, Old San Juan, swim in bioluminescent water while stargazing, slide down natural waterslides, and eat some street mangos"
-    },
-    # {
+class Entry
+    def initialize(pName, pLocation, pDate, pDescription, pActivities)
+        trip = Trip.create(name: pName, location: pLocation, date: pDate, description: pDescription)
+       
+        pActivities.each do |tmp_activity|
+            activity = Activity.create(trip_activity: tmp_activity, trip_id: trip.id)
+            trip.activities << activity
+        end
+    end
+end
 
-    # },
-])
+Entry.new("West Texas Roadtrip", 
+    "Big Bend National Park", 
+    Date.new(2017, 3, 4), 
+    "Go on a roadtrip in western Texas to go backpacking in Big Bend, climb the highet point in Texas, and surf down sand dunes",
+    ["Backpacking", "Camping"]
+)
 
-activities = Activity.create([
-    #West texas roadtrip
-    {
-        trip_activity: "Backpacking",
-        trip: trips.first
-    },
-    {
-        trip_activity: "Sand dune surfing",
-        trip: trips.first
-    },
+Entry.new("Buffalo River Backpacking", 
+    "Buffalo River, Arkansas", 
+    Date.new(2018, 3, 14), 
+    "Spend a few nights exploring the Arkansas backcountry",
+    ["Backpacking"]
+)
 
-    #Buffao river backoacking
-    {
-        trip_activity: "Backpacking",
-        trip: trips.second
-    },
+Entry.new("Hawaii Multisport",
+    "Big Island of Hawaii",
+    Date.new(2021, 6, 14),
+    "See Volcano National Park, black sand beaches, and explore the less traveled areas of Hawaii's Big Island by bike, foot, and kayak",
+    ["Biking", "Kayaking", "Hiking", "Snorkelling"]
+)
 
-    #Hawaii multisport
-    {
-        trip_activity: "Biking",
-        trip: trips.third
-    },
-    {
-        trip_activity: "Hiking",
-        trip: trips.third
-    },
-    {
-        trip_activity: "Kayaking",
-        trip: trips.third
-    },
-    {
-        trip_activity: "Snorkeling",
-        trip: trips.third
-    },
+Entry.new("Boundary Water Canoeing",
+    "Minnesota Boundary Waters",
+    Date.new(2016, 3, 20),
+    "Travel 50 miles canoeing, portaging, and camping out under the stars in the Minnesota wilderness",
+    ["Canoeing"]
+)
 
-    #Boundary waters canoeing
-    {
-        trip_activity: "Canoeing",
-        trip: trips.fourth
-    },
+Entry.new("Pacific Northwest Roadtrip",
+    "Olympic National Park and Seattle",
+    Date.new(2021, 7, 15),
+    "Explore Olympic National Park's backcountry, Seattle, and Ruby Beach. Enjoy breathtaking views as you go skydiving over Olympic National Park",
+    ["Skydiving", "Backpacking", "Kayaking"]
+)
 
-    #Pacific northwest roadtrip
-    {
-        trip_activity: "Backpacking",
-        trip: trips.fifth
-    },
-    {
-        trip_activity: "Sky diving",
-        trip: trips.fifth
-    },
-    {
-        trip_activity: "kayaking",
-        trip: trips.fifth
-    },
+Entry.new("Puerto Rico Exploring",
+    "Puerto Rico",
+    Date.new(2022, 6, 27),
+    "Check out El Yunque rainforest, Old San Juan, swim in bioluminescent water while stargazing, slide down natural waterslides, and eat some street mangos",
+    ["Hiking", "Kayaking", "Ziplining", "Swimming"]
+)
 
-    # #Puerto rico exploring
-    # {
-    #     trip_activity: "hiking",
-    #     trip: trips
-    # },
-    # {
-    #     trip_activity: "kayaking",
-    #     trip: trips.
-    # },
-    # {
-    #     trip_activity: "hiking",
-    #     trip: trips.six
-    # },
-
-])
