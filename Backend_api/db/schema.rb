@@ -10,13 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_09_015508) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_23_190827) do
   create_table "activities", force: :cascade do |t|
     t.string "trip_activity"
     t.integer "trip_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["trip_id"], name: "index_activities_on_trip_id"
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string "image_url"
+    t.integer "trip_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["trip_id"], name: "index_images_on_trip_id"
+  end
+
+  create_table "itineraries", force: :cascade do |t|
+    t.string "itinerary_description"
+    t.integer "trip_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["trip_id"], name: "index_itineraries_on_trip_id"
   end
 
   create_table "trips", force: :cascade do |t|
@@ -26,7 +42,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_09_015508) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "highlight_img_url"
   end
 
   add_foreign_key "activities", "trips"
+  add_foreign_key "images", "trips"
+  add_foreign_key "itineraries", "trips"
 end

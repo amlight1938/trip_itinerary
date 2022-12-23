@@ -54,6 +54,6 @@ class Api::V1::TripsController < ApplicationController
     end
 
     def options
-      @options ||= {include: %i[activities]}
+      @options ||= {include: %i[activities images itinerary]}
     end
 end
