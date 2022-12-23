@@ -2,8 +2,8 @@ import longs_peak from "../Assets/longs_peak.jpg"
 
 const TripCard = (props) => {
     
-    let trip = props.trip.attributes;
-    let activities = props.activities;
+    const trip = props.trip.attributes;
+    const activities = props.activities;
       
     return ( 
         
