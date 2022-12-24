@@ -1,6 +1,6 @@
-class ImageSerializer
-    include JSONAPI::Serializer
-    attributes :image_url, :trip_id
+class ImageSerializer < ActiveModel::Serializer
+    #include JSONAPI::Serializer
+    attributes :id, :trip_id, :image_url
 
     belongs_to :trip
 end

@@ -1,1 +1,1 @@
-#ActiveModelSerializers.config.adapter = :jsonapi
+#ActiveModelSerializers.config.adapter = :JSONAPI

@@ -1,7 +1,7 @@
-class TripSerializer
-  include JSONAPI::Serializer
-  attributes :name, :location, :date, :description, :highlight_img_url
-
+class TripSerializer < ActiveModel::Serializer
+  
+  attributes :id, :name, :location, :date, :highlight_img_url, :description 
+  
   has_many :activities
   has_many :images
   has_one :itinerary

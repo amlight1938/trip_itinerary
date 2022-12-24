@@ -1,6 +1,6 @@
-class ItinerarySerializer
-    include JSONAPI::Serializer
-    attributes :itinerary_description, :trip_id
+class ItinerarySerializer < ActiveModel::Serializer
+    #include JSONAPI::Serializer
+    attributes :id, :trip_id, :itinerary_description
 
     belongs_to :trip
 end

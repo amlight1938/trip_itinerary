@@ -6,13 +6,16 @@ class Api::V1::TripsController < ApplicationController
     @trips = Trip.all
 
     #render json: @trips, include: [:activities]
-    render json: TripSerializer.new(@trips, options)
+    #render json: TripSerializer.new(@trips, options_all)
+    render json: @trips, each_serializer: TripSerializer #include: [:activities, only: [:id, :trip_id, :trip_activity]] #except: %i[created_at updated_at]
   end
 
   # GET /trips/id number
   def show
     #render json: @trip
-    render json: TripSerializer.new(@trip, options)
+    #render json: TripSerializer.new(@trip, options_specific)
+    #each_serializer: TripSerializer,
+    render json: @trip, each_serializer: TripSerializer#include: %i[activities images itinerary], each_serializer: TripSerializer#except: %i[created_at updated_at]
   end
 
   # POST /trips
@@ -31,7 +34,7 @@ class Api::V1::TripsController < ApplicationController
   def update
     if @trip.update(trip_params)
       #render json: @trip
-      render json: TripSerializer.new(@trip, options)
+      render json: TripSerializer.new(@trip, options_specific_trip)
     else
       render json: @trip.errors, status: :unprocessable_entity
     end
@@ -53,7 +56,9 @@ class Api::V1::TripsController < ApplicationController
       params.require(:trip).permit(:name, :location, :date, :description)
     end
 
-    def options
-      @options ||= {include: %i[activities images itinerary]}
-    end
+    # def options
+    #   @options_all_trips ||={include: %i[activities]}
+    #   @options_specific_trip ||= {include: %i[activities images itinerary]}
+    # end
+
 end
