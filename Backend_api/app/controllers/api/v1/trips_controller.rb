@@ -7,15 +7,14 @@ class Api::V1::TripsController < ApplicationController
 
     #render json: @trips, include: [:activities]
     #render json: TripSerializer.new(@trips, options_all)
-    render json: @trips, each_serializer: TripSerializer #include: [:activities, only: [:id, :trip_id, :trip_activity]] #except: %i[created_at updated_at]
+    render json: @trips, each_serializer: PartialTripSerializer 
   end
 
   # GET /trips/id number
   def show
     #render json: @trip
     #render json: TripSerializer.new(@trip, options_specific)
-    #each_serializer: TripSerializer,
-    render json: @trip, each_serializer: TripSerializer#include: %i[activities images itinerary], each_serializer: TripSerializer#except: %i[created_at updated_at]
+    render json: @trip, each_serializer: TripSerializer
   end
 
   # POST /trips
