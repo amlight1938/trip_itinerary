@@ -8,7 +8,7 @@ class TripList extends Component{
         super(props)    
         this.state = {
             trips: [],
-            activities: [],
+            //activities: [],
             loading: true,
             didFetchSucceed: false
         }
@@ -22,10 +22,9 @@ class TripList extends Component{
         fetch(api_url)
         .then(response => response.json())
         .then(api_package => {
-            console.log(api_package)
             this.setState({
-                trips: api_package.data,
-                activities: api_package.included,
+                trips: api_package,
+                //activities: api_package.included,
                 didFetchSucceed: true
             })
         }).catch(err => {
@@ -47,11 +46,10 @@ class TripList extends Component{
             return <h3>Data failed to load :(</h3>
         }
 
-        console.log(this.state)
         return (
             <div>
                 <div className="container">
-                    <TripCardList state={this.state}/>
+                    <TripCardList trips = {this.state.trips}/>
                 </div>
             </div>
         )

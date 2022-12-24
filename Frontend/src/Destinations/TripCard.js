@@ -1,10 +1,12 @@
 import longs_peak from "../Assets/longs_peak.jpg"
+import { buildActivityString } from "../utils";
 
 const TripCard = (props) => {
     
-    const trip = props.trip.attributes;
-    const activities = props.activities;
-      
+    const trip = props.trip;
+
+    const activities_str = buildActivityString(trip.activities)
+
     return ( 
         
         <div className="card" style={{width: "18rem"}}>
@@ -16,7 +18,7 @@ const TripCard = (props) => {
             <ul className="list-group list-group-flush">
                 <li className="list-group-item">{trip.location}</li>
                 <li className="list-group-item">{trip.date}</li>
-                <li className="list-group-item">{activities.join(', ')}</li>
+                <li className="list-group-item">{activities_str}</li>
             </ul>
             <div className="card-body">
                 <a href="#" className="card-link">Sample itinerary link</a>
