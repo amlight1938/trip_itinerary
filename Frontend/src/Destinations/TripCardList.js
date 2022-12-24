@@ -1,5 +1,5 @@
 import TripCard from "./TripCard";
-import { getActivity } from "../utils";
+import { getActivity } from "../Helper functions/utils";
 
 const TripCardList = (props) => {
     let trips = props.trips;

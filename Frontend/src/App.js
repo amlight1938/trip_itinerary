@@ -1,10 +1,11 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
-import TripList from "./Destinations/TripList";
+import CallApiTripList from "./Destinations/CallApiTripList";
 import About from "./About";
 import './index.css';
 
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import CallApiSingleTrip from "./Destinations/Single Trip/CallApiSingleTrip";
 
 
 function App() {
@@ -21,7 +22,10 @@ function App() {
                   <About/>
                 </Route>
                 <Route exact path='/destinations'>
-                  <TripList />
+                  <CallApiTripList />
+                </Route>
+                <Route exact path={'/destinations/:tripId'}>
+                  <CallApiSingleTrip />
                 </Route>
               </Switch>
             

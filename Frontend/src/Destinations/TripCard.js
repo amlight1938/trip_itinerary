@@ -1,11 +1,11 @@
 import longs_peak from "../Assets/longs_peak.jpg"
-import { buildActivityString } from "../utils";
+import { build_activity_list } from "../Helper functions/utils";
 
 const TripCard = (props) => {
     
     const trip = props.trip;
 
-    const activities_str = buildActivityString(trip.activities)
+    const activities_str = build_activity_list(trip.activities).join(', ');
 
     return ( 
         
