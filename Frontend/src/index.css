@@ -27,6 +27,10 @@
   opacity: .8;
 }
 
-.trip_cards_list{
+/* .card {
+  text-decoration-color: black;
+} */
 
+.card a{
+  text-decoration: none;
 }

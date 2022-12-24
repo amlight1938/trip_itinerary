@@ -12,8 +12,8 @@ Activity.destroy_all
 Trip.destroy_all
 
 class Entry
-    def initialize(pName, pLocation, pDate, pHighlightImageURL, pDescription, 
-            pActivities, pImageURLs, pItinerary)
+    def initialize(pName:, pLocation:, pDate:, pHighlightImageURL:, pDescription:, 
+            pActivities:, pImageURLs:, pItinerary:)
         
         trip = Trip.create(name: pName, location: pLocation, date: pDate, description: pDescription, 
             highlight_img_url: pHighlightImageURL)
@@ -32,23 +32,38 @@ class Entry
     end
 end
 
-Entry.new("West Texas Roadtrip", 
-    "Big Bend National Park", 
-    Date.new(2017, 3, 4), 
-    "highlight image .com",
-    "Go on a roadtrip in western Texas to go backpacking in Big Bend, climb the highet point in Texas, and surf down sand dunes",
-    ["Backpacking", "Camping"],
-    ["test 1 image url .com", "test 2 image url .com"],
-    "Day1: do something on day 1. Day 2: do something on day 2."
+Entry.new(
+    pName: "West Texas Roadtrip",
+    pLocation: "Big Bend National Park",
+    pDate: Date.new(2017, 3, 4),
+    pHighlightImageURL: "highlight image .com",
+    pDescription: "Go on a roadtrip in western Texas to go backpacking in Big Bend, climb the highet point in Texas, and surf down sand dunes",
+    pActivities: ["Backpacking", "Camping", "Sand surfing"],
+    pImageURLs: ["test 1 image url .com", "test 2 image url .com"],
+    pItinerary: "Day1: do something on day 1. Day 2: do something on day 2."
 )
 
-# Entry.new("Buffalo River Backpacking", 
-#     "Buffalo River, Arkansas", 
-#     Date.new(2018, 3, 14), 
-#     "Spend a few nights exploring the Arkansas backcountry",
-#     ["Backpacking"]
-# )
+Entry.new(
+    pName: "Buffalo River Backpacking",
+    pLocation: "Buffalo River, Arkansas",
+    pDate: Date.new(2018, 3, 14),
+    pHighlightImageURL: "AR highlight image .com",
+    pDescription: "Spend a few nights exploring the Arkansas backcountry",
+    pActivities: ["Backpacking"],
+    pImageURLs: ["AR test 1 image url .com", "AR test 2 image url .com"],
+    pItinerary: "AR Day1: do something on day 1. Day 2: do something on day 2."
+)
 
+Entry.new(
+    pName: "Hawaii Multisport",
+    pLocation: "Big Island of Hawaii",
+    pDate: Date.new(2021, 6, 14),
+    pHighlightImageURL: "HI highlight image .com",
+    pDescription: "See Volcano National Park, black sand beaches, and explore the less traveled areas of Hawaii's Big Island by bike, foot, and kayak",
+    pActivities: ["Biking", "Kayaking", "Hiking", "Snorkelling"]
+    pImageURLs: ["HI test 1 image url .com", "HI test 2 image url .com"],
+    pItinerary: "HI Day1: do something on day 1. Day 2: do something on day 2."
+)
 # Entry.new("Hawaii Multisport",
 #     "Big Island of Hawaii",
 #     Date.new(2021, 6, 14),

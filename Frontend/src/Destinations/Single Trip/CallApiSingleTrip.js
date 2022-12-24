@@ -11,7 +11,8 @@ const CallApiSingleTrip = () => {
         <div className="container">
             {isLoading && <h3>Loading...</h3>}
             {errors && <h3>Data failed to load :(</h3>}
-            {trip && <TripCardList trip = {trip}/>}
+            {/* {trip == null && <h3>loaded data is empty :(</h3>} */}
+            {/* {trip && SINGLE TRIP DETAILS COMPONENT} */}
         </div>
     );
 }
