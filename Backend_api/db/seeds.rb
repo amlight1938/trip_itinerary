@@ -13,7 +13,7 @@ Trip.destroy_all
 
 class Entry
     def initialize(pName:, pLocation:, pDate:, pHighlightImageURL:, pDescription:, 
-            pActivities:, pImageURLs:, pItinerary:)
+            pActivities:, pImageURLs:, pItineraries:)
         
         trip = Trip.create(name: pName, location: pLocation, date: pDate, description: pDescription, 
             highlight_img_url: pHighlightImageURL)
@@ -28,7 +28,14 @@ class Entry
             trip.images << url
         end
 
-        itinerary = Itinerary.create(itinerary_description: pItinerary, trip_id: trip.id)
+        pItineraries.each do |row|
+            day = row[0]
+            itin = row[1]
+            itinerary = Itinerary.create(day_number: day, day_itinerary: itin, trip_id: trip.id)
+            trip.itineraries << itinerary
+        end
+
+        #itinerary = Itinerary.create(itinerary_description: pItinerary, trip_id: trip.id)
     end
 end
 
@@ -40,7 +47,11 @@ Entry.new(
     pDescription: "Go on a roadtrip in western Texas to go backpacking in Big Bend, climb the highet point in Texas, and surf down sand dunes",
     pActivities: ["Backpacking", "Camping", "Sand surfing"],
     pImageURLs: ["test 1 image url .com", "test 2 image url .com"],
-    pItinerary: "Day1: do something on day 1. Day 2: do something on day 2."
+    pItineraries: 
+    [
+        ["Day 1", "TX do something on day 1"],
+        ["Day 2", "TX do something on day 2"]
+    ]
 )
 
 Entry.new(
@@ -51,7 +62,11 @@ Entry.new(
     pDescription: "Spend a few nights exploring the Arkansas backcountry",
     pActivities: ["Backpacking"],
     pImageURLs: ["AR test 1 image url .com", "AR test 2 image url .com"],
-    pItinerary: "AR Day1: do something on day 1. Day 2: do something on day 2."
+    pItineraries: 
+    [
+        ["Day 1", "AR do something on day 1"],
+        ["Day 2", "AR do something on day 2"]
+    ]
 )
 
 Entry.new(
@@ -62,7 +77,11 @@ Entry.new(
     pDescription: "See Volcano National Park, black sand beaches, and explore the less traveled areas of Hawaii's Big Island by bike, foot, and kayak",
     pActivities: ["Biking", "Kayaking", "Hiking", "Snorkelling"],
     pImageURLs: ["HI test 1 image url .com", "HI test 2 image url .com"],
-    pItinerary: "HI Day1: do something on day 1. Day 2: do something on day 2."
+    pItineraries: 
+    [
+        ["Day 1", "HI do something on day 1"],
+        ["Day 2", "HI do something on day 2"]
+    ]
 )
 
 Entry.new(
@@ -73,7 +92,11 @@ Entry.new(
     pDescription: "Travel 50 miles canoeing, portaging, and camping out under the stars in the Minnesota wilderness",
     pActivities: ["Canoeing"],
     pImageURLs: ["MN test 1 image url .com", "MN test 2 image url .com"],
-    pItinerary: "MN Day1: do something on day 1. Day 2: do something on day 2."
+    pItineraries: 
+    [
+        ["Day 1", "MN do something on day 1"],
+        ["Day 2", "MN do something on day 2"]
+    ]
 )
 
 Entry.new(
@@ -84,7 +107,11 @@ Entry.new(
     pDescription: "Explore Olympic National Park's backcountry, Seattle, and Ruby Beach. Enjoy breathtaking views as you go skydiving over Olympic National Park",
     pActivities: ["Skydiving", "Backpacking", "Kayaking"],
     pImageURLs: ["WA test 1 image url .com", "WA test 2 image url .com"],
-    pItinerary: "WA Day1: do something on day 1. Day 2: do something on day 2."
+    pItineraries: 
+    [
+        ["Day 1", "WA do something on day 1"],
+        ["Day 2", "WA do something on day 2"]
+    ]
 )
 
 Entry.new(
@@ -95,6 +122,10 @@ Entry.new(
     pDescription: "Check out El Yunque rainforest, Old San Juan, swim in bioluminescent water while stargazing, slide down natural waterslides, and eat some street mangos",
     pActivities: ["Hiking", "Kayaking", "Ziplining", "Swimming"],
     pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
-    pItinerary: "PR Day1: do something on day 1. Day 2: do something on day 2."
+    pItineraries: 
+    [
+        ["Day 1", "PR do something on day 1"],
+        ["Day 2", "PR do something on day 2"]
+    ]
 )
 

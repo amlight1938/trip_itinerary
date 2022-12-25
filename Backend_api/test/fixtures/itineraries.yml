@@ -1,9 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  itinerary_description: MyString
+  day_number: MyString
+  day_itinerary: MyString
   trip: one
 
 two:
-  itinerary_description: MyString
+  day_number: MyString
+  day_itinerary: MyString
   trip: two
