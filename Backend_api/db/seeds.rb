@@ -60,35 +60,41 @@ Entry.new(
     pDate: Date.new(2021, 6, 14),
     pHighlightImageURL: "HI highlight image .com",
     pDescription: "See Volcano National Park, black sand beaches, and explore the less traveled areas of Hawaii's Big Island by bike, foot, and kayak",
-    pActivities: ["Biking", "Kayaking", "Hiking", "Snorkelling"]
+    pActivities: ["Biking", "Kayaking", "Hiking", "Snorkelling"],
     pImageURLs: ["HI test 1 image url .com", "HI test 2 image url .com"],
     pItinerary: "HI Day1: do something on day 1. Day 2: do something on day 2."
 )
-# Entry.new("Hawaii Multisport",
-#     "Big Island of Hawaii",
-#     Date.new(2021, 6, 14),
-#     "See Volcano National Park, black sand beaches, and explore the less traveled areas of Hawaii's Big Island by bike, foot, and kayak",
-#     ["Biking", "Kayaking", "Hiking", "Snorkelling"]
-# )
 
-# Entry.new("Boundary Water Canoeing",
-#     "Minnesota Boundary Waters",
-#     Date.new(2016, 3, 20),
-#     "Travel 50 miles canoeing, portaging, and camping out under the stars in the Minnesota wilderness",
-#     ["Canoeing"]
-# )
+Entry.new(
+    pName: "Boundary Water Canoeing",
+    pLocation: "Minnesota Boundary Waters",
+    pDate: Date.new(2016, 3, 20),
+    pHighlightImageURL: "MN highlight image .com",
+    pDescription: "Travel 50 miles canoeing, portaging, and camping out under the stars in the Minnesota wilderness",
+    pActivities: ["Canoeing"],
+    pImageURLs: ["MN test 1 image url .com", "MN test 2 image url .com"],
+    pItinerary: "MN Day1: do something on day 1. Day 2: do something on day 2."
+)
 
-# Entry.new("Pacific Northwest Roadtrip",
-#     "Olympic National Park and Seattle",
-#     Date.new(2021, 7, 15),
-#     "Explore Olympic National Park's backcountry, Seattle, and Ruby Beach. Enjoy breathtaking views as you go skydiving over Olympic National Park",
-#     ["Skydiving", "Backpacking", "Kayaking"]
-# )
+Entry.new(
+    pName: "Pacific Northwest Roadtrip",
+    pLocation: "Olympic National Park and Seattle",
+    pDate: Date.new(2021, 7, 15),
+    pHighlightImageURL: "WA highlight image .com",
+    pDescription: "Explore Olympic National Park's backcountry, Seattle, and Ruby Beach. Enjoy breathtaking views as you go skydiving over Olympic National Park",
+    pActivities: ["Skydiving", "Backpacking", "Kayaking"],
+    pImageURLs: ["WA test 1 image url .com", "WA test 2 image url .com"],
+    pItinerary: "WA Day1: do something on day 1. Day 2: do something on day 2."
+)
 
-# Entry.new("Puerto Rico Exploring",
-#     "Puerto Rico",
-#     Date.new(2022, 6, 27),
-#     "Check out El Yunque rainforest, Old San Juan, swim in bioluminescent water while stargazing, slide down natural waterslides, and eat some street mangos",
-#     ["Hiking", "Kayaking", "Ziplining", "Swimming"]
-# )
+Entry.new(
+    pName: "Puerto Rico Exploring",
+    pLocation: "Puerto Rico",
+    pDate: Date.new(2022, 6, 27),
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Check out El Yunque rainforest, Old San Juan, swim in bioluminescent water while stargazing, slide down natural waterslides, and eat some street mangos",
+    pActivities: ["Hiking", "Kayaking", "Ziplining", "Swimming"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItinerary: "PR Day1: do something on day 1. Day 2: do something on day 2."
+)
 

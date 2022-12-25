@@ -11,7 +11,7 @@ const TripCard = (props) => {
     return ( 
         
         <div className="card" style={{width: "18rem"}}>
-            <Link to="/destinations/33">
+            <Link to={`/destinations/${trip.id}`}>
                 <img src={longs_peak} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{trip.name}</h5>
