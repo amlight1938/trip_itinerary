@@ -11,7 +11,7 @@ const CallApiTripList = () => {
         <div className="container">
             {isLoading && <h3>Loading...</h3>}
             {errors && <h3>Data failed to load :(</h3>}
-            {trips && <TripCardList trips = {trips}/>}
+            {!errors && !isLoading && <TripCardList trips = {trips}/>}
         </div>
     );
 }

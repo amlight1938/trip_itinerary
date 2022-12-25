@@ -22,10 +22,10 @@ const TripCard = (props) => {
                     <li className="list-group-item">{trip.date}</li>
                     <li className="list-group-item">{activities_str}</li>
                 </ul>
-                <div className="card-body">
+                {/* <div className="card-body">
                     <a href="#" className="card-link">Sample itinerary link</a>
                     <a href="#" className="card-link">Another link</a>
-                </div>
+                </div> */}
             </Link>
         </div>
      );
