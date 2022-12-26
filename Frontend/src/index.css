@@ -34,3 +34,11 @@
 .card a{
   text-decoration: none;
 }
+
+.paragraph_image {
+  width: 100%;
+}
+
+.paragraph_and_picture {
+  padding-top: 3%;
+}

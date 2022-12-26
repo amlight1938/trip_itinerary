@@ -1,13 +1,32 @@
+import new_york from '../../Assets/new_york.jpg'
+import Paragraph from '../../Paragraph';
+
+
 const TripDetails = ({trip}) => {
-    // console.log(trip)
-    return (
-          
+
+    // let iteration_count = 0;
+    // let left_pic = null;
+
+    return (     
         <div className="container">
             <h3>Trip details: {trip.name}</h3>
-            <h3>{trip.location}</h3>
-            <h3>Itinerary: {trip.itinerary.itinerary_description}</h3>
-        </div>
-        
+
+            {trip.itineraries.map((itin) => {
+                // iteration_count % 2 !== 0 ? left_pic = true : left_pic = false;
+                // iteration_count++;
+                return(
+                    <div key={itin.id}>
+                        <Paragraph 
+                            title={itin.day_number}
+                            pgraph={itin.day_itinerary} 
+                            image={null} 
+                            img_left_bool={false}
+                        />
+                    </div>
+                )               
+            })}
+
+        </div> 
     );
 }
  
