@@ -1,7 +1,7 @@
 const Paragraph = ({title, pgraph, image, img_left_bool}) => {
     
     return (
-        <div className="paragraph_and_picture">
+        <div className="paragraph_and_picture" style={{ textAlign: img_left_bool ? "right" : "left"}}>
             
                 {!img_left_bool 
                     ?   <div className="row">

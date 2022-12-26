@@ -27,9 +27,9 @@
   opacity: .8;
 }
 
-/* .card {
-  text-decoration-color: black;
-} */
+.card-text {
+  color: black;
+}
 
 .card a{
   text-decoration: none;

@@ -1,32 +1,24 @@
 import new_york from '../../Assets/new_york.jpg'
-import Paragraph from '../../Paragraph';
-
+import DisplayParagraphAndImage from "../../Paragraph and image section/DisplayParagraphAndImage"
 
 const TripDetails = ({trip}) => {
 
-    // let iteration_count = 0;
-    // let left_pic = null;
+    //TODO make call to AWS to get pictures
 
-    return (     
-        <div className="container">
-            <h3>Trip details: {trip.name}</h3>
+    //TODO make trip photo caraousel
 
-            {trip.itineraries.map((itin) => {
-                // iteration_count % 2 !== 0 ? left_pic = true : left_pic = false;
-                // iteration_count++;
-                return(
-                    <div key={itin.id}>
-                        <Paragraph 
-                            title={itin.day_number}
-                            pgraph={itin.day_itinerary} 
-                            image={null} 
-                            img_left_bool={false}
-                        />
-                    </div>
-                )               
-            })}
+    const alternateSides = false;
+    const noImage = true;
+    const id = "id"
+    const title = "day_number"
+    const pgraph = "day_itinerary"
+    const image = "image"
 
-        </div> 
+    
+    return(
+
+        <DisplayParagraphAndImage obj_list={trip.itineraries} idField={id} titleField={title} 
+            pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
     );
 }
  
