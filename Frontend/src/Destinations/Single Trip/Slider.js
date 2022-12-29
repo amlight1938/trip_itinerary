@@ -1,27 +1,23 @@
 import { useState } from "react";
 
 const Slider = ({slides}) => {
-    const [currentIndex, setCurrentIndex] = useState(2);
+    const sl = slides.length;
+    const lastIndex = sl - 1;
 
-    // var image_places = [
-    //     currentIndex - 2,
-    //     currentIndex - 1,
-    //     currentIndex,
-    //     currentIndex + 1,
-    //     currentIndex + 2,
-    // ]
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToPrevious = () => {
-        const newIndex = currentIndex - 1;
+        let isFirstSlide = currentIndex === 0;
+        let newIndex = isFirstSlide ? lastIndex : currentIndex - 1; 
         setCurrentIndex(newIndex);
-        // image_places.map((place) => {
+    };
 
-        // })
-    };
     const goToNext = () => {
-        const newIndex = currentIndex + 1;
+        let isLastSlide = currentIndex === lastIndex;
+        let newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     };
+
     const goToSlide = (slideIndex) => {
         setCurrentIndex(slideIndex);
     };
@@ -77,6 +73,7 @@ const Slider = ({slides}) => {
     const smallImageStyles ={
         height: "90%",
         width: "auto",
+        cursor: "pointer"
 
     }
 
@@ -114,19 +111,19 @@ const Slider = ({slides}) => {
                 <div onClick={goToPrevious} style={leftArrowStyles} >❰</div>
                 <div onClick={goToNext} style={rightArrowStyles}>❱</div>
 
-                <div className="picture-row" style={rowStyles}>
-                    <img src={slides[currentIndex - 2 ]} alt="" style={smallImageStyles} />
+                <div className="picture-row" onClick={() => goToSlide(currentIndex - 2)} style={rowStyles}>
+                    <img src={slides[currentIndex - 2]} alt="" style={smallImageStyles} />
                 </div>
-                <div className="picture-row" style={rowStyles}>
-                    <img src={slides[currentIndex - 1 ]} alt="" style={smallImageStyles} />
+                <div className="picture-row" onClick={() => goToSlide(currentIndex - 1)} style={rowStyles}>
+                    <img src={slides[currentIndex - 1]} alt="" style={smallImageStyles} />
                 </div>
-                <div className="picture-row" style={rowStyles}>
+                <div className="picture-row" onClick={() => goToSlide(currentIndex)} style={rowStyles}>
                     <img src={slides[currentIndex ]} alt="" style={smallImageStyles} />
                 </div>
-                <div className="picture-row" style={rowStyles}>
+                <div className="picture-row" onClick={() => goToSlide(currentIndex + 1)} style={rowStyles}>
                     <img src={slides[currentIndex + 1 ]} alt="" style={smallImageStyles} />
                 </div>
-                <div className="picture-row" style={rowStyles}>
+                <div className="picture-row" onClick={() => goToSlide(currentIndex + 2)} style={rowStyles}>
                     <img src={slides[currentIndex + 2 ]} alt="" style={smallImageStyles} />
                 </div>
             </div>
