@@ -1,5 +1,13 @@
+
 import new_york from '../../Assets/new_york.jpg'
+import colorado from '../../Assets/colorado.jpg'
+import biking from '../../Assets/biking.jpg'
+import longs_peak from '../../Assets/longs_peak.jpg'
+import puerto_rico from '../../Assets/puerto_rico.jpg'
+import italy_hike from '../../Assets/italy_hike.jpg'
+
 import DisplayParagraphAndImage from "../../Paragraph and image section/DisplayParagraphAndImage"
+import ImageSlider from './ImageSlider';
 
 const TripDetails = ({trip}) => {
 
@@ -14,11 +22,25 @@ const TripDetails = ({trip}) => {
     const pgraph = "day_itinerary"
     const image = "image"
 
-    
-    return(
 
-        <DisplayParagraphAndImage obj_list={trip.itineraries} idField={id} titleField={title} 
-            pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
+
+    const containerStyles = {
+        width: "100%",
+        height: "500px",
+        margin: "0 auto",
+      };
+
+    const slides = [new_york, colorado, biking, longs_peak, puerto_rico, italy_hike];
+
+    return(
+        <>
+            <div style={containerStyles}>
+                <ImageSlider slides={slides} />
+            </div>
+
+            <DisplayParagraphAndImage obj_list={trip.itineraries} idField={id} titleField={title} 
+                pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
+        </>
     );
 }
  
