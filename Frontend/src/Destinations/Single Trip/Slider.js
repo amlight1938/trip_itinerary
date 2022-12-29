@@ -19,13 +19,23 @@ const Slider = ({slides}) => {
     };
 
     const goToSlide = (slideIndex) => {
-        setCurrentIndex(slideIndex);
+        if(slideIndex >= 0 || slideIndex <= lastIndex){
+            setCurrentIndex(slideIndex);
+        }
+    };
+
+    const containerStyles = {
+        width: "1000px",
+        height: "700px",
+        // margin: "0 auto",
+        // backgroundColor: "blue",
+        position: "absolute"
     };
 
     const bigImageAreaStyles = {
         height: "75%",
-        backgroundColor: "black",
-        border: "4px solid green",
+        // backgroundColor: "black",
+        // border: "4px solid green",
         position: "relative",
 
         display: "flex",
@@ -37,17 +47,11 @@ const Slider = ({slides}) => {
     const bigImageStyles = {
         height: "98%",
         width: "auto",
-        // margin: "0 auto"
-        // position: "absolute",
-        // top: "50%",
-        // left: "50%",
-        // transform: "translate(-50%,-50%)"
-        
     }
 
     const carouselDivStyles = {
         height: "25%",
-        backgroundColor: "red",
+        // backgroundColor: "red",
         position: "absolute",
         bottom: 4,
         width: "100%",
@@ -99,10 +103,11 @@ const Slider = ({slides}) => {
         cursor: "pointer",
     };
 
+
     
 
     return (
-        <>
+        <div style={containerStyles}>
             <div className="bigImage" style={bigImageAreaStyles}>
                 <img src={slides[currentIndex]} alt="" style={bigImageStyles} />
             </div>
@@ -111,9 +116,9 @@ const Slider = ({slides}) => {
                 <div onClick={goToPrevious} style={leftArrowStyles} >❰</div>
                 <div onClick={goToNext} style={rightArrowStyles}>❱</div>
 
-                <div className="picture-row" onClick={() => goToSlide(currentIndex - 2)} style={rowStyles}>
+                {/* <div className="picture-row" onClick={() => goToSlide(currentIndex - 2)} style={rowStyles}>
                     <img src={slides[currentIndex - 2]} alt="" style={smallImageStyles} />
-                </div>
+                </div> */}
                 <div className="picture-row" onClick={() => goToSlide(currentIndex - 1)} style={rowStyles}>
                     <img src={slides[currentIndex - 1]} alt="" style={smallImageStyles} />
                 </div>
@@ -127,9 +132,9 @@ const Slider = ({slides}) => {
                     <img src={slides[currentIndex + 2 ]} alt="" style={smallImageStyles} />
                 </div>
             </div>
-
+        </div>
             
-        </>
+        
     );
 }
  

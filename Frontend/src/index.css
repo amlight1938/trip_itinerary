@@ -47,14 +47,20 @@
   padding-top: 3%;
 }
 
-/* @media (min-width: 768px) {
-  .imageSlider-inner {
-    display: flex;
-  }
-  .imageSlider-item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
-  }
+/* .modal-header{
+  background-color: rgba(22, 22, 26, 0.529);
+} */
+/* .modal-body{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-Items: center
+ 
 } */
 
+.modal-dialog{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-Items: center
+}
