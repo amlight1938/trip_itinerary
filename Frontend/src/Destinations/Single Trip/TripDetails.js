@@ -7,7 +7,8 @@ import puerto_rico from '../../Assets/puerto_rico.jpg'
 import italy_hike from '../../Assets/italy_hike.jpg'
 
 import DisplayParagraphAndImage from "../../Paragraph and image section/DisplayParagraphAndImage"
-import ImageSlider from './ImageSlider';
+import Slider from './Slider.js'
+
 
 const TripDetails = ({trip}) => {
 
@@ -26,8 +27,10 @@ const TripDetails = ({trip}) => {
 
     const containerStyles = {
         width: "100%",
-        height: "500px",
+        height: "600px",
         margin: "0 auto",
+        backgroundColor: "blue",
+        position: "relative"
       };
 
     const slides = [new_york, colorado, biking, longs_peak, puerto_rico, italy_hike];
@@ -35,7 +38,8 @@ const TripDetails = ({trip}) => {
     return(
         <>
             <div style={containerStyles}>
-                <ImageSlider slides={slides} />
+                {/* <ImageSlider slides={slides} /> */}
+                <Slider slides={slides} />
             </div>
 
             <DisplayParagraphAndImage obj_list={trip.itineraries} idField={id} titleField={title} 
