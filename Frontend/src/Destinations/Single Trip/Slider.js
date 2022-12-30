@@ -55,7 +55,7 @@ const Slider = ({slides}) => {
         position: "absolute",
         bottom: 4,
         width: "100%",
-        border: "4px solid green",
+        border: "4px solid black",
 
         display: "flex",
         justifyContent: "center",
@@ -66,7 +66,7 @@ const Slider = ({slides}) => {
     const rowStyles = {
         width: "98%",
         height: "100%",
-        backgroundColor: "pink",
+        backgroundColor: "rgb(0,0,0,.5)",
 
         display: "flex",
         justifyContent: "center",

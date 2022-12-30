@@ -33,7 +33,7 @@ const TripDetails = ({trip}) => {
         <>
 
             <Button variant="primary" onClick={() => setModalShow(true)}>
-                Launch vertically centered modal
+                See all photos
             </Button>
 
             <ModalFunc
