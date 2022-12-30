@@ -25,17 +25,15 @@ const Slider = ({slides}) => {
     };
 
     const containerStyles = {
-        width: "1000px",
-        height: "700px",
-        // margin: "0 auto",
-        // backgroundColor: "blue",
+        height: "100%",
+        width: "90%",
+        // width: "1000px",
+        // height: "700px",
         position: "absolute"
     };
 
     const bigImageAreaStyles = {
         height: "75%",
-        // backgroundColor: "black",
-        // border: "4px solid green",
         position: "relative",
 
         display: "flex",
@@ -107,6 +105,7 @@ const Slider = ({slides}) => {
     
 
     return (
+        
         <div style={containerStyles}>
             <div className="bigImage" style={bigImageAreaStyles}>
                 <img src={slides[currentIndex]} alt="" style={bigImageStyles} />

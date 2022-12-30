@@ -59,8 +59,22 @@
 } */
 
 .modal-dialog{
+  /* position: relative;
+  display: flex;
+  justify-content: center;
+  align-Items: center */
+  background-color: rgba(22, 22, 26, 0.529);
+}
+
+.modalData{
   position: relative;
   display: flex;
   justify-content: center;
-  align-Items: center
+  align-Items: center;
+
+  height: 700px;
+  /* width: 1200px */
+}
+.modal-width-control{
+  min-width:75%
 }

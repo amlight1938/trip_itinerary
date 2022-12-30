@@ -1,6 +1,7 @@
 import { ModalBody } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import ModalDialog from 'react-bootstrap';
 
 function ModalFunc(props) {
 
@@ -8,17 +9,11 @@ function ModalFunc(props) {
     const styles_body = props.styles_body;
 
   return (
-    <Modal
-    {...props}
-    size="xxlg"
-    aria-labelledby="contained-modal-title-vcenter"
-    
-    style={{height:"100%", width:"100%"}}
-    >
-        {props.content}
-        {/* <Modal.Header style={styles_header} closeButton></Modal.Header>
-        <ModalBody style={styles_body}>{props.content}</ModalBody> */}
-      
+    <Modal {...props} dialogClassName="modal-width-control" aria-labelledby="contained-modal-title-vcenter">
+        <div className="modalData">
+            {props.content}
+        </div>
+        
     </Modal>
   );
 }
