@@ -19,7 +19,7 @@ const Slider = ({slides}) => {
     };
 
     const goToSlide = (slideIndex) => {
-        if(slideIndex >= 0 || slideIndex <= lastIndex){
+        if(slideIndex >= 0 && slideIndex <= lastIndex){
             setCurrentIndex(slideIndex);
         }
     };
