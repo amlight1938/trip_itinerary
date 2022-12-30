@@ -63,7 +63,7 @@
   display: flex;
   justify-content: center;
   align-Items: center */
-  background-color: rgba(22, 22, 26, 0.529);
+  /* background-color: rgba(22, 22, 26, 0.529); */
 }
 
 .modalData{
@@ -72,9 +72,13 @@
   justify-content: center;
   align-Items: center;
 
+  background: rgb(0,0,0,.2);
+
   height: 700px;
   /* width: 1200px */
 }
+
 .modal-width-control{
   min-width:75%
 }
+
