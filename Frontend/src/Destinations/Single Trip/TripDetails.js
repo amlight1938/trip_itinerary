@@ -10,7 +10,7 @@ import DisplayParagraphAndImage from "../../Paragraph and image section/DisplayP
 import Slider from './Slider.js'
 import { useState } from 'react'
 import { Button } from 'react-bootstrap'
-import ModalFunc from '../../ModalFunc'
+import ModalFunc from './ModalFunc'
 
 const TripDetails = ({trip}) => {
 
@@ -40,14 +40,6 @@ const TripDetails = ({trip}) => {
                 show={modalShow}
                 onHide={() => setModalShow(false)} 
                 content={<Slider slides={slides} />} 
-                styles_header = {{
-                    backgroundColor: "rgba(22, 22, 26, 0.529)"
-                }}
-                styles_body = {{
-                    height: "700px",
-                    width: "700px%",
-                    backgroundColor: "rgba(22, 22, 26, 0.529)"
-                }}
             />
 
             

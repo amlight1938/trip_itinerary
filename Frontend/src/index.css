@@ -47,9 +47,9 @@
   padding-top: 3%;
 }
 
-/* .modal-header{
-  background-color: rgba(22, 22, 26, 0.529);
-} */
+.modal-header{
+  background-color: rgba(0,0,0,.2);
+}
 /* .modal-body{
   position: absolute;
   display: flex;
@@ -59,7 +59,7 @@
 } */
 
 .modal-dialog{
-  /* position: relative;
+    /* position: relative;
   display: flex;
   justify-content: center;
   align-Items: center */
@@ -74,11 +74,10 @@
 
   background: rgb(0,0,0,.2);
 
-  height: 700px;
-  /* width: 1200px */
+  height: 650px;
 }
 
 .modal-width-control{
-  min-width:75%
+  min-width: 75%;
 }
 
