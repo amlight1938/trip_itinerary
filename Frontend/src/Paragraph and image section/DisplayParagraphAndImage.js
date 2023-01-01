@@ -15,8 +15,9 @@ const DisplayParagraphAndImage = ({obj_list, idField, titleField, pgraphField, i
         left_pic = false;
     }
     
-    return (     
-        <div className="container">
+    return ( 
+        <>    
+        {/* <div className="container"> */}
             {obj_list.map((obj) => {
                 if(alternate_sides){
                     iteration_count % 2 !== 0 ? left_pic = true : left_pic = false;
@@ -38,7 +39,8 @@ const DisplayParagraphAndImage = ({obj_list, idField, titleField, pgraphField, i
                     </div>
                 )               
             })}
-        </div>
+        {/* </div> */}
+        </>
     );
 }
  

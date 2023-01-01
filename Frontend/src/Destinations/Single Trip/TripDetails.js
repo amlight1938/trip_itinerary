@@ -13,6 +13,7 @@ import { Button } from 'react-bootstrap'
 import ModalFunc from './ModalFunc'
 import CarouselFadeExample from '../../CarouselFadeExample'
 import Carousel3 from '../../Carousel3'
+import { build_activity_list } from '../../Helper functions/utils'
 
 const TripDetails = ({trip}) => {
 
@@ -40,45 +41,56 @@ const TripDetails = ({trip}) => {
         margin: "auto",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
-        
+        justifyContent: "center",  
     }
+    
 
 
     const slides = [new_york, colorado, biking, longs_peak, puerto_rico, italy_hike];
 
     return(
-        <>
-
-            <ModalFunc
-                show={modalShow}
-                onHide={() => setModalShow(false)} 
-                content={<Slider slides={slides} />}
-                styles_header={{height: "20px"}}
-            />
-
-            <div className="trip-details-carousel" onClick={() => setModalShow(true)}>
-                <CarouselFadeExample 
-                carousel_items={carousel_items} 
-                controls_bool={false} 
-                caption_bool={false}
-                indicator_bool={false}
-                />     
-
-                <div className="overlay-carousel">
-                    <h3><b>SEE ALL PHOTOS</b></h3>
-                </div>         
+        <div className="trip-details-content">
+            <div className="column">
+                <div className="itineraryDiv">
+                    <h3><b>Itinerary</b></h3>
+                    <DisplayParagraphAndImage obj_list={trip.itineraries} idField={id} titleField={title} 
+                        pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
+                </div>
             </div>
 
-            
-            
+            <div className="column">
+                <div className="fixed-sidebar">
+                    <div className="sidebar-info">
+                        {trip.date}
+                        {build_activity_list(trip.activities)}
+                    </div>
 
-            <div className="itineraryDiv">
-                <DisplayParagraphAndImage obj_list={trip.itineraries} idField={id} titleField={title} 
-                    pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
+                    
+                    <ModalFunc
+                        show={modalShow}
+                        onHide={() => setModalShow(false)} 
+                        content={<Slider slides={slides} />}
+                        styles_header={{height: "20px"}}
+                    />
+                    <div className="trip-details-carousel" onClick={() => setModalShow(true)}>
+                        <CarouselFadeExample 
+                        carousel_items={carousel_items} 
+                        controls_bool={false} 
+                        caption_bool={false}
+                        indicator_bool={false}
+                        />     
+                        <div className="overlay-carousel">
+                            <h3><b>SEE ALL PHOTOS</b></h3>
+                        </div>         
+                    </div>
+                </div>
             </div>
+       
+
+
+
             
-        </>
+        </div>
     );
 }
  

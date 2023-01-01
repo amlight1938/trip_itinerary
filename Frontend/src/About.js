@@ -17,33 +17,12 @@ const About = () => {
 
     
     return(
-        <DisplayParagraphAndImage obj_list={about_items} idField={id} titleField={title} 
-            pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
+        <div className="container">
+            <DisplayParagraphAndImage obj_list={about_items} idField={id} titleField={title} 
+                pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
+        </div>
+        
     );
-
-    // let iteration_count = 0;
-    // let left_pic = null;
-
-    // return (     
-    //     <div className="container">
-
-    //         {about_items.map((item) => {
-    //             iteration_count % 2 !== 0 ? left_pic = true : left_pic = false;
-    //             iteration_count++;
-    //             return(
-    //                 <div key={item.id}>
-    //                     <Paragraph 
-    //                         title={item.title}
-    //                         pgraph={item.pgraph} 
-    //                         image={item.image} 
-    //                         img_left_bool={left_pic}
-    //                     />
-    //                 </div>
-    //             )               
-    //         })}
-
-    //     </div> 
-    // );
 }
  
 export default About;
