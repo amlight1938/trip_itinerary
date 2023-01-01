@@ -50,10 +50,6 @@ const TripDetails = ({trip}) => {
     return(
         <>
 
-            <Button variant="primary" onClick={() => setModalShow(true)}>
-                See all photos
-            </Button>
-
             <ModalFunc
                 show={modalShow}
                 onHide={() => setModalShow(false)} 
@@ -67,9 +63,13 @@ const TripDetails = ({trip}) => {
                 controls_bool={false} 
                 caption_bool={false}
                 indicator_bool={false}
-                />
-                {/* <Carousel3 slides={carousel_items} /> */}
+                />     
+
+                <div className="overlay-carousel">
+                    <h3><b>SEE ALL PHOTOS</b></h3>
+                </div>         
             </div>
+
             
             
 
@@ -83,12 +83,3 @@ const TripDetails = ({trip}) => {
 }
  
 export default TripDetails;
-
-
-// const containerStyles = {
-//     width: "100%",
-//     height: "600px",
-//     margin: "0 auto",
-//     // backgroundColor: "blue",
-//     position: "relative"
-//   };

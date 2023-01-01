@@ -70,20 +70,27 @@
 
 } */
 .trip-details-carousel{
-  --heights: 400px;
-  --widths: 500px;
-  height: var(--heights);
-  width: var(--widths);
+  --heights_trip_details: 400px;
+  --widths_trip_details: 500px;
+  height: var(--heights_trip_details);
+  width: var(--widths_trip_details);
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer
+  cursor: pointer;
+  position: relative
+}
+
+.trip-details-carousel :hover{
+  opacity: .8;
+  transition: .3s;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
 
 .carousel-pic-container{
-  height: var(--heights);
-  width: var(--widths);
+  height: var(--heights_trip_details);
+  width: var(--widths_trip_details);
   background-color: rgb(0,0,0,.7);
   display: flex;
   margin: auto;
@@ -98,4 +105,11 @@
   width: var(--widths) */
   height: auto;
   width: 120%;
+}
+
+.overlay-carousel{
+  /* background-color: aqua; */
+  z-index: 10;
+  position: absolute;
+  color: #fff;
 }
