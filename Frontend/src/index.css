@@ -1,5 +1,5 @@
 
-.carousel{
+/* .carousel{
   height: 600px;
 }
 
@@ -19,7 +19,7 @@
   color: white;
   font-weight: bold;
   width: 700px;
-}
+} */
 
 .carousel .btn-primary{
   margin-top: 10px;
@@ -50,21 +50,6 @@
 .modal-header{
   background-color: rgba(0,0,0,.2);
 }
-/* .modal-body{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-Items: center
- 
-} */
-
-.modal-dialog{
-    /* position: relative;
-  display: flex;
-  justify-content: center;
-  align-Items: center */
-  /* background-color: rgba(22, 22, 26, 0.529); */
-}
 
 .modalData{
   position: relative;
@@ -81,3 +66,36 @@
   min-width: 75%;
 }
 
+/* .itineraryDiv{
+
+} */
+.trip-details-carousel{
+  --heights: 400px;
+  --widths: 500px;
+  height: var(--heights);
+  width: var(--widths);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer
+}
+
+.carousel-pic-container{
+  height: var(--heights);
+  width: var(--widths);
+  background-color: rgb(0,0,0,.7);
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px
+}
+
+.carousel-pic{
+  /* height: var(--heights);
+  width: var(--widths) */
+  height: auto;
+  width: 120%;
+}

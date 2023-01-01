@@ -10,7 +10,7 @@ function ModalFunc(props) {
 
   return (
     <Modal {...props} dialogClassName="modal-width-control" aria-labelledby="contained-modal-title-vcenter">
-        <Modal.Header closeButton />
+        <Modal.Header closeButton style={styles_header}/>
         <div className="modalData">
             {props.content}
         </div>

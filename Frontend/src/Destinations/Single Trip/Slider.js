@@ -38,7 +38,10 @@ const Slider = ({slides}) => {
 
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        paddingBottom: "3px",
+
+        overflow: "hidden"
 
     }
 
@@ -57,7 +60,7 @@ const Slider = ({slides}) => {
 
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
 
     }
 
@@ -68,7 +71,9 @@ const Slider = ({slides}) => {
 
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+
+        overflow: "hidden"
 
     }
 
