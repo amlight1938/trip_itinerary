@@ -88,9 +88,11 @@
   margin: 0 auto;
   padding: 15px;
   position: relative;
+  width: 100%;
 }
 
 .itineraryDiv{
+  width: 100%;
   border: 2px solid rgba(4, 169, 251, 0.941);
   border-radius: 15px;
   padding: 15px;
