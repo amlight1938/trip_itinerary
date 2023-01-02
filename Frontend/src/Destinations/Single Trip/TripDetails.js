@@ -61,8 +61,20 @@ const TripDetails = ({trip}) => {
             <div className="column">
                 <div className="fixed-sidebar">
                     <div className="sidebar-info">
-                        {trip.date}
-                        {build_activity_list(trip.activities)}
+                        <p><b>Date: </b> {trip.date}</p>
+                        <p><b>Location: </b>{trip.location}</p>
+                        <p><b>Activities:</b></p>
+                        {build_activity_list(trip.activities).map((activity) => {
+                            return(
+                                <p className="half-line-height">&emsp;{"- " + activity}</p>
+                            )
+                        })
+                        }
+                       
+                        <Button variant="primary" className="btn-primary" size="md" ><b>Book This Trip</b></Button>  
+                        
+                        
+                        
                     </div>
 
                     

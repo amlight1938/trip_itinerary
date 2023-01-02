@@ -21,10 +21,16 @@
   width: 700px;
 } */
 
-.carousel .btn-primary{
+/* .carousel .btn-primary{
   margin-top: 10px;
   background-color: rgb(46, 9, 157);
   opacity: .8;
+} */
+
+.btn-primary{
+  border-radius: 18px !important;
+  opacity: .7;
+  width:100%;
 }
 
 .card-text {
@@ -95,17 +101,23 @@
   position: sticky;
   top: 15px;
 }
+
 .sidebar-info{
-  
+  border: 2px solid rgba(4, 169, 251, 0.941);
+  border-radius: 15px;
+  padding: 15px;
 }
 
+.half-line-height{
+  line-height: .5;
+}
 
 .trip-details-carousel{
   --heights_trip_details: 250px;
-  --widths_trip_details: 350px;
+  --widths_trip_details: 100%;
   height: var(--heights_trip_details);
   width: var(--widths_trip_details);
-  margin: auto;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,7 +140,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 10px
+  border-radius: 15px
 }
 
 .carousel-pic{
