@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Slider = ({slides}) => {
+const ImageGallery = ({slides}) => {
     const sl = slides.length;
     const lastIndex = sl - 1;
 
@@ -27,8 +27,6 @@ const Slider = ({slides}) => {
     const containerStyles = {
         height: "100%",
         width: "90%",
-        // width: "1000px",
-        // height: "700px",
         position: "absolute"
     };
 
@@ -52,7 +50,6 @@ const Slider = ({slides}) => {
 
     const carouselDivStyles = {
         height: "25%",
-        // backgroundColor: "red",
         position: "absolute",
         bottom: 4,
         width: "100%",
@@ -74,14 +71,12 @@ const Slider = ({slides}) => {
         alignItems: "center",
 
         overflow: "hidden"
-
     }
 
     const smallImageStyles ={
         height: "90%",
         width: "auto",
         cursor: "pointer"
-
     }
 
     const rightArrowStyles = {
@@ -106,11 +101,7 @@ const Slider = ({slides}) => {
         cursor: "pointer",
     };
 
-
-    
-
-    return (
-        
+    return (      
         <div style={containerStyles}>
             <div className="bigImage" style={bigImageAreaStyles}>
                 <img src={slides[currentIndex]} alt="" style={bigImageStyles} />
@@ -120,9 +111,6 @@ const Slider = ({slides}) => {
                 <div onClick={goToPrevious} style={leftArrowStyles} >❰</div>
                 <div onClick={goToNext} style={rightArrowStyles}>❱</div>
 
-                {/* <div className="picture-row" onClick={() => goToSlide(currentIndex - 2)} style={rowStyles}>
-                    <img src={slides[currentIndex - 2]} alt="" style={smallImageStyles} />
-                </div> */}
                 <div className="picture-row" onClick={() => goToSlide(currentIndex - 1)} style={rowStyles}>
                     <img src={slides[currentIndex - 1]} alt="" style={smallImageStyles} />
                 </div>
@@ -137,9 +125,7 @@ const Slider = ({slides}) => {
                 </div>
             </div>
         </div>
-            
-        
     );
 }
  
-export default Slider;
+export default ImageGallery;

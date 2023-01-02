@@ -1,4 +1,3 @@
-
 import new_york from '../../Assets/new_york.jpg'
 import colorado from '../../Assets/colorado.jpg'
 import biking from '../../Assets/biking.jpg'
@@ -7,26 +6,21 @@ import puerto_rico from '../../Assets/puerto_rico.jpg'
 import italy_hike from '../../Assets/italy_hike.jpg'
 
 import DisplayParagraphAndImage from "../../Paragraph and image section/DisplayParagraphAndImage"
-import Slider from './Slider.js'
+import ImageGallery from './ImageGallery.js'
 import { useState } from 'react'
 import { Button } from 'react-bootstrap'
 import ModalFunc from './ModalFunc'
-import CarouselFadeExample from '../../CarouselFadeExample'
-import Carousel3 from '../../Carousel3'
+import CarouselFade from '../../CarouselFade'
 import { build_activity_list } from '../../Helper functions/utils'
 
 const TripDetails = ({trip}) => {
 
     const [modalShow, setModalShow] = useState(false);
+
     //TODO make call to AWS to get pictures
 
-    //TODO make trip photo caraousel
-    const carousel_items = [
-        {id: 1, class: 'carousel-item active', image: new_york, caption: 'Adventure is out there!', subcaption: 'Explore new activities that will get your heart racing'},
-        {id: 2, class: 'carousel-item',image: colorado, caption: 'See what the world has to offer', subcaption: 'Build lasting memories with family and friends'},
-        {id: 3, class: 'carousel-item',image: longs_peak, caption: 'Find your dream destination', subcaption: 'You\'ll never know whats out there until you see it for yourself' }
-    ]
 
+    //DisplayParagraph
     const alternateSides = false;
     const noImage = true;
     const id = "id"
@@ -34,23 +28,40 @@ const TripDetails = ({trip}) => {
     const pgraph = "day_itinerary"
     const image = "image"
 
+    //CarouselFade
+    const controls_bool = false;
+    const caption_bool = false;
+    const indicator_bool = false;
     const carousel_css = {
-        // backgroundColor: "red",
-        height: "400px",
-        width: "500px",
-        margin: "auto",
+        height: "250px",
+        width: "100%",
+        margin: "10px auto",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",  
+        justifyContent: "center",
+        cursor: "pointer",
+        position: "relative",
+        borderRadius: "15px",
+        overflow: "hidden",
+        backgroundColor: "rgb(0,0,0,.7)",
     }
+    const carousel_items = [
+        {id: 1, image: new_york},
+        {id: 2, image: colorado},
+        {id: 3, image: longs_peak}
+    ]
     
-
-
+    //ImageGallery
     const slides = [new_york, colorado, biking, longs_peak, puerto_rico, italy_hike];
 
     return(
         <div className="trip-details-content">
             <div className="column">
+                <h1><b>{trip.name}</b></h1>
+                <h4>{trip.location}</h4>
+                <br />
+                <p>{trip.description}</p>
+
                 <div className="itineraryDiv">
                     <h3><b>Itinerary</b></h3>
                     <DisplayParagraphAndImage obj_list={trip.itineraries} idField={id} titleField={title} 
@@ -81,15 +92,15 @@ const TripDetails = ({trip}) => {
                     <ModalFunc
                         show={modalShow}
                         onHide={() => setModalShow(false)} 
-                        content={<Slider slides={slides} />}
+                        content={<ImageGallery slides={slides} />}
                         styles_header={{height: "20px"}}
                     />
-                    <div className="trip-details-carousel" onClick={() => setModalShow(true)}>
-                        <CarouselFadeExample 
-                        carousel_items={carousel_items} 
-                        controls_bool={false} 
-                        caption_bool={false}
-                        indicator_bool={false}
+                    <div className="trip-details-carousel-container" style={carousel_css} onClick={() => setModalShow(true)}>
+                        <CarouselFade 
+                            carousel_items={carousel_items} 
+                            controls_bool={controls_bool} 
+                            caption_bool={caption_bool}
+                            indicator_bool={indicator_bool}
                         />     
                         <div className="overlay-carousel">
                             <h3><b>SEE ALL PHOTOS</b></h3>

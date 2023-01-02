@@ -1,8 +1,8 @@
-import Carousel from "./Carousel";
+import HomeCarousel from "./HomeCarousel";
 
 const Home = () => {
     return (
-        <Carousel />
+        <HomeCarousel />
     );
 }
  

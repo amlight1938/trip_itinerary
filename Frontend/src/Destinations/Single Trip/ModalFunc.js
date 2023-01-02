@@ -1,7 +1,4 @@
-import { ModalBody } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import ModalDialog from 'react-bootstrap';
 
 function ModalFunc(props) {
 
@@ -20,17 +17,3 @@ function ModalFunc(props) {
 }
 export default ModalFunc;
 
-
-
-// return (
-//     <>
-//       <Button variant="primary" onClick={() => setModalShow(true)}>
-//         Launch vertically centered modal
-//       </Button>
-
-//       <MyVerticallyCenteredModal
-//         show={modalShow}
-//         onHide={() => setModalShow(false)}
-//       />
-//     </>
-//   );
