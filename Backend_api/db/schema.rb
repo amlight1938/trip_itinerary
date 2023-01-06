@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_25_174830) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_04_011736) do
   create_table "activities", force: :cascade do |t|
     t.string "trip_activity"
     t.integer "trip_id", null: false
@@ -44,6 +44,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_25_174830) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "highlight_img_url"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "activities", "trips"

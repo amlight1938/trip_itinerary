@@ -1,11 +1,11 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
 import CallApiTripList from "./Destinations/CallApiTripList";
+import CallApiSingleTrip from "./Destinations/Single Trip/CallApiSingleTrip";
 import About from "./About";
 import './index.css';
-
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import CallApiSingleTrip from "./Destinations/Single Trip/CallApiSingleTrip";
+
 
 
 function App() {
