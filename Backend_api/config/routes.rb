@@ -6,14 +6,16 @@ Rails.application.routes.draw do
   # post '/login',  to: 'sessions#create'
   # post '/logout', to: 'sessions#destroy'
   # get 'is_logged_in' to: 'sessions#is_logged_in'
+  
 
 
   namespace :api do
     namespace :v1 do
+      resources :registrations, only: [:create]
       resources :trips
       resources :activities
       resources :sessions, only: [:create]
-      resources :registrations, only: [:create]
+      
       # resources :users, only: [:create, :show, :index]
       # resources :sessions, only: [:create, :destroy, :is_logged_in]
     end

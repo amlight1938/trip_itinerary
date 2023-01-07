@@ -5,15 +5,22 @@ import CallApiSingleTrip from "./Destinations/Single Trip/CallApiSingleTrip";
 import About from "./About";
 import './index.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { Component } from "react";
 
 
-
-function App() {
-  return (
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      isLoggedIn: false,
+      user: {}
+    };
+  };
+  
+  render(){
+    return (   
       <Router>
-          <Navbar />
-          
-            
+          <Navbar />   
               <Switch>
                 <Route exact path='/'>
                   <Home />
@@ -28,10 +35,9 @@ function App() {
                   <CallApiSingleTrip />
                 </Route>
               </Switch>
-            
-       
       </Router>
-  );
-}
+    )
+  }
+};
 
 export default App;
