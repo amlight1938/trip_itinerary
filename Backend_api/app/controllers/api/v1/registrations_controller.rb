@@ -1,9 +1,9 @@
-class RegistrationsController < ApplicationController
+class Api::V1::RegistrationsController < ApplicationController
     def create
         user = User.create!(
-            username: params['user']['username'],
-            password: params['user']['password'],
-            password_confirmation: params['user']['password_confirmation']
+            username: reg_params[:username],
+            password: reg_params[:password],
+            password_confirmation: reg_params[:password_confirmation]
         )
 
         if user
@@ -17,5 +17,10 @@ class RegistrationsController < ApplicationController
                 status: 500
             }
         end
+    end
+
+    private
+    def reg_params
+        params.require(:user).permit(:username, :password, :password_confirmation)
     end
 end

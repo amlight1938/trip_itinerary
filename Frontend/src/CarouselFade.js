@@ -7,7 +7,7 @@ function CarouselFade({carousel_items, controls_bool, caption_bool, indicator_bo
       
         {carousel_items.map((item) => {
           return(
-            <Carousel.Item interval={3000} style={{
+            <Carousel.Item interval={3000} key={item.id} style={{
               height: "100%",
               width: "100%",
               backgroundImage: `url('${item.image}')`,

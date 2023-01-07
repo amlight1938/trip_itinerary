@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
+import axios from "axios";
 
 class Registration extends Component {
   constructor(props) {
@@ -18,19 +19,23 @@ class Registration extends Component {
   handleSubmit(event) {
 
     console.log(this.state)
-      fetch('http://localhost:3001/api/v1/registrations',{
-        method: 'POST',
-        user:{
-          username: this.state.username,
-          password: this.state.password,
-          password_confirmation: this.state.password_confirmation
-        },
-        withCredentials: true})
-      .then(response => response.json())
-      .then(api_package => console.log(api_package))
-      .catch(error => {
-        console.log('registration error: ', error)
-      })
+    
+    const {username, password, password_confirmation} = this.state;
+    let user = {
+      username: username,
+      password: password,
+      password_confirmation: password_confirmation
+    };
+
+    axios.post('http://localhost:3001/api/v1/registrations', 
+    {user},
+    {withCredentials: true})
+    .then(response => {
+      console.log('registration response: ', response)
+    })
+    .catch(error => {
+      console.log('registration error: ', error)
+    })
 
     event.preventDefault();
   }
