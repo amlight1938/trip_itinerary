@@ -2,23 +2,24 @@ import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import axios from "axios";
 
-class Registration extends Component {
+class RegistrationOrLogin extends Component {
   constructor(props) {
     super(props);
+
+    this.isRegistration= props.registration;
+    
     this.state = {
       username: "",
       password: "",
       password_confirmation: "",
-      registration_errors: "",
-    };
+      errors: "",
+    }
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleSubmit(event) {
-
-    console.log(this.state)
     
     const {username, password, password_confirmation} = this.state;
     let user = {
@@ -27,21 +28,35 @@ class Registration extends Component {
       password_confirmation: password_confirmation
     };
 
-    axios.post('http://localhost:3001/api/v1/registrations', 
-    {user},
-    {withCredentials: true})
-    .then(response => {
-      console.log('registration response: ', response)
-    })
-    .catch(error => {
-      console.log('registration error: ', error)
-    })
+    let api_url;
+    if(this.isRegistration){
+      api_url = 'http://localhost:3001/api/v1/registrations'
+    }else{
+      api_url = 'http://localhost:3001/api/v1/sessions'
+    }
+
+    axios
+      .post(api_url, 
+        {user},
+        {withCredentials: true})
+      .then(response => {
+        if(response.data.status === 'created'){
+          this.props.handleSuccessfulAuthentication(response.data)
+        }else{
+          this.setState({
+            errors: response.data.errors
+          })
+        }
+        console.log('registration response: ', response)
+      })
+      .catch(error => {
+        console.log('registration error: ', error)
+      })
 
     event.preventDefault();
   }
 
   handleChange(event) {
-    console.log("handle change", event);
     this.setState({
       [event.target.name]: event.target.value
     })
@@ -68,20 +83,22 @@ class Registration extends Component {
             required
           />
 
-          <input
-            type="password"
-            name="password_confirmation"
-            placeholder="Password confirmation"
-            value={this.state.password_confirmation}
-            onChange={this.handleChange}
-            required
-          />
+          {this.isRegistration &&
+            <input
+              type="password"
+              name="password_confirmation"
+              placeholder="Password confirmation"
+              value={this.state.password_confirmation}
+              onChange={this.handleChange}
+              required
+            />
+          }
 
-          <Button variant="outline-primary" type="submit">Create Account</Button>
+          <Button variant="outline-primary" type="submit">{this.isRegistration ? 'Create Account' : 'Login'}</Button>
         </form>  
       </div>
     );
   }
 }
 
-export default Registration;
+export default RegistrationOrLogin;

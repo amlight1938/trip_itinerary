@@ -1,14 +1,9 @@
 import HomeCarousel from "./HomeCarousel";
-import Registration from "./Registration";
 
-const Home = () => {
+const Home = (props) => {
     return (
         <>
         <HomeCarousel />
-        <div className="container" style={{margin: "20px"}}>
-            <Registration />
-        </div>
-        
         </>
         
     );
