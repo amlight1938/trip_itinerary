@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import axios from "axios";
 
-class RegistrationOrLogin extends Component {
+class RegistrationOrLoginForm extends Component {
   constructor(props) {
     super(props);
 
@@ -101,4 +101,4 @@ class RegistrationOrLogin extends Component {
   }
 }
 
-export default RegistrationOrLogin;
+export default RegistrationOrLoginForm;

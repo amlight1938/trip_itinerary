@@ -82,7 +82,7 @@ const TripDetails = ({trip}) => {
                         })
                         }
                        
-                        <Button variant="primary" className="btn-primary" size="md" ><b>Book This Trip</b></Button>  
+                        <Button variant="primary" className="book-btn" size="md" ><b>Book This Trip</b></Button>  
                         
                         
                         

@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import Home from "./Home";
 import CallApiTripList from "./Destinations/CallApiTripList";
 import CallApiSingleTrip from "./Destinations/Single Trip/CallApiSingleTrip";
@@ -6,8 +5,9 @@ import About from "./About";
 import './index.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import { Component } from "react";
-import UserCustomTrips from "./Users/UserCustomTrips";
+import UserCustomTripsPage from "./Users/UserCustomTripsPage";
 import axios from "axios";
+import MyNavbar from "./MyNavbar";
 
 class App extends Component {
   constructor(props){
@@ -73,7 +73,12 @@ class App extends Component {
   render(){
     return (   
       <Router>
-          <Navbar />   
+
+          <Route
+            render={props => (
+              <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
+            )}/>
+
               <Switch>
                 <Route exact path='/'
                   render={props => (
@@ -97,7 +102,7 @@ class App extends Component {
                
                 <Route exact path='/my-custom-trips'
                   render={props => (
-                    <UserCustomTrips {...props} handleLogin={this.handleLogin} handleLogout={this.handleLogout} session={this.state}/>
+                    <UserCustomTripsPage {...props} handleLogin={this.handleLogin} handleLogout={this.handleLogout} session={this.state}/>
                   )}/>
 
               </Switch>
