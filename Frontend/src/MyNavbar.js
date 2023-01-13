@@ -2,10 +2,14 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function MyNavbar(props) {
   const user = props.session.user;
   const isLoggedIn = props.session.isLoggedIn;
+
+  const [modalShow, setModalShow] = useState(false);
 
   return (
     <Navbar bg="white" expand="sm">
@@ -31,7 +35,10 @@ function MyNavbar(props) {
                     </>
                   : <>
                       <p className="login-status-text">{"No user signed in" }</p>
-                      <Button variant="outline-primary">Login</Button>
+                      <Link to="/my-custom-trips">
+                        <Button variant="outline-primary">Login</Button>
+                      </Link>
+                      
                     </> 
                 }
             </div>

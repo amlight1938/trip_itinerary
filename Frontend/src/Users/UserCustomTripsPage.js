@@ -22,23 +22,26 @@ class UserCustomTripsPage extends Component {
 
                 <div> 
                     <h4>Registration</h4>
-                    <RegistrationOrLoginForm registration={true} handleSuccessfulAuthentication={this.handleSuccessfulAuthentication}/>
+                    <div style={{width: "400px"}}>
+                        <RegistrationOrLoginForm handleSuccessfulAuthentication={this.handleSuccessfulAuthentication}/>
+                    </div>
+                    
 
-                    <h4>Login</h4>
-                    <RegistrationOrLoginForm registration={false} handleSuccessfulAuthentication={this.handleSuccessfulAuthentication}/>
+                    {/* <h4>Login</h4>
+                    <RegistrationOrLoginForm registration={false} handleSuccessfulAuthentication={this.handleSuccessfulAuthentication}/> */}
 
                     {/* <Button variant="outline-primary" onClick={() => this.props.handleLogout()}>Logout</Button> */}
 
                     <h4>Status: {this.props.session.isLoggedIn.toString()}</h4>
                 </div>
 
-                <hr/>
+                {/* <hr/>
 
                 <div>
                     <h4>Make your own trip</h4>
 
 
-                </div>
+                </div> */}
                 
             </div>
         );
