@@ -77,7 +77,7 @@ const TripDetails = ({trip}) => {
                         <p><b>Activities:</b></p>
                         {build_activity_list(trip.activities).map((activity) => {
                             return(
-                                <p className="half-line-height">&emsp;{"- " + activity}</p>
+                                <p key={activity} className="half-line-height" >&emsp;{"- " + activity}</p>
                             )
                         })
                         }

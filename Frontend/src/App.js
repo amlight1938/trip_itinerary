@@ -59,7 +59,7 @@ class App extends Component {
           })
         }
 
-        console.log(response)
+        //console.log(response)
       })
       .catch(error => {
         console.log('initial check response', error)
@@ -95,7 +95,7 @@ class App extends Component {
                     <CallApiTripList {...props} session={this.state}/>
                   )}/>
           
-                <Route exact path={'/destinations/:tripId'}
+                <Route exact path='/destinations/:tripId'
                   render={props => (
                     <CallApiSingleTrip {...props} session={this.state}/>
                   )}/>

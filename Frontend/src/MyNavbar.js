@@ -9,8 +9,6 @@ function MyNavbar(props) {
   const user = props.session.user;
   const isLoggedIn = props.session.isLoggedIn;
 
-  const [modalShow, setModalShow] = useState(false);
-
   return (
     <Navbar bg="white" expand="sm">
       <Container fluid>
@@ -24,7 +22,7 @@ function MyNavbar(props) {
                 <Nav.Link className="px-4 text-dark" href="/"><b>HOME</b></Nav.Link>
                 <Nav.Link className="px-4 text-dark" href="/about"><b>ABOUT</b></Nav.Link>
                 <Nav.Link className="px-4 text-dark" href="/destinations"><b>DESTINATIONS</b></Nav.Link>
-                <Nav.Link className="px-4 text-dark" href="my-custom-trips"><b>CUSTOM TRIPS</b></Nav.Link>
+                <Nav.Link className="px-4 text-dark" href="/my-custom-trips"><b>CUSTOM TRIPS</b></Nav.Link>
             </Nav>
 
             <div className="login-status-div">

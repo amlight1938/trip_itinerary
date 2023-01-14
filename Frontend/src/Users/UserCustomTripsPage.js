@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RegistrationOrLoginForm from './RegistrationOrLoginForm';
-import { Button } from 'react-bootstrap';
+import CustomTripForm from './CustomTripForm';
 
 class UserCustomTripsPage extends Component {
     constructor(props){
@@ -11,7 +11,7 @@ class UserCustomTripsPage extends Component {
 
     handleSuccessfulAuthentication(data){
         this.props.handleLogin(data)
-        this.props.history.push("/my-custom-trips")
+        //this.props.history.push("/my-custom-trips")
     };
     
     render() {
@@ -19,29 +19,21 @@ class UserCustomTripsPage extends Component {
             <div className="container">
                 <h3>User custom trips</h3>
                 <hr/>
-
-                <div> 
-                    <h4>Registration</h4>
-                    <div style={{width: "400px"}}>
+ 
+                {!this.props.session.isLoggedIn 
+                &&  <div style={{width: "400px", margin: "auto"}}>
                         <RegistrationOrLoginForm handleSuccessfulAuthentication={this.handleSuccessfulAuthentication}/>
-                    </div>
-                    
+                    </div>  
+                }
 
-                    {/* <h4>Login</h4>
-                    <RegistrationOrLoginForm registration={false} handleSuccessfulAuthentication={this.handleSuccessfulAuthentication}/> */}
-
-                    {/* <Button variant="outline-primary" onClick={() => this.props.handleLogout()}>Logout</Button> */}
-
-                    <h4>Status: {this.props.session.isLoggedIn.toString()}</h4>
-                </div>
-
-                {/* <hr/>
+                <hr/>
 
                 <div>
                     <h4>Make your own trip</h4>
 
+                    <CustomTripForm />
 
-                </div> */}
+                </div>
                 
             </div>
         );

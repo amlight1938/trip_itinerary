@@ -1,3 +1,8 @@
+.container{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .home-carousel-container .carousel-caption {
   position: absolute;
   left: 50%;
@@ -166,7 +171,18 @@ height: 100%;
   border: solid #ccc 3px;
 }
 
-.inputField:focus{
+.inputField-long{
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding: 3px;
+  border-radius: 5px;
+  border: solid #ccc 3px;
+  resize: vertical;
+  overflow: auto;
+}
+
+.inputField:focus, .inputField-long:focus{
   border: solid rgb(152, 195, 255) 3px;
   outline: none;
 }
