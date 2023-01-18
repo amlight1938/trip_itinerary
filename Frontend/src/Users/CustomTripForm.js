@@ -7,11 +7,14 @@ class CustomTripForm extends Component {
         this.state = {
             name: "",
             location: "",
-            date: "",
+            date_input: "",
+            sYear: "",
+            sMonth: "",
+            sDay: "",
             description: "",
             activities: [],
             activity_input:"",
-            itinerary: [["day", "stuff"]],
+            itinerary: [],
             itin_day_input:"",
             itin_dectription_input:"",
         }
@@ -27,28 +30,71 @@ class CustomTripForm extends Component {
         })
     }
 
-    handleSubmit() {
-
+    handleSubmit(event) {
+        this.getDateFromInput();
+        console.log(this.state);
+        this.handleResetFields();
+        event.preventDefault();
     }
 
     addNewActivity() {
         let {activities, activity_input} = this.state;
-        activities.push(activity_input)
-        this.setState({
-            activities: activities,
-            activity_input: ""
-        })
+        if(activity_input.trim() !== "") {    
+            activities.push(activity_input.trim())
+            this.setState({
+                activities: activities,
+                activity_input: ""
+            })
+        }
     }
 
     addNewItinerary() {
         let {itinerary, itin_day_input, itin_dectription_input} = this.state;
-        itinerary.push([itin_day_input, itin_dectription_input]);
+        if(itin_day_input.trim() !== "" && itin_dectription_input.trim() !== "") {
+            itinerary.push([itin_day_input.trim(), itin_dectription_input.trim()]);
+            this.setState({
+                itinerary: itinerary,
+                itin_day_input: "",
+                itin_dectription_input: ""
+            })
+        }
+    }
+
+    getDateFromInput(){
+        let {date_input} = this.state;
+        let dash_idx_1 = date_input.indexOf("-");
+        let dash_idx_2 = date_input.lastIndexOf("-");
+
+        let year = date_input.substring(0,dash_idx_1);
+        let month = date_input.substring(dash_idx_1 + 1, dash_idx_2);
+        let day = date_input.substring(dash_idx_2 + 1);
+
         this.setState({
-            itinerary: itinerary,
-            itin_day_input: "",
-            itin_dectription_input: ""
+            sYear: year,
+            sMonth: month,
+            sDay: day
         })
     }
+
+    handleResetFields() {
+        Array.from(document.querySelectorAll("input")).forEach(
+          inputField => inputField.value = ""
+        );
+        this.setState({
+            name: "",
+            location: "",
+            date_input: "",
+            sYear: "",
+            sMonth: "",
+            sDay: "",
+            description: "",
+            activities: [],
+            activity_input:"",
+            itinerary: [],
+            itin_day_input:"",
+            itin_dectription_input:"",
+        });
+      }
 
     render() {
         return (
@@ -82,7 +128,8 @@ class CustomTripForm extends Component {
                     <input 
                         id="tripDate"
                         className="inputField"
-                        name="date"
+                        name="date_input"
+                        type="date"
                         placeholder="Trip date"
                         value={this.state.date}
                         onChange={this.handleChange}
@@ -120,7 +167,6 @@ class CustomTripForm extends Component {
                             placeholder="Trip activity"
                             value={this.state.activity_input}
                             onChange={this.handleChange}
-                            required
                         />
                         </div>
                         <Button variant="secondary" onClick={() => this.addNewActivity()} style={{flex: ".2"}}>Add this item</Button>
@@ -128,8 +174,6 @@ class CustomTripForm extends Component {
                     </>
 
                     <hr />
-
-
 
                     {/* ITINERARIES */}
                     <>
@@ -148,7 +192,6 @@ class CustomTripForm extends Component {
                                 placeholder="example: Day 1 or Days 2-5"
                                 value={this.state.itin_day_input}
                                 onChange={this.handleChange}
-                                required
                             />
 
                             <label htmlFor="tripItinDescription">Itinerary description</label>
@@ -159,14 +202,13 @@ class CustomTripForm extends Component {
                                 placeholder="Do something today"
                                 value={this.state.itin_dectription_input}
                                 onChange={this.handleChange}
-                                required
                             />
                         </div>
                         <Button variant="secondary" onClick={() => this.addNewItinerary()} style={{flex: ".2"}}>Add this item</Button>
                     </div>
                     </>
 
-                    <Button variant="outline-primary" style={{width: "100%", marginTop: "15px"}}type="submit">{this.state.isRegistration ? 'Create Account' : 'Login'}</Button>
+                    <Button variant="outline-primary" style={{width: "100%", marginTop: "15px"}} type="submit">{this.state.isRegistration ? 'Create Account' : 'Login'}</Button>
                 </form> 
                 
                         
