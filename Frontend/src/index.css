@@ -178,13 +178,18 @@ height: 100%;
   padding: 3px;
   border-radius: 5px;
   border: solid #ccc 3px;
-  resize: vertical;
-  overflow: auto;
 }
 
 .inputField:focus, .inputField-long:focus{
   border: solid rgb(152, 195, 255) 3px;
   outline: none;
+}
+
+.addItemButton{
+  height: 38px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  margin-left: auto
 }
 
 .text-button{

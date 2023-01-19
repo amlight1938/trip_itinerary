@@ -151,7 +151,7 @@ class RegistrationOrLoginForm extends Component {
           </>
           }
 
-          <Button variant="outline-primary" style={{width: "100%", marginTop: "15px"}}type="submit">{this.state.isRegistration ? 'Create Account' : 'Login'}</Button>
+          <Button variant="outline-primary" style={{width: "100%", marginTop: "15px"}} type="submit">{this.state.isRegistration ? 'Create Account' : 'Login'}</Button>
         </form>  
 
         {this.state.isRegistration 
