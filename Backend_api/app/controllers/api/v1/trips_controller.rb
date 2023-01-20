@@ -22,7 +22,9 @@ class Api::V1::TripsController < ApplicationController
   # POST /trips
   def create
     # @trip = Trip.new(trip_params)
+    debugger
     custom_trip = Entry.new(
+      pUser_id: trip_params[:user_id],
       pName: trip_params[:name],
       pLocation: trip_params[:location],
       pDate: trip_params[:date],

@@ -13,6 +13,7 @@ Activity.destroy_all
 Trip.destroy_all
 
 Entry.new(
+    pUser_id: nil,
     pName: "West Texas Roadtrip",
     pLocation: "Big Bend NP, Guadalupe Mtns. NP",
     pDate: "2017-03-04",
@@ -69,6 +70,7 @@ Entry.new(
 )
 
 Entry.new(
+    pUser_id: nil,
     pName: "Buffalo River Backpacking",
     pLocation: "Buffalo River, Arkansas",
     pDate: "2018-03-14",
@@ -87,6 +89,7 @@ Entry.new(
 )
 
 Entry.new(
+    pUser_id: nil,
     pName: "Hawaii Multisport",
     pLocation: "Big Island of Hawaii",
     pDate: "2022-06-14",
@@ -105,6 +108,7 @@ Entry.new(
 )
 
 Entry.new(
+    pUser_id: nil,
     pName: "Boundary Water Canoeing",
     pLocation: "Minnesota Boundary Waters",
     pDate: "2016-03-20",
@@ -123,6 +127,7 @@ Entry.new(
 )
 
 Entry.new(
+    pUser_id: nil,
     pName: "Pacific Northwest Roadtrip",
     pLocation: "Olympic National Park and Seattle",
     pDate: "2021-07-15",
@@ -141,6 +146,7 @@ Entry.new(
 )
 
 Entry.new(
+    pUser_id: nil,
     pName: "Puerto Rico Exploring",
     pLocation: "Puerto Rico",
     pDate: "2022-06-27",

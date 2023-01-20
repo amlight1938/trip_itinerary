@@ -1,9 +1,9 @@
 class Entry
-    def initialize(pName:, pLocation:, pDate:, pHighlightImageURL:, pDescription:, 
+    def initialize(pUser_id:, pName:, pLocation:, pDate:, pHighlightImageURL:, pDescription:, 
             pActivities:, pImageURLs:, pItineraries:)
-
+        
         trip = Trip.create(name: pName, location: pLocation, date: pDate, description: pDescription, 
-            highlight_img_url: pHighlightImageURL)
+            highlight_img_url: pHighlightImageURL, user_id: pUser_id)
         
         pActivities.each do |tmp_activity|
             activity = Activity.create(trip_activity: tmp_activity, trip_id: trip.id)
@@ -14,13 +14,6 @@ class Entry
             url = Image.create(image_url: tmp_url, trip_id: trip.id)
             trip.images << url
         end
-
-        # pItineraries.each do |row|
-        #     day = row[0]
-        #     itin = row[1]
-        #     itinerary = Itinerary.create(day_number: day, day_itinerary: itin, trip_id: trip.id)
-        #     trip.itineraries << itinerary
-        # end
 
         iteration = 0
         tmp = nil
