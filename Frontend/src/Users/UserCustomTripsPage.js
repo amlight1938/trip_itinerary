@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import RegistrationOrLoginForm from './RegistrationOrLoginForm';
 import CustomTripForm from './CustomTripForm';
+import CallApiTripList from '../Destinations/CallApiTripList';
 
 class UserCustomTripsPage extends Component {
     constructor(props){
@@ -27,10 +28,18 @@ class UserCustomTripsPage extends Component {
                 }
 
                 {this.props.session.isLoggedIn
-                &&  <div>
+                &&  <>
+                    <div>
                         <h4>Make your own trip</h4>
-                        <CustomTripForm session={this.props.session}/>
+                        <CustomTripForm session={this.props.session} />
                     </div>
+
+                    <br />
+                    <hr />
+
+                    <CallApiTripList api_url={`http://localhost:3001/api/v1/trips`}/>
+                    {/* <CallApiTripList api_url={`http://localhost:3001/api/v1/trips/${this.props.session.user.id}`}/> */}
+                    </>
                 }
             </div>
         );

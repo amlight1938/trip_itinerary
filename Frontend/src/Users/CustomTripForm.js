@@ -79,6 +79,7 @@ class CustomTripForm extends Component {
         event.preventDefault();
         this.handleResetFields();
         this.hideCustomTripForm();
+        window.scrollTo(0,0);
     };
 
     addNewActivity() {
@@ -158,7 +159,7 @@ class CustomTripForm extends Component {
 
                 {this.state.showSuccess 
                 &&  <Alert variant="success" onClose={() => this.hideAlerts()} dismissible>
-                        <Alert.Heading>Trip successfully created!</Alert.Heading>
+                        <Alert.Heading>Trip successfully created! Refresh page to see new trip</Alert.Heading>
                     </Alert>
                 }
 

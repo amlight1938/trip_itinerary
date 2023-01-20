@@ -8,6 +8,7 @@ import { Component } from "react";
 import UserCustomTripsPage from "./Users/UserCustomTripsPage";
 import axios from "axios";
 import MyNavbar from "./MyNavbar";
+import DestinationsPage from "./Destinations/DestinationsPage";
 
 class App extends Component {
   constructor(props){
@@ -90,10 +91,15 @@ class App extends Component {
                     <About {...props} session={this.state}/>
                   )}/>
 
-                <Route exact path='/destinations'
+                {/* <Route exact path='/destinations'
                   render={props => (
                     <CallApiTripList {...props} session={this.state}/>
-                  )}/>
+                  )}/> */}
+
+                <Route exact path='/destinations'
+                  render={props => (
+                    <DestinationsPage {...props} session={this.state}/>
+                  )}/> 
           
                 <Route exact path='/destinations/:tripId'
                   render={props => (
