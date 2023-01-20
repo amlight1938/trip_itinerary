@@ -26,15 +26,12 @@ class UserCustomTripsPage extends Component {
                     </div>  
                 }
 
-                <hr/>
-
-                <div>
-                    <h4>Make your own trip</h4>
-
-                    <CustomTripForm />
-
-                </div>
-                
+                {this.props.session.isLoggedIn
+                &&  <div>
+                        <h4>Make your own trip</h4>
+                        <CustomTripForm session={this.props.session}/>
+                    </div>
+                }
             </div>
         );
     };

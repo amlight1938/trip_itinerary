@@ -73,7 +73,7 @@ class Api::V1::TripsController < ApplicationController
     def trip_params
       # params.require(:trip).permit(:name, :location, :date, :description)
       # debugger
-      params.require(:custom_trip).permit(:name, :location, :date, :description, 
+      params.require(:custom_trip).permit(:user_id, :name, :location, :date, :description, 
         :highlight_img_url, activities: [], img_urls: [], itinerary: [])
     end
 

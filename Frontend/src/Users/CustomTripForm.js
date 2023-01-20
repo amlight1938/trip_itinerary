@@ -6,6 +6,7 @@ class CustomTripForm extends Component {
     constructor(props){
         super(props)
         this.state = {
+            user_id: this.props.session.user.id,
             name: "",
             location: "",
             date: "",
@@ -35,8 +36,9 @@ class CustomTripForm extends Component {
     }
 
     handleSubmit(event) {
-        const {name, location, date, description, activities, itinerary, highlight_img_url, img_urls} = this.state;
+        const {user_id, name, location, date, description, activities, itinerary, highlight_img_url, img_urls} = this.state;
         const custom_trip = {
+            user_id: user_id,
             name: name,
             location: location,
             date: date,
