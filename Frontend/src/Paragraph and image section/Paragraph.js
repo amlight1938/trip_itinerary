@@ -10,20 +10,20 @@ const Paragraph = ({title, pgraph, image, img_left_bool}) => {
                 
                 :    !img_left_bool 
                         ?   <div className="row">
-                                <div className="col-6">
+                                <div className="col-7">
                                     <h5>{title}</h5>
                                     <p>{pgraph}</p>
                                 </div>
-                                <div className="col-4">
-                                        <img className="paragraph_image" src={image} alt="" />
+                                <div className="col-4" style={{marginLeft: "auto"}}>
+                                        <img className="paragraph_image" style={{marginLeft: "auto"}} src={image} alt="" />
                                 </div>
                             </div>
 
                         :   <div className="row">
-                                <div className="col-4">
+                                <div className="col-4" style={{marginRight: "auto"}}>
                                     <img className="paragraph_image" src={image} alt="" />
                                 </div>
-                                <div className="col-6">
+                                <div className="col-7">
                                     <h5>{title}</h5>
                                     <p>{pgraph}</p>
                                 </div>                        
