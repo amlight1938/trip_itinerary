@@ -37,8 +37,8 @@ class UserCustomTripsPage extends Component {
                     <br />
                     <hr />
 
-                    <CallApiTripList api_url={`http://localhost:3001/api/v1/trips`}/>
-                    {/* <CallApiTripList api_url={`http://localhost:3001/api/v1/trips/${this.props.session.user.id}`}/> */}
+                    {/* <CallApiTripList api_url={`http://localhost:3001/api/v1/trips${}`}/> */}
+                    <CallApiTripList api_url={`http://localhost:3001/api/v1/search-by-user/${this.props.session.user.id}`}/>
                     </>
                 }
             </div>

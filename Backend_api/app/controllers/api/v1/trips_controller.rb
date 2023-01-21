@@ -5,11 +5,18 @@ class Api::V1::TripsController < ApplicationController
 
   # GET /trips
   def index
-    @trips = Trip.all
+    # @trips = Trip.all
+    @trips = Trip.no_associated_user
 
     #render json: @trips, include: [:activities]
     #render json: TripSerializer.new(@trips, options_all)
     render json: @trips, each_serializer: PartialTripSerializer 
+  end
+
+  def search_by_user
+    @trips = Trip.with_user_id(params[:id])
+    render json: @trips, each_serializer: PartialTripSerializer
+
   end
 
   # GET /trips/id number
@@ -75,6 +82,10 @@ class Api::V1::TripsController < ApplicationController
       params.require(:custom_trip).permit(:user_id, :name, :location, :date, :description, 
         :highlight_img_url, activities: [], img_urls: [], itinerary: [])
     end
+
+    # def search_params
+    #   params.require(:user_id)
+    # end
 
     # def create_trip_params
     #   params.require(:custom_trip).permit(:name, :location, :date, :description, 
