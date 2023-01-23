@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import useApiRequest from "../../Helper functions/useApiRequest";
 import TripDetails from "./TripDetails";
 
-const CallApiSingleTrip = () => {
+const CallApiSingleTrip = (props) => {
     const {tripId} = useParams();
     const api_url = `http://localhost:3001/api/v1/trips/${tripId}`;
     const {data: trip, isLoading, errors} = useApiRequest(api_url)
@@ -12,7 +12,23 @@ const CallApiSingleTrip = () => {
         <div className="container">
             {isLoading && <h3>Loading...</h3>}
             {errors && <h3>Data failed to load :(</h3>}
-            {!errors && !isLoading && <TripDetails trip={trip}/>}
+            {!errors && !isLoading &&
+            <>
+                {trip.user === null
+                    
+                    ?   //no user associated with trip so not custom trip
+                        <TripDetails trip={trip}/>
+                                          
+                    :   //check if logged in and if user id and trip's user id match
+                    <>
+                        {props.session.isLoggedIn && (trip.user.id === props.session.user.id)
+                            ? <TripDetails trip={trip}/>
+                            : <h2>Data not found :(  You must be logged in to view your custom trips</h2>
+                        }
+                    </>
+                }
+            </>
+            }
         </div>
     );
 }

@@ -82,12 +82,8 @@ const TripDetails = ({trip}) => {
                         })
                         }
                        
-                        <Button variant="primary" className="book-btn" size="md" ><b>Book This Trip</b></Button>  
-                        
-                        
-                        
+                        <Button variant="primary" className="book-btn" size="md" ><b>Book This Trip</b></Button>                        
                     </div>
-
                     
                     <ModalFunc
                         show={modalShow}
@@ -107,12 +103,7 @@ const TripDetails = ({trip}) => {
                         </div>         
                     </div>
                 </div>
-            </div>
-       
-
-
-
-            
+            </div>           
         </div>
     );
 }
