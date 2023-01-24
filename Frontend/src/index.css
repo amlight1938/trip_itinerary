@@ -108,6 +108,7 @@ height: 100%;
   align-Items: center;
   background: rgb(0,0,0,.2);
   height: 650px;
+  padding: 30px
 }
 
 .modal-width-control{

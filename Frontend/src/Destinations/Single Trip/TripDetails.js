@@ -12,10 +12,12 @@ import { Button } from 'react-bootstrap'
 import ModalFunc from './ModalFunc'
 import CarouselFade from '../../CarouselFade'
 import { build_activity_list } from '../../Helper functions/utils'
+import UpdateTripForm from './UpdateTripForm'
 
 const TripDetails = ({trip}) => {
 
-    const [modalShow, setModalShow] = useState(false);
+    const [imageModalShow, setImageModalShow] = useState(false);
+    const [updateFormModalShow, setUpdateFormModalShow] = useState(false);
 
     //TODO make call to AWS to get pictures
 
@@ -86,12 +88,12 @@ const TripDetails = ({trip}) => {
                     </div>
                     
                     <ModalFunc
-                        show={modalShow}
-                        onHide={() => setModalShow(false)} 
+                        show={imageModalShow}
+                        onHide={() => setImageModalShow(false)} 
                         content={<ImageGallery slides={slides} />}
                         styles_header={{height: "20px"}}
                     />
-                    <div className="trip-details-carousel-container" style={carousel_css} onClick={() => setModalShow(true)}>
+                    <div className="trip-details-carousel-container" style={carousel_css} onClick={() => setImageModalShow(true)}>
                         <CarouselFade 
                             carousel_items={carousel_items} 
                             controls_bool={controls_bool} 
@@ -102,6 +104,23 @@ const TripDetails = ({trip}) => {
                             <h3><b>SEE ALL PHOTOS</b></h3>
                         </div>         
                     </div>
+
+                    {trip.user !== null &&
+                    <>
+                        <ModalFunc
+                        show={updateFormModalShow}
+                        onHide={() => setUpdateFormModalShow(false)} 
+                        content= {<UpdateTripForm trip={trip} />}
+                        styles_header={{height: "20px"}}
+                        />
+
+                        <div style={{display: "flex"}}>
+                            <Button variant="outline-danger" style={{flex: ".4", marginLeft: "30px", marginRight: "auto"}}>Delete trip</Button>
+                            <Button variant="outline-secondary" onClick={()=>setUpdateFormModalShow(true)} style={{flex: ".4", marginLeft: "auto", marginRight: "30px"}}>Update trip</Button>
+                        </div>         
+                    </> 
+                    }
+                              
                 </div>
             </div>           
         </div>

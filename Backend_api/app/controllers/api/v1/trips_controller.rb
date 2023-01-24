@@ -7,22 +7,16 @@ class Api::V1::TripsController < ApplicationController
   def index
     # @trips = Trip.all
     @trips = Trip.no_associated_user
-
-    #render json: @trips, include: [:activities]
-    #render json: TripSerializer.new(@trips, options_all)
     render json: @trips, each_serializer: PartialTripSerializer 
   end
 
   def search_by_user
     @trips = Trip.with_user_id(params[:id])
     render json: @trips, each_serializer: PartialTripSerializer
-
   end
 
   # GET /trips/id number
   def show
-    #render json: @trip
-    #render json: TripSerializer.new(@trip, options_specific)
     render json: @trip, each_serializer: TripSerializer
   end
 
@@ -56,11 +50,16 @@ class Api::V1::TripsController < ApplicationController
 
   # PATCH/PUT /trips/1
   def update
-    if @trip.update(trip_params)
-      #render json: @trip
-      render json: TripSerializer.new(@trip, options_specific_trip)
+    if @trip.update(update_trip_params)
+      render json: {
+        status: :updated,
+        errors: nil
+      }
     else
-      render json: @trip.errors, status: :unprocessable_entity
+      render json: {
+        status: 500,
+        errors: @trip.errors.full_messages[0]
+      }
     end
   end
 
@@ -77,24 +76,11 @@ class Api::V1::TripsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def trip_params
-      # params.require(:trip).permit(:name, :location, :date, :description)
-      # debugger
       params.require(:custom_trip).permit(:user_id, :name, :location, :date, :description, 
         :highlight_img_url, activities: [], img_urls: [], itinerary: [])
     end
 
-    # def search_params
-    #   params.require(:user_id)
-    # end
-
-    # def create_trip_params
-    #   params.require(:custom_trip).permit(:name, :location, :date, :description, 
-    #     :activities, :itinerary, :highlight_img_url, :img_urls)
-    # end
-
-    # def options
-    #   @options_all_trips ||={include: %i[activities]}
-    #   @options_specific_trip ||= {include: %i[activities images itinerary]}
-    # end
-
+    def update_trip_params
+      params.require(:updated_trip).permit(:name, :location, :date, :description)
+    end
 end

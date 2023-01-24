@@ -15,7 +15,7 @@ class CustomTripForm extends Component {
             activity_input:"",
             itinerary: [],
             itin_day_input:"",
-            itin_dectription_input:"",
+            itin_description_input:"",
             highlight_img_url: "",
             img_urls: [],
             errors: "",
@@ -94,15 +94,15 @@ class CustomTripForm extends Component {
     };
 
     addNewItinerary() {
-        let {itinerary, itin_day_input, itin_dectription_input} = this.state;
+        let {itinerary, itin_day_input, itin_description_input} = this.state;
 
-        if(itin_day_input.trim() !== "" && itin_dectription_input.trim() !== "") {
+        if(itin_day_input.trim() !== "" && itin_description_input.trim() !== "") {
             itinerary.push(itin_day_input.trim());
-            itinerary.push(itin_dectription_input.trim());
+            itinerary.push(itin_description_input.trim());
             this.setState({
                 itinerary: itinerary,
                 itin_day_input: "",
-                itin_dectription_input: ""
+                itin_description_input: ""
             })
         }
     };
@@ -114,16 +114,13 @@ class CustomTripForm extends Component {
         this.setState({
             name: "",
             location: "",
-            date_input: "",
-            sYear: "",
-            sMonth: "",
-            sDay: "",
+            date: "",
             description: "",
             activities: [],
             activity_input:"",
             itinerary: [],
             itin_day_input:"",
-            itin_dectription_input:"",
+            itin_description_input:"",
         });
     };
 
@@ -272,9 +269,9 @@ class CustomTripForm extends Component {
                                 <input
                                     id="tripItinDescription"
                                     className="inputField"
-                                    name="itin_dectription_input"
+                                    name="itin_description_input"
                                     placeholder="Do something today"
-                                    value={this.state.itin_dectription_input}
+                                    value={this.state.itin_description_input}
                                     onChange={this.handleChange}
                                 />
                             </div>
