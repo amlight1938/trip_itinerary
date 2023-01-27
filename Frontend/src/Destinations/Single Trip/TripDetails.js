@@ -13,12 +13,20 @@ import ModalFunc from './ModalFunc'
 import CarouselFade from '../../CarouselFade'
 import { build_activity_list } from '../../Helper functions/utils'
 import UpdateTripForm from './UpdateTripForm'
+import DeleteTripCheck from './DeleteTripCheck'
+import { useHistory } from 'react-router-dom'
 
 const TripDetails = ({trip}) => {
 
     const [imageModalShow, setImageModalShow] = useState(false);
     const [updateFormModalShow, setUpdateFormModalShow] = useState(false);
+    const [deleteTripModalShow, setDeleteTripModalShow] = useState(false);
 
+    const history = useHistory();
+
+    let handleSuccessfulDelete = () => {
+        history.push("/my-custom-trips")
+    }
     //TODO make call to AWS to get pictures
 
 
@@ -110,12 +118,21 @@ const TripDetails = ({trip}) => {
                         <ModalFunc
                         show={updateFormModalShow}
                         onHide={() => setUpdateFormModalShow(false)} 
-                        content= {<UpdateTripForm trip={trip} />}
+                        content= {<UpdateTripForm trip={trip}/>}
                         styles_header={{height: "20px"}}
+                        // styles_body={{height: "200px"}}
+                        />
+
+                        <ModalFunc
+                        show={deleteTripModalShow}
+                        onHide={() => setDeleteTripModalShow(false)} 
+                        content= {<DeleteTripCheck trip_id={trip.id} handleSuccessfulDelete={handleSuccessfulDelete} setDeleteTripModalShow={setDeleteTripModalShow} />}
+                        styles_header={{height: "20px"}}
+                        // styles_body={{height: "200px"}}
                         />
 
                         <div style={{display: "flex"}}>
-                            <Button variant="outline-danger" style={{flex: ".4", marginLeft: "30px", marginRight: "auto"}}>Delete trip</Button>
+                            <Button variant="outline-danger" onClick={()=>setDeleteTripModalShow(true)} style={{flex: ".4", marginLeft: "30px", marginRight: "auto"}}>Delete trip</Button>
                             <Button variant="outline-secondary" onClick={()=>setUpdateFormModalShow(true)} style={{flex: ".4", marginLeft: "auto", marginRight: "30px"}}>Update trip</Button>
                         </div>         
                     </> 

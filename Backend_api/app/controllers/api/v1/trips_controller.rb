@@ -66,6 +66,17 @@ class Api::V1::TripsController < ApplicationController
   # DELETE /trips/1
   def destroy
     @trip.destroy
+    if @trip.destroyed?
+      render json: {
+        status: :deleted,
+        errors: nil
+      }
+    else
+      render json: {
+        status: 500,
+        errors: @trip.errors.full_messages[0]
+      }
+    end
   end
 
   private

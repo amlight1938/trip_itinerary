@@ -8,7 +8,7 @@ function ModalFunc(props) {
   return (
     <Modal {...props} dialogClassName="modal-width-control" aria-labelledby="contained-modal-title-vcenter">
         <Modal.Header closeButton style={styles_header}/>
-        <div className="modalData">
+        <div className="modalData" style={{styles_body}}>
             {props.content}
         </div>
         

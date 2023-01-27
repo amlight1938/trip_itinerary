@@ -3,7 +3,7 @@ class Trip < ApplicationRecord
     scope :no_associated_user, -> {where.missing(:user)}
 
     belongs_to :user, optional: true
-    has_many :activities
-    has_many :images
-    has_many :itineraries
+    has_many :activities, dependent: :destroy
+    has_many :images, dependent: :destroy
+    has_many :itineraries, dependent: :destroy
 end
