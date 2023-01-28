@@ -7,6 +7,18 @@ const TripCard = (props) => {
     
     const trip = props.trip;
 
+    
+    // const card_img_styles = {
+    //     height: "100%",
+    //     width: "100%",
+    //     // backgroundImage: `url('${item.image}')`,
+    //     backgroundImage: longs_peak,
+    //     backgroundSize: "cover",
+    //     backgroundRepeat: "no-repeat",
+    //     backgroundPosition: "50% 45%",
+    // }
+  
+
     // const activities_str = build_activity_list(trip.activities).join(', ');
 
     return ( 
@@ -14,6 +26,7 @@ const TripCard = (props) => {
         <div className="card h-100" style={{width: "19rem"}}>
             <Link to={`/destinations/${trip.id}`}>
                 <img src={longs_peak} className="card-img-top" alt="..." />
+
                 <div className="card-body">
                     <h5 className="card-title">{trip.name}</h5>
                     <hr />

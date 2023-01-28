@@ -1,4 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function CarouselFade({carousel_items, controls_bool, caption_bool, indicator_bool}) {
   
@@ -20,6 +22,9 @@ function CarouselFade({carousel_items, controls_bool, caption_bool, indicator_bo
                 &&  <Carousel.Caption>
                       <h2>{item.caption}</h2>
                       <h5>{item.subcaption}</h5>
+                      <Link to="/destinations">
+                        <Button variant="primary" style={{opacity: ".8"}}>See destinations</Button>
+                      </Link>
                     </Carousel.Caption>               
               }
               
