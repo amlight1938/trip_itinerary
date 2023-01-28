@@ -56,10 +56,12 @@ height: 100%;
   height: 100%;
 }
 
-.book-btn{
+.trip-details-button{
   border-radius: 18px !important;
-  opacity: .7;
-  width:100%;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  opacity: .8;
 }
 
 .navbar .btn-outline-primary{
@@ -107,18 +109,22 @@ height: 100%;
   justify-content: center;
   align-Items: center;
   background: rgb(0,0,0,.2);
-  height: 650px;
+  /* height: 650px; */
   padding: 30px
 }
 
-.modal-width-control{
+.image-gallery-modal-width{
+  min-width: 75%;
+}
+.update-trip-modal-width{
   min-width: 75%;
 }
 
-.trip-details-content{
+@media only screen and (min-width: 480px) {
+  .trip-details-content{
   display: grid;
-  grid-template-columns: 65% 30%;
-  
+  grid-template-columns: 65% 30%;  
+  }
 }
 
 .column{

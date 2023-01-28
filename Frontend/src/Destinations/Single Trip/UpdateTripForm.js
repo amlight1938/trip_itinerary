@@ -28,10 +28,10 @@ class UpdateTripForm extends Component {
     handleSubmit(event) {
         const {name, location, date, description} = this.state;
         const updated_trip = {
-            name: name,
-            location: location,
-            date: date,
-            description: description,
+            ...(name.trim() !== "" && {name: name}),
+            ...(location.trim() !== "" && {location: location}),
+            ...(date.trim() !== "" && {date: date}),
+            ...(description.trim() !== "" && {description: description}),
         };
 
         const api_url = `http://localhost:3001/api/v1/trips/${this.props.trip.id}`;
@@ -86,7 +86,7 @@ class UpdateTripForm extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{width: "98%"}}>
                 {this.state.showErrors 
                 &&  <Alert variant="danger" onClose={() => this.hideAlerts()} dismissible>
                         <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
@@ -114,7 +114,6 @@ class UpdateTripForm extends Component {
                         placeholder="New trip name"
                         value={this.state.name}
                         onChange={this.handleChange}
-                        required
                     />
 
                     <label htmlFor="tripLocation"><b>Trip location</b> -- {this.props.trip.location}</label>
@@ -125,7 +124,6 @@ class UpdateTripForm extends Component {
                         placeholder="New trip location"
                         value={this.state.location}
                         onChange={this.handleChange}
-                        required
                     />
 
                     <label htmlFor="tripDate"><b>Trip date</b> -- {this.props.trip.date}</label>
@@ -137,7 +135,6 @@ class UpdateTripForm extends Component {
                         placeholder="New trip date"
                         value={this.state.date}
                         onChange={this.handleChange}
-                        required
                     />
 
                     <label htmlFor="tripDescription"><b>Trip description</b> -- {this.props.trip.description}</label>
@@ -148,11 +145,13 @@ class UpdateTripForm extends Component {
                         placeholder="New trip description"
                         value={this.state.description}
                         onChange={this.handleChange}
-                        required
                     />
                     </>
 
-                    <Button variant="outline-primary" style={{width: "100%", marginTop: "15px"}} type="submit">Update trip</Button>
+                    <div style={{display: "flex", justifyContent:"right", marginTop: "15px"}}>
+                        <Button variant="secondary" onClick={() => this.props.setUpdateFormModalShow(false)} style={{marginRight: "10px"}}>Cancel</Button>  
+                        <Button variant="primary" type="submit">Update trip</Button>
+                    </div>
                 </form>                          
             </div>
         );

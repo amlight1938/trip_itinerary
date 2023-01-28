@@ -61,7 +61,7 @@ class DeleteTripCheck extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{width: "98%"}}>
                 {!this.state.showDeleteErrors && !this.state.showDeleteSuccess &&
                 <>
                     <h3>Delete Trip</h3>
@@ -79,7 +79,7 @@ class DeleteTripCheck extends Component {
                 {this.state.showDeleteSuccess &&
                 <>
                     <Alert variant="success" >
-                        <Alert.Heading>Trip successfully deleted. wait for redirecting...</Alert.Heading>
+                        <Alert.Heading>Trip successfully deleted. Wait for redirecting...</Alert.Heading>
                     </Alert>
                 </>
                 }

@@ -91,15 +91,24 @@ const TripDetails = ({trip}) => {
                             )
                         })
                         }
-                       
-                        <Button variant="primary" className="book-btn" size="md" ><b>Book This Trip</b></Button>                        
+
+                        <Button variant="outline-primary" className="trip-details-button" size="md" >Book This Trip</Button> 
+                        
+                        {trip.user !== null &&
+                        <>
+                            <Button variant="outline-secondary" className="trip-details-button" onClick={()=>setUpdateFormModalShow(true)} >Update trip</Button>                       
+                            <Button variant="outline-danger" className="trip-details-button" onClick={()=>setDeleteTripModalShow(true)} >Delete trip</Button>
+                        </>
+                        }
                     </div>
                     
                     <ModalFunc
                         show={imageModalShow}
                         onHide={() => setImageModalShow(false)} 
                         content={<ImageGallery slides={slides} />}
-                        styles_header={{height: "20px"}}
+                        styles_header={{height: "20px", minWidth: "75%"}}
+                        modal_width_class="image-gallery-modal-width"
+                        styles_body={{height: "650px"}}
                     />
                     <div className="trip-details-carousel-container" style={carousel_css} onClick={() => setImageModalShow(true)}>
                         <CarouselFade 
@@ -118,8 +127,9 @@ const TripDetails = ({trip}) => {
                         <ModalFunc
                         show={updateFormModalShow}
                         onHide={() => setUpdateFormModalShow(false)} 
-                        content= {<UpdateTripForm trip={trip}/>}
+                        content= {<UpdateTripForm trip={trip} setUpdateFormModalShow={setUpdateFormModalShow} />}
                         styles_header={{height: "20px"}}
+                        modal_width_class="update-trip-modal-width"
                         // styles_body={{height: "200px"}}
                         />
 
@@ -130,11 +140,6 @@ const TripDetails = ({trip}) => {
                         styles_header={{height: "20px"}}
                         // styles_body={{height: "200px"}}
                         />
-
-                        <div style={{display: "flex"}}>
-                            <Button variant="outline-danger" onClick={()=>setDeleteTripModalShow(true)} style={{flex: ".4", marginLeft: "30px", marginRight: "auto"}}>Delete trip</Button>
-                            <Button variant="outline-secondary" onClick={()=>setUpdateFormModalShow(true)} style={{flex: ".4", marginLeft: "auto", marginRight: "30px"}}>Update trip</Button>
-                        </div>         
                     </> 
                     }
                               

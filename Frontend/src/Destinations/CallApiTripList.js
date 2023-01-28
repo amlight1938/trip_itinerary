@@ -11,7 +11,8 @@ const CallApiTripList = ({api_url}) => {
         <div className="container">
             {isLoading && <h3>Loading...</h3>}
             {errors && <h3>Data failed to load :(</h3>}
-            {!errors && !isLoading && <TripCardList trips = {trips}/>}
+            {!errors && !isLoading && trips.length !== 0 && <TripCardList trips = {trips}/>}
+            {!errors && !isLoading && trips.length === 0 && <h3>You have no custom trips created</h3>}
         </div>
     );
 }

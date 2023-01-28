@@ -44,8 +44,10 @@ const ImageGallery = ({slides}) => {
     }
 
     const bigImageStyles = {
-        height: "98%",
-        width: "auto",
+        // height: "98%",
+        // width: "auto",
+        maxHeight: "98%",
+        maxWidth: "95%"
     }
 
     const carouselDivStyles = {
