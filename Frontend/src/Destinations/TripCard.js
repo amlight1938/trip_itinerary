@@ -1,4 +1,5 @@
 import longs_peak from "../Assets/longs_peak.jpg"
+import new_york from "../Assets/new_york.jpg"
 import { build_activity_list } from "../Helper functions/utils";
 import { Link } from "react-router-dom";
 

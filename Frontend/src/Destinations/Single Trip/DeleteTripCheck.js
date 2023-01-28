@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import axios from 'axios';
+import { Alert } from 'react-bootstrap';
 
 class DeleteTripCheck extends Component {
     constructor(props) {
@@ -8,8 +9,8 @@ class DeleteTripCheck extends Component {
         this.state = {
             trip_id: this.props.trip_id,
             errors: "",
-            showSuccessToast: false,
-            showErrors: false
+            showDeleteSuccess: false,
+            showDeleteErrors: false
         }
 
         this.handleDeleteTripSubmit = this.handleDeleteTripSubmit.bind(this);
@@ -29,23 +30,21 @@ class DeleteTripCheck extends Component {
                 {withCredentials: true})
             .then(response => {
                 if(response.data.status === "deleted"){
-                    this.props.handleSuccessfulDelete()
-                    // this.setState({
-                    //     showSuccessToast: true
-                    // })
-                    // console.log("success trip delete response: ", response)
+                    this.setState({
+                        showDeleteSuccess: true
+                    })
+                    setTimeout(() => this.props.handleSuccessfulDelete(), 3000);
                 }else{
                     this.setState({
                         errors: response.data.errors,
-                        // showErrors: true
+                        showDeleteErrors: true
                     })
-                    // console.log("error trip delete response: ", this.state.errors)
                 }
                 console.log("trip delete response: ", response)})
             .catch(error => {
                 this.setState({
                     errors: error.message,
-                    showErrors: true
+                    showDeleteErrors: true
                 })
                 console.log('trip delete response catch error: ', error)
             })
@@ -53,18 +52,46 @@ class DeleteTripCheck extends Component {
         event.preventDefault();
     };
 
+    hideAlerts() {
+        this.setState({
+            showDeleteSuccess: false,
+            showDeleteErrors: false
+        })
+    }
+
     render() {
         return (
             <div>
-                <h3>Delete Trip</h3>
-                <hr/>
-                <p>Are you sure you want to delete this trip?</p>
-                <br />
-                <hr />
-                <div style={{display: "flex", justifyContent:"right"}}>
-                    <Button variant="secondary" onClick={() => this.props.setDeleteTripModalShow(false)} style={{marginRight: "10px"}}>Cancel</Button>
-                    <Button variant="primary" onClick={this.handleDeleteTripSubmit}>Delete trip</Button>
-                </div>   
+                {!this.state.showDeleteErrors && !this.state.showDeleteSuccess &&
+                <>
+                    <h3>Delete Trip</h3>
+                    <hr/>
+                    <p>Are you sure you want to delete this trip?</p>
+                    <br />
+                    <hr />
+                    <div style={{display: "flex", justifyContent:"right"}}>
+                        <Button variant="secondary" onClick={() => this.props.setDeleteTripModalShow(false)} style={{marginRight: "10px"}}>Cancel</Button>
+                        <Button variant="primary" onClick={this.handleDeleteTripSubmit}>Delete trip</Button>
+                    </div>   
+                </>                   
+                }
+
+                {this.state.showDeleteSuccess &&
+                <>
+                    <Alert variant="success" >
+                        <Alert.Heading>Trip successfully deleted. wait for redirecting...</Alert.Heading>
+                    </Alert>
+                </>
+                }
+
+                {this.state.showDeleteErrors &&
+                <>
+                    <Alert variant="danger" onClose={() => this.hideAlerts()} dismissible>
+                        <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
+                        <p>{this.state.errors}</p>
+                    </Alert>
+                </>
+                }
             </div>
         );
     }

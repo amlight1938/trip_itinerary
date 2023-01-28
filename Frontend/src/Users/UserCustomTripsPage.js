@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RegistrationOrLoginForm from './RegistrationOrLoginForm';
 import CustomTripForm from './CustomTripForm';
 import CallApiTripList from '../Destinations/CallApiTripList';
+import changeCustomTripPageDeleteAlertStatus from '../Destinations/Single Trip/DeleteTripCheck.js'
 
 class UserCustomTripsPage extends Component {
     constructor(props){

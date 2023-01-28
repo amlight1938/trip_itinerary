@@ -105,10 +105,10 @@ class RegistrationOrLoginForm extends Component {
     return (
       <div className="form-div">
         {this.state.showErrors 
-          && <Alert variant="danger" onClose={() => this.hideErrors()} dismissible>
-                <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
-                <p>{this.state.errors}</p>
-            </Alert>
+            &&  <Alert variant="danger" onClose={() => this.hideErrors()} dismissible>
+                  <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
+                  <p>{this.state.errors}</p>
+                </Alert>
         }
 
         <form onSubmit={this.handleSubmit}>
