@@ -9,6 +9,7 @@ import UserCustomTripsPage from "./Users/UserCustomTripsPage";
 import axios from "axios";
 import MyNavbar from "./MyNavbar";
 import DestinationsPage from "./Destinations/DestinationsPage";
+import BottomBanner from "./BottomBanner";
 
 class App extends Component {
   constructor(props){
@@ -91,11 +92,6 @@ class App extends Component {
                     <About {...props} session={this.state}/>
                   )}/>
 
-                {/* <Route exact path='/destinations'
-                  render={props => (
-                    <CallApiTripList {...props} session={this.state}/>
-                  )}/> */}
-
                 <Route exact path='/destinations'
                   render={props => (
                     <DestinationsPage {...props} session={this.state}/>
@@ -112,6 +108,10 @@ class App extends Component {
                   )}/>
 
               </Switch>
+              <Route
+                render={props => (
+                  <BottomBanner {...props} session={this.state}/>
+                )}/>
       </Router>
     )
   }

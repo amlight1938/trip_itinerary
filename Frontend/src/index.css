@@ -33,6 +33,11 @@ height: 100%;
   opacity: .7;
 }
 
+.bottom-banner-background{
+  mask-image: linear-gradient(to top, white, transparent)
+}
+
+
 .login-status-div{
   display: flex;
   flex: .4;
@@ -90,6 +95,7 @@ height: 100%;
 .card{
   box-shadow: 0px 0px 10px 0px rgba(22, 22, 26, 0.18);
   margin: auto;
+  overflow: hidden;
 }
 
 .card:hover{
