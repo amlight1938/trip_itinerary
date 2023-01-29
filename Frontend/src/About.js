@@ -17,10 +17,13 @@ const About = () => {
 
     
     return(
-        <div className="container">
-            <DisplayParagraphAndImage obj_list={about_items} idField={id} titleField={title} 
-                pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
-        </div>
+        // <div className="topo-background">
+            <div className="container">
+                <DisplayParagraphAndImage obj_list={about_items} idField={id} titleField={title} 
+                    pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
+            </div>
+        // </div>
+
         
     );
 }
