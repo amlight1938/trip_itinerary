@@ -11,6 +11,7 @@ const TopBanner = ({image, position, text}) => {
 
     const text_style = {
         margin: "auto",
+        textAlign: "center",
         fontSize: "60px",
         color: "white",
         textShadow: "4px 4px 15px rgb(0 0 0 / 85%)"
