@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import RegistrationOrLoginForm from './RegistrationOrLoginForm';
 import CustomTripForm from './CustomTripForm';
 import CallApiTripList from '../Destinations/CallApiTripList';
-import changeCustomTripPageDeleteAlertStatus from '../Destinations/Single Trip/DeleteTripCheck.js'
+import TopBanner from '../TopBanner';
+import lake from '../Assets/lake.jpg'
 
 class UserCustomTripsPage extends Component {
     constructor(props){
@@ -18,31 +19,38 @@ class UserCustomTripsPage extends Component {
     
     render() {
         return (
-            <div className="container">
-                <h3>User custom trips</h3>
-                <hr/>
- 
-                {!this.props.session.isLoggedIn 
-                &&  <div style={{width: "400px", margin: "auto"}}>
-                        <RegistrationOrLoginForm handleSuccessfulAuthentication={this.handleSuccessfulAuthentication}/>
-                    </div>  
-                }
+            <>
+                <TopBanner 
+                    image={lake} 
+                    position={"50% 48%"}
+                    text={"USER CUSTOM TRIPS"}/>
+           
+                <div className="container">
+                    {/* <h3>User custom trips</h3> */}
+                    <hr/>
+    
+                    {!this.props.session.isLoggedIn 
+                    &&  <div style={{width: "400px", margin: "auto"}}>
+                            <RegistrationOrLoginForm handleSuccessfulAuthentication={this.handleSuccessfulAuthentication}/>
+                        </div>  
+                    }
 
-                {this.props.session.isLoggedIn
-                &&  <>
-                    <div>
-                        <h4>Make your own trip</h4>
-                        <CustomTripForm session={this.props.session} />
-                    </div>
+                    {this.props.session.isLoggedIn
+                    &&  <>
+                        <div>
+                            <h4>Make your own trip</h4>
+                            <CustomTripForm session={this.props.session} />
+                        </div>
 
-                    <br />
-                    <hr />
+                        <br />
+                        <hr />
 
-                    {/* <CallApiTripList api_url={`http://localhost:3001/api/v1/trips${}`}/> */}
-                    <CallApiTripList api_url={`http://localhost:3001/api/v1/search-by-user/${this.props.session.user.id}`}/>
-                    </>
-                }
-            </div>
+                        {/* <CallApiTripList api_url={`http://localhost:3001/api/v1/trips${}`}/> */}
+                        <CallApiTripList api_url={`http://localhost:3001/api/v1/search-by-user/${this.props.session.user.id}`}/>
+                        </>
+                    }
+                </div>
+            </>
         );
     };
 }

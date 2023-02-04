@@ -1,5 +1,7 @@
 import DisplayParagraphAndImage from "./Paragraph and image section/DisplayParagraphAndImage"
 import italy_hike from "./Assets/italy_hike.jpg"
+import mountain_sunrise from "./Assets/mountain_sunrise.jpg"
+import TopBanner from "./TopBanner";
 
 
 const About = () => {
@@ -17,12 +19,18 @@ const About = () => {
 
     
     return(
-        // <div className="topo-background">
+        <>
+            <TopBanner 
+                image={mountain_sunrise} 
+                position={"40% 47%"}
+                text={"ABOUT"}/>
+
             <div className="container">
                 <DisplayParagraphAndImage obj_list={about_items} idField={id} titleField={title} 
                     pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
             </div>
-        // </div>
+        </>
+
 
         
     );

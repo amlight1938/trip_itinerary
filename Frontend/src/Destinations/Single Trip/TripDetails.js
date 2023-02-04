@@ -4,6 +4,7 @@ import biking from '../../Assets/biking.jpg'
 import longs_peak from '../../Assets/longs_peak.jpg'
 import puerto_rico from '../../Assets/puerto_rico.jpg'
 import italy_hike from '../../Assets/italy_hike.jpg'
+import topo_dark from '../../Assets/topo_dark.jpg'
 
 import DisplayParagraphAndImage from "../../Paragraph and image section/DisplayParagraphAndImage"
 import ImageGallery from './ImageGallery.js'
@@ -15,6 +16,7 @@ import { build_activity_list } from '../../Helper functions/utils'
 import UpdateTripForm from './UpdateTripForm'
 import DeleteTripCheck from './DeleteTripCheck'
 import { useHistory } from 'react-router-dom'
+import TopBanner from '../../TopBanner'
 
 const TripDetails = ({trip}) => {
 
@@ -65,87 +67,97 @@ const TripDetails = ({trip}) => {
     const slides = [new_york, colorado, biking, longs_peak, puerto_rico, italy_hike];
 
     return(
-        <div className="trip-details-content">
-            <div className="column">
-                <h1><b>{trip.name}</b></h1>
-                <h4>{trip.location}</h4>
-                <br />
-                <p>{trip.description}</p>
+    <>
+        <TopBanner 
+            // image={trip.highlight_img} 
+            image={topo_dark}
+            position={"50% 50%"}
+            text={"TRIP HIGHLIGHT IMAGE"}/>
+    
+        <div className="container">
+            <div className="trip-details-content">
+                <div className="column">
+                    <h1><b>{trip.name}</b></h1>
+                    <h4>{trip.location}</h4>
+                    <br />
+                    <p>{trip.description}</p>
 
-                <div className="itineraryDiv">
-                    <h3><b>Itinerary</b></h3>
-                    <DisplayParagraphAndImage obj_list={trip.itineraries} idField={id} titleField={title} 
-                        pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
+                    <div className="itineraryDiv">
+                        <h3><b>Itinerary</b></h3>
+                        <DisplayParagraphAndImage obj_list={trip.itineraries} idField={id} titleField={title} 
+                            pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
+                    </div>
                 </div>
-            </div>
 
-            <div className="column">
-                <div className="fixed-sidebar">
-                    <div className="sidebar-info">
-                        <p><b>Date: </b> {trip.date}</p>
-                        <p><b>Location: </b>{trip.location}</p>
-                        <p><b>Activities:</b></p>
-                        {build_activity_list(trip.activities).map((activity) => {
-                            return(
-                                <p key={activity} className="half-line-height" >&emsp;{"- " + activity}</p>
-                            )
-                        })
-                        }
+                <div className="column">
+                    <div className="fixed-sidebar">
+                        <div className="sidebar-info">
+                            <p><b>Date: </b> {trip.date}</p>
+                            <p><b>Location: </b>{trip.location}</p>
+                            <p><b>Activities:</b></p>
+                            {build_activity_list(trip.activities).map((activity) => {
+                                return(
+                                    <p key={activity} className="half-line-height" >&emsp;{"- " + activity}</p>
+                                )
+                            })
+                            }
 
-                        <Button variant="outline-primary" className="trip-details-button" size="md" >Book This Trip</Button> 
+                            <Button variant="outline-primary" className="trip-details-button" size="md" >Book This Trip</Button> 
+                            
+                            {trip.user !== null &&
+                            <>
+                                <Button variant="outline-secondary" className="trip-details-button" onClick={()=>setUpdateFormModalShow(true)} >Update trip</Button>                       
+                                <Button variant="outline-danger" className="trip-details-button" onClick={()=>setDeleteTripModalShow(true)} >Delete trip</Button>
+                            </>
+                            }
+                        </div>
                         
+                        <ModalFunc
+                            show={imageModalShow}
+                            onHide={() => setImageModalShow(false)} 
+                            content={<ImageGallery slides={slides} />}
+                            styles_header={{height: "20px", minWidth: "75%"}}
+                            modal_width_class="image-gallery-modal-width"
+                            styles_body={{height: "650px"}}
+                        />
+                        <div className="trip-details-carousel-container" style={carousel_css} onClick={() => setImageModalShow(true)}>
+                            <CarouselFade 
+                                carousel_items={carousel_items} 
+                                controls_bool={controls_bool} 
+                                caption_bool={caption_bool}
+                                indicator_bool={indicator_bool}
+                            />     
+                            <div className="overlay-carousel">
+                                <h3><b>SEE ALL PHOTOS</b></h3>
+                            </div>         
+                        </div>
+
                         {trip.user !== null &&
                         <>
-                            <Button variant="outline-secondary" className="trip-details-button" onClick={()=>setUpdateFormModalShow(true)} >Update trip</Button>                       
-                            <Button variant="outline-danger" className="trip-details-button" onClick={()=>setDeleteTripModalShow(true)} >Delete trip</Button>
-                        </>
+                            <ModalFunc
+                            show={updateFormModalShow}
+                            onHide={() => setUpdateFormModalShow(false)} 
+                            content= {<UpdateTripForm trip={trip} setUpdateFormModalShow={setUpdateFormModalShow} />}
+                            styles_header={{height: "20px"}}
+                            modal_width_class="update-trip-modal-width"
+                            // styles_body={{height: "200px"}}
+                            />
+
+                            <ModalFunc
+                            show={deleteTripModalShow}
+                            onHide={() => setDeleteTripModalShow(false)} 
+                            content= {<DeleteTripCheck trip_id={trip.id} handleSuccessfulDelete={handleSuccessfulDelete} setDeleteTripModalShow={setDeleteTripModalShow} />}
+                            styles_header={{height: "20px"}}
+                            // styles_body={{height: "200px"}}
+                            />
+                        </> 
                         }
+                                
                     </div>
-                    
-                    <ModalFunc
-                        show={imageModalShow}
-                        onHide={() => setImageModalShow(false)} 
-                        content={<ImageGallery slides={slides} />}
-                        styles_header={{height: "20px", minWidth: "75%"}}
-                        modal_width_class="image-gallery-modal-width"
-                        styles_body={{height: "650px"}}
-                    />
-                    <div className="trip-details-carousel-container" style={carousel_css} onClick={() => setImageModalShow(true)}>
-                        <CarouselFade 
-                            carousel_items={carousel_items} 
-                            controls_bool={controls_bool} 
-                            caption_bool={caption_bool}
-                            indicator_bool={indicator_bool}
-                        />     
-                        <div className="overlay-carousel">
-                            <h3><b>SEE ALL PHOTOS</b></h3>
-                        </div>         
-                    </div>
-
-                    {trip.user !== null &&
-                    <>
-                        <ModalFunc
-                        show={updateFormModalShow}
-                        onHide={() => setUpdateFormModalShow(false)} 
-                        content= {<UpdateTripForm trip={trip} setUpdateFormModalShow={setUpdateFormModalShow} />}
-                        styles_header={{height: "20px"}}
-                        modal_width_class="update-trip-modal-width"
-                        // styles_body={{height: "200px"}}
-                        />
-
-                        <ModalFunc
-                        show={deleteTripModalShow}
-                        onHide={() => setDeleteTripModalShow(false)} 
-                        content= {<DeleteTripCheck trip_id={trip.id} handleSuccessfulDelete={handleSuccessfulDelete} setDeleteTripModalShow={setDeleteTripModalShow} />}
-                        styles_header={{height: "20px"}}
-                        // styles_body={{height: "200px"}}
-                        />
-                    </> 
-                    }
-                              
-                </div>
-            </div>           
-        </div>
+                </div>           
+            </div>
+        </div>   
+    </>
     );
 }
  

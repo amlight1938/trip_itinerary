@@ -9,7 +9,7 @@ const CallApiSingleTrip = (props) => {
     const {data: trip, isLoading, errors} = useApiRequest(api_url)
 
     return (
-        <div className="container">
+        <div>
             {isLoading && <h3>Loading...</h3>}
             {errors && <h3>Data failed to load :(</h3>}
             {!errors && !isLoading &&
@@ -23,7 +23,7 @@ const CallApiSingleTrip = (props) => {
                     <>
                         {props.session.isLoggedIn && (trip.user.id === props.session.user.id)
                             ? <TripDetails trip={trip}/>
-                            : <h2>Data not found :(  You must be logged in to view your custom trips</h2>
+                            : <h2 className="container">Data not found :(  You must be logged in to view your custom trips</h2>
                         }
                     </>
                 }
