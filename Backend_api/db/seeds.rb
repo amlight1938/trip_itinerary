@@ -71,6 +71,25 @@ Entry.new(
 
 Entry.new(
     pUser_id: nil,
+    pName: "Bike from Texas to Alaska",
+    pLocation: "North America",
+    pDate: "2019-05-31",
+    pHighlightImageURL: "T4K highlight image .com",
+    pDescription: "Ride a bicycle 4,000 miles over 70 days from Austin, TX to Anchorage, AK. See North America from a new perspective and spend nights in host homes or camping in the wilderness",
+    pActivities: ["Biking", "White water rafting", "Hiking", "Camping", "Swimming"],
+    pImageURLs: ["T4K test 1 image url .com", "T4K test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 0-9",
+        "T4K do something",
+
+        "Day 10-19", 
+        "T4K do something"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
     pName: "Buffalo River Backpacking",
     pLocation: "Buffalo River, Arkansas",
     pDate: "2018-03-14",
@@ -128,6 +147,44 @@ Entry.new(
 
 Entry.new(
     pUser_id: nil,
+    pName: "Rock Climbing Overnight",
+    pLocation: "Vail, Colorado",
+    pDate: "2022-07-04",
+    pHighlightImageURL: "CO highlight image .com",
+    pDescription: "Camp in remote territory and conquer your fear of heights while climbing towering cliffs for two days",
+    pActivities: ["Rock climbing", "Camping"],
+    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1", 
+        "CO do something on day 1",
+
+        "Day 2", 
+        "CO do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Climb a 14er",
+    pLocation: "Decalibron Loop, Colorado",
+    pDate: "2022-06-11",
+    pHighlightImageURL: "CO highlight image .com",
+    pDescription: "Camp at the base of Mt. Democrat and hike 2,000ft to the summit in the early morning",
+    pActivities: ["Hiking", "Camping"],
+    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1", 
+        "CO do something on day 1",
+
+        "Day 2", 
+        "CO do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
     pName: "Pacific Northwest Roadtrip",
     pLocation: "Olympic National Park and Seattle",
     pDate: "2021-07-15",
@@ -163,4 +220,5 @@ Entry.new(
         "PR do something on day 2"
     ]
 )
+
 
