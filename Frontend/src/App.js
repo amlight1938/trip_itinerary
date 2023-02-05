@@ -10,6 +10,7 @@ import axios from "axios";
 import MyNavbar from "./MyNavbar";
 import DestinationsPage from "./Destinations/DestinationsPage";
 import BottomBanner from "./BottomBanner";
+import NotFound from "./NotFound";
 
 class App extends Component {
   constructor(props){
@@ -76,42 +77,69 @@ class App extends Component {
     return (   
       <Router>
 
-          <Route
+          {/* <Route
             render={props => (
               <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
-            )}/>
+            )}/> */}
 
               <Switch>
                 <Route exact path='/'
                   render={props => (
+                    <>
+                    <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
                     <Home {...props} session={this.state}/>
+                    <BottomBanner {...props} session={this.state}/>
+                    </>
                   )}/>
                   
                 <Route exact path='/about'
                   render={props => (
+                    <>
+                    <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
                     <About {...props} session={this.state}/>
+                    <BottomBanner {...props} session={this.state}/>
+                    </>
                   )}/>
 
                 <Route exact path='/destinations'
                   render={props => (
+                    <>
+                    <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
                     <DestinationsPage {...props} session={this.state}/>
+                    <BottomBanner {...props} session={this.state}/>
+                    </>
                   )}/> 
           
                 <Route exact path='/destinations/:tripId'
                   render={props => (
+                    <>
+                    <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
                     <CallApiSingleTrip {...props} session={this.state}/>
+                    <BottomBanner {...props} session={this.state}/>
+                    </>
                   )}/>
                
                 <Route exact path='/my-custom-trips'
                   render={props => (
+                    <>
+                    <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
                     <UserCustomTripsPage {...props} handleLogin={this.handleLogin} handleLogout={this.handleLogout} session={this.state}/>
+                    <BottomBanner {...props} session={this.state}/>
+                    </>
                   )}/>
-
+                
+                <Route>
+                  <NotFound />
+                </Route>
               </Switch>
-              <Route
+
+              {/* <Route
                 render={props => (
                   <BottomBanner {...props} session={this.state}/>
-                )}/>
+                )}/> */}
+
+                  
+              
       </Router>
     )
   }

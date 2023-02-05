@@ -14,6 +14,22 @@
   height: fit-content;
 } 
 
+.color_strip{
+  height: 50px;
+  width: 100%;
+  background-color: #454b59;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.svg_icon{
+  color: white;
+  transform: scale(1.5);
+  margin: auto;
+}
+
 .carousel-inner{
 width: 100%;
 height: 100%;
