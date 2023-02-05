@@ -52,8 +52,13 @@ const BottomBanner = () => {
                     <div className="banner-text-section" style={{flex: ".7"}}>
                         <p><b>ABOUT THE AUTHOR</b></p>
                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                            I am a self-taught software engineer with a background in Aerospace Engineering from The University of Texas at Austin. I have been a fulltime engineer at Northrop Grumman since 8/2021. My skills include React, Ruby on Rails, Python, Java, C, C#, SQL, HTML/CSS, Matlab, and Object-Oriented Programming.
                         </p>
+                        <div className="profile_link_styles">   
+                            <a href="https://www.linkedin.com/in/aaronmlight/" style={{color: "white"}}><p>LinkedIn</p></a>
+                            <a href="https://github.com/amlight1938/trip_itinerary" style={{color: "white"}}><p>GitHub</p></a>
+                        </div>
+                        
                     </div>
                     <div className="banner-text-section" style={{flex: ".3"}}>
                         <p><b>QUICK LINKS</b></p>

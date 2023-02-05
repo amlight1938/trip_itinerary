@@ -14,8 +14,6 @@ import rappel_1 from './Assets/rappel_1.jpg'
 import peak from './Assets/peak.jpg'
 
 const Home = (props) => {
-
-    // const [featured_trips, setCarousel] = useState([
     const featured_trips = ([
         {id: 8, image: mountain_view, name: 'Pacific Northwest Roadtrip', description: 'Explore Olympic National Park\'s backcountry, Seattle, and Ruby Beach. Enjoy breathtaking views as you go skydiving over Olympic National Park'},
         {id: 2, image: Alaska_sign, name: 'Bike from Texas to Alaska', description: 'Ride a bicycle 4,000 miles over 70 days from Austin, TX to Anchorage, AK. See North America from a new perspective and spend nights in host homes or camping in the wilderness'},

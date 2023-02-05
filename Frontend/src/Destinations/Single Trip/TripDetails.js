@@ -35,6 +35,7 @@ const TripDetails = ({trip}) => {
     //DisplayParagraph
     const alternateSides = false;
     const noImage = true;
+    const about_bool = false;
     const id = "id"
     const title = "day_number"
     const pgraph = "day_itinerary"
@@ -85,7 +86,7 @@ const TripDetails = ({trip}) => {
                     <div className="itineraryDiv">
                         <h3><b>Itinerary</b></h3>
                         <DisplayParagraphAndImage obj_list={trip.itineraries} idField={id} titleField={title} 
-                            pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage}/> 
+                            pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage} about_bool={about_bool}/> 
                     </div>
                 </div>
 

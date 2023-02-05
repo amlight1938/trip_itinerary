@@ -2,7 +2,7 @@ import Paragraph from "./Paragraph";
 
 //takes as input a list of objects and those objects' field names in strings ("fields"), 
 //and bools for alteranting picture sides and showing an image or not
-const DisplayParagraphAndImage = ({obj_list, idField, titleField, pgraphField, imageField, alternate_sides, no_Image}) => {
+const DisplayParagraphAndImage = ({obj_list, idField, titleField, pgraphField, imageField, alternate_sides, no_Image, about_bool}) => {
     
     let iteration_count = 0;
 
@@ -35,6 +35,7 @@ const DisplayParagraphAndImage = ({obj_list, idField, titleField, pgraphField, i
                             pgraph={obj[pgraphField]} 
                             image={image} 
                             img_left_bool={left_pic}
+                            about_bool={about_bool}
                         />
                     </div>
                 )               
