@@ -39,14 +39,16 @@ const Home = (props) => {
         <br />
         <h2 style={{textAlign: "center"}}>Featured Trips</h2>
 
-        <div className="container" style={{display: "flex", justifyContent: "space-between"}}>
-            {featured_trips.map((trip) => {
-                return(
-                    <div key={trip.id}>
-                        <TripCard trip={trip} />
-                    </div>
-                )
-            })}
+        <div className="container">
+            <div className="featured_trips">
+                {featured_trips.map((trip) => {
+                    return(
+                        <div key={trip.id}>
+                            <TripCard trip={trip} />
+                        </div>
+                    )
+                })}
+            </div>
         </div>
 
         </> 
