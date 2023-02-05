@@ -16,7 +16,8 @@ const SearchBar = ({data, filterTripsFunc}) => {
                 item.location.toLowerCase().includes(searchInput.toLowerCase()) ||
                 item.name.toLowerCase().includes(searchInput.toLowerCase()) ||
                 activity_list.toLowerCase().includes(searchInput.toLowerCase()) ||
-                item.date.toLowerCase().includes(searchInput.toLowerCase())
+                item.date.toLowerCase().includes(searchInput.toLowerCase()) ||
+                item.description.toLowerCase().includes(searchInput.toLowerCase())
             )
         })
 
@@ -37,7 +38,7 @@ const SearchBar = ({data, filterTripsFunc}) => {
         <div className="inputField search_bar">
             <input 
             className="search_inputField"
-                placeholder="Search by location, year, trip name, or activity..."
+                placeholder="Search by location, description, year, trip name, or activity..."
                 value={searchInput}
                 onChange={handleFilter}
             />
