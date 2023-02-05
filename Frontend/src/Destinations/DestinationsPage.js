@@ -12,7 +12,7 @@ const DestinationsPage = () => {
             position={"50% 50%"}
             text={"DESTINATIONS"}/>
 
-        <CallApiTripList api_url={api_url}/>
+            <CallApiTripList api_url={api_url}/>
         </>
     );
 }

@@ -37,12 +37,11 @@ class UserCustomTripsPage extends Component {
 
                     {this.props.session.isLoggedIn
                     &&  <>
-                        <div>
-                            <h4>Make your own trip</h4>
+                        <div style={{margin: "auto"}}>
+                            <h4 style={{textAlign: "center"}}>Make your own trip</h4>
                             <CustomTripForm session={this.props.session} />
                         </div>
 
-                        <br />
                         <hr />
 
                         {/* <CallApiTripList api_url={`http://localhost:3001/api/v1/trips${}`}/> */}

@@ -23,7 +23,7 @@ function CarouselFade({carousel_items, controls_bool, caption_bool, indicator_bo
                       <h2>{item.caption}</h2>
                       <h5>{item.subcaption}</h5>
                       <Link to="/destinations">
-                        <Button variant="primary" style={{opacity: ".8"}}>See destinations</Button>
+                        <Button variant="primary" style={{opacity: ".8", textAlign: "center"}}>See destinations</Button>
                       </Link>
                     </Carousel.Caption>               
               }

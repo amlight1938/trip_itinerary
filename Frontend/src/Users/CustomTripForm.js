@@ -146,7 +146,7 @@ class CustomTripForm extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{display: "grid", justifyItems: "center"}}>
                 {this.state.showErrors 
                 &&  <Alert variant="danger" onClose={() => this.hideAlerts()} dismissible>
                         <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
@@ -161,12 +161,12 @@ class CustomTripForm extends Component {
                 }
 
                 {!this.state.showCustomTripForm 
-                    &&  <Button variant="primary" onClick={() => this.customTripFormShow()}>Add a custom trip</Button>
+                    &&  <Button variant="primary" style={{marginBottom: "10px", width: "170px"}} onClick={() => this.customTripFormShow()}>Add a custom trip</Button>
                 }
 
                 {this.state.showCustomTripForm 
                 &&  <>
-                    <Button variant="primary" style={{marginBottom: "20px"}} onClick={() => [this.hideCustomTripForm(), this.handleResetFields()]}>Cancel</Button>
+                    <Button variant="primary" style={{width: "170px"}} onClick={() => [this.hideCustomTripForm(), this.handleResetFields()]}>Cancel</Button>
                 
                     <form onSubmit={this.handleSubmit}>
                         {/* MAIN TRIP ENTRIES */}
