@@ -166,11 +166,11 @@ Entry.new(
 
 Entry.new(
     pUser_id: nil,
-    pName: "Climb a 14er",
+    pName: "Climb Mt. Democrat",
     pLocation: "Decalibron Loop, Colorado",
     pDate: "2022-06-11",
     pHighlightImageURL: "CO highlight image .com",
-    pDescription: "Camp at the base of Mt. Democrat and hike 2,000ft to the summit in the early morning",
+    pDescription: "Camp at the base of Mt. Democrat (14,155ft) and hike 2,000ft of elevation to the summit in the early morning",
     pActivities: ["Hiking", "Camping"],
     pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
     pItineraries: 
@@ -220,5 +220,316 @@ Entry.new(
         "PR do something on day 2"
     ]
 )
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Backpack Long's Peak",
+    pLocation: "Rocky Mountain Nat. Park",
+    pDate: "2022-08-06",
+    pHighlightImageURL: "CO highlight image .com",
+    pDescription: "Spend two days climbing Long's Peak (14,259ft), Colorado's deadliest 14er. Spend a night in Boulderfield before your summit bid through the keyhole the next morning",
+    pActivities: ["Backpacking", "Climbing"],
+    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "CO do something on day 1",
+
+        "Day 2", 
+        "CO do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Canaveral Nat. Seashores Canoeing",
+    pLocation: "Canaveral Nat. Seashores, Florida",
+    pDate: "2022-04-15",
+    pHighlightImageURL: "FL highlight image .com",
+    pDescription: "Throw all your gear in a canoe and paddle out amongst dolphins to a secluded island to spend the night next to a roaring campfire",
+    pActivities: ["Canoeing", "Camping"],
+    pImageURLs: ["FL test 1 image url .com", "FL test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "FL do something on day 1",
+
+        "Day 2", 
+        "FL do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Biking up Pikes Peak",
+    pLocation: "Pikes Peak, Colorado",
+    pDate: "2022-05-28",
+    pHighlightImageURL: "CO highlight image .com",
+    pDescription: "Grab your roadbike and fight the urge to quit on this grueling 17 mile and 7,000ft elevation gain bike ride up Pikes Peak (14,115ft)",
+    pActivities: ["Biking", "Questioning your life choices"],
+    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "CO do something on day 1",
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Backpacking Four Pass Loop",
+    pLocation: "Maroon Bells, Colorado",
+    pDate: "2020-08-11",
+    pHighlightImageURL: "CO highlight image .com",
+    pDescription: "Climb four different mountain passses, swim in frigid mountain lakes, and enjoy good company on this 30 mile loop near Aspen, Colorado",
+    pActivities: ["Backpacking", "Swimming"],
+    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "CO do something on day 1",
+
+        "Day 2", 
+        "CO do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Buckcreek Pass Loop Backpacking",
+    pLocation: "Leavenworth and Seattle, Washington",
+    pDate: "2020-08-23",
+    pHighlightImageURL: "WA highlight image .com",
+    pDescription: "Buy plane tickets one day in advance for this spantaneous 40 mile backpacking trip with some of the most gorgeous views you'll ever see. Explore Seattle after the hike",
+    pActivities: ["Backpacking", "Exploring Seattle"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "WA do something on day 1",
+
+        "Day 2", 
+        "WA do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "After work rock climbing",
+    pLocation: "Clear Creek Canyon, Colorado",
+    pDate: "2022-10-05",
+    pHighlightImageURL: "CO highlight image .com",
+    pDescription: "To get to this climbing crag, you'll need to climb a tree, hook into a cable, and pull yourself across a river. Make sure you bring a headlamp since the sun is going down",
+    pActivities: ["Rock climbing"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Great Sand Dunes Day Trip",
+    pLocation: "Great Sand Dunes Nat. Park",
+    pDate: "2023-01-15",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Experience a real life game of Settlers of Catan as you explore the park's sand dunes, mountains, forests, plains, and frozen waterfalls all in one day",
+    pActivities: ["Hiking"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Weekend in New York City",
+    pLocation: "New York, New York",
+    pDate: "2021-12-10",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Go ice skating in Brooklyn, get a tour of the 3rd World Trade Center, discover a popular underground speakeasy, and win an extremely competitive game of bar trivia with your team",
+    pActivities: ["Ice skating", "Walking", "Nightlife"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+
+        "Day 2", 
+        "PR do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Italy",
+    pLocation: "Italy",
+    pDate: "2018-05-01",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Spend a month in Italy traveling to places like Cinque Terre, the Alps, Florence, Rome, and Milan. Take an italian cooking class, swim in the Mediterranean, and hike along the beautiful coastline",
+    pActivities: ["Swimming", "Hiking", "Cooking", "Nightlife"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+
+        "Day 2", 
+        "PR do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Alaska Multisport",
+    pLocation: "Anchorage, Kenai Fjords, Seward, AK",
+    pDate: "2019-08-10",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Take in magnificent views of a pristine wilderness and wildlife at Kenai Fjords Nat. Park, go fishing on the beach, kayak in the bay, and hike on Exit Glacier",
+    pActivities: ["Kayaking", "Hiking", "Wildlife watching", "Fishing"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+
+        "Day 2", 
+        "PR do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Midnight 14er Hike",
+    pLocation: "Mt. Quandary (14,271 ft)",
+    pDate: "2022-09-24",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Enjoy the peaceful and quiet night as you gaze up at the stars throughout the trek up Mt. Quandary (14,271 ft). If you're lucky, a mountain goat or two will walk right up to you and say hi",
+    pActivities: ["Hiking", "Star gazing"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Yosemite Backpacking and San Francisco",
+    pLocation: "Yosemite Nat. Park, San Francisco, California",
+    pDate: "2015-06-01",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Backpack through Yosemite's beautiful wilderness, walk across cloud's rest, and top off the trip with a climb up Half Dome. Afterwards, travel to San Francisco to see Alcatraz",
+    pActivities: ["Backpacking"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+
+        "Day 2", 
+        "PR do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Eagle Rock Loop Backpacking",
+    pLocation: "Ouachita Mountains, Arkansas",
+    pDate: "2017-06-06",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Experience rugged Arkansas on this 28 mile steep up and down loop in the Ouachita Mountains",
+    pActivities: ["Backpacking"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+
+        "Day 2", 
+        "PR do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "IRONMAN Indiana",
+    pLocation: "Muncie, Indiana",
+    pDate: "2021-10-02",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Travel to the middle of nowehere Indiana to race in Indiana's first full Ironman! Swim 2.4 miles, Bike 112 miles, and run 26.2 miles? Easy right...",
+    pActivities: ["Swimming", "Biking", "Running", "Questioning your life choices"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+
+        "Day 2", 
+        "PR do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Grand Staircase Roadtrip",
+    pLocation: "Grand Canyon, Bryce Canyon and Zion Nat. Parks, Utah",
+    pDate: "2017-07-31",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Travel to the Grand Canyon, Bryce Canyon and Zion National Parks. Conquer your fear of hieghts at Zion on the Angle's Landing trail, which is not for the faint of heart.",
+    pActivities: ["Hiking"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+
+        "Day 2", 
+        "PR do something on day 2"
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Lost Maples Backpacking",
+    pLocation: "Lost Maples St. Park, Texas",
+    pDate: "2021-04-09",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Do a quick and spontaneous one nighter trip at Lost Maples.",
+    pActivities: ["Backpacking"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "PR do something on day 1",
+
+        "Day 2", 
+        "PR do something on day 2"
+    ]
+)
+
+# Entry.new(
+#     pUser_id: nil,
+#     pName: "",
+#     pLocation: "",
+#     pDate: "",
+#     pHighlightImageURL: "PR highlight image .com",
+#     pDescription: "",
+#     pActivities: ["", ""],
+#     pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+#     pItineraries: 
+#     [
+#         "Day 1",
+#         "PR do something on day 1",
+
+#         "Day 2", 
+#         "PR do something on day 2"
+#     ]
+# )
 
 
