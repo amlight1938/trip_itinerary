@@ -351,7 +351,7 @@ Entry.new(
     pLocation: "New York, New York",
     pDate: "2021-12-10",
     pHighlightImageURL: "PR highlight image .com",
-    pDescription: "Go ice skating in Brooklyn, get a tour of the 3rd World Trade Center, discover a popular underground speakeasy, and win an extremely competitive game of bar trivia with your team",
+    pDescription: "Ice skate in Brooklyn, get a tour of the 3rd World Trade Center, discover an underground speakeasy, and win an extremely competitive game of bar trivia with your team",
     pActivities: ["Ice skating", "Walking", "Nightlife"],
     pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
     pItineraries: 
@@ -370,7 +370,7 @@ Entry.new(
     pLocation: "Italy",
     pDate: "2018-05-01",
     pHighlightImageURL: "PR highlight image .com",
-    pDescription: "Spend a month in Italy traveling to places like Cinque Terre, the Alps, Florence, Rome, and Milan. Take an italian cooking class, swim in the Mediterranean, and hike along the beautiful coastline",
+    pDescription: "Spend a month in Italy traveling to Cinque Terre, the Alps, Florence, Rome, and Milan. Take a cooking class, swim in the Mediterranean, and hike along the coast",
     pActivities: ["Swimming", "Hiking", "Cooking", "Nightlife"],
     pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
     pItineraries: 
@@ -408,7 +408,7 @@ Entry.new(
     pLocation: "Mt. Quandary (14,271 ft)",
     pDate: "2022-09-24",
     pHighlightImageURL: "PR highlight image .com",
-    pDescription: "Enjoy the peaceful and quiet night as you gaze up at the stars throughout the trek up Mt. Quandary (14,271 ft). If you're lucky, a mountain goat or two will walk right up to you and say hi",
+    pDescription: "Enjoy the peaceful and quiet night as you gaze up at the stars throughout the trek up Mt. Quandary (14,271 ft). If you're lucky, a mountain goat will walk right up to you and say hi",
     pActivities: ["Hiking", "Star gazing"],
     pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
     pItineraries: 
