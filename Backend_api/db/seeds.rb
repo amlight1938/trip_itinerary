@@ -81,10 +81,25 @@ Entry.new(
     pItineraries: 
     [
         "Day 0-9",
-        "T4K do something",
+        "Austin, TX -> Whichita, KS",
 
         "Day 10-19", 
-        "T4K do something"
+        "Whichita, KS -> Estes Park, CO",
+
+        "Day 20-29", 
+        "Estes Park, CO -> West Yellowstone, WY",
+
+        "Day 30-39", 
+        "West Yellowstone, WY -> Glacier Nat. Park, MT",
+
+        "Day 40-49", 
+        "Glacier Nat. Park, MT -> Smithers, British Columbia",
+
+        "Day 50-59", 
+        "Smithers, British Columbia -> WHitehorse, YT",
+
+        "Day 60-70", 
+        "Whitehorse, YT -> Anchorage, AK",
     ]
 )
 
@@ -119,10 +134,36 @@ Entry.new(
     pItineraries: 
     [
         "Day 1", 
-        "HI do something on day 1",
+        "Start the day off with a 13 mile peaceful early morning run in the rain on the Big Island. Run through some rural areas 
+        outside the city and see some wild rainbow colored chickens that are surprisingly territorial. Once you come back from 
+        the run you'll meet your tour guide group and hit the road with them. First you'll hit the southernmost point in the US 
+        to hike to a green sand beach. Your group will then head to your lodge next to Hawaii Volcanoes National Park. You'll feel 
+        like you are in Jurassic Park.",
 
         "Day 2", 
-        "HI do something on day 2"
+        "Today is the first bike ride of the trip. Explore dried lava fields, the coastline, and forest roads. Afte the bike ride, 
+        enjoy a few hours of free time in the hot tub or around the bed and breakfast. Meet for dinner with your tour group in the 
+        evening and get to know some people on the tour.",
+
+        "Day 3", 
+        "Take a guided hike in Volcanoes National Park and hear exciting facts about the terrain. See remnants of volcanic eruptions, 
+        caves, and tropical forests. After the hike, drive with your group to the east side of the Island and take a bike ride along 
+        the beautiful and quiet coastline with many opportunities for photos.",
+
+        "Day 4", 
+        "Drive over the volcano from the East side of the Big Island to the West side to the resort you will be staying in for the 
+        final two nights. Before stopping at the resort, you'll do a bike ride along the north side of the island along the same route 
+        that the Ironman World Championship takes each year. This is something you've been really looking forward to since you've been 
+        training for an Ironman of your own for the past several months. The route is notoriously windy so try not to get blown over! 
+        After the ride, enjoy some drinks at the resort and explore the beach.",
+
+        "Day 5", 
+        "You've got some free time today and it just so happens that two high school buddies are in Hawaii at the same time as you! 
+        Head over to Kona with them to take a surfing lesson from a local. Shred some waves and grab a bite with them for the night.",
+
+        "Day 6", 
+        "Last day in Hawaii :( Not much going on today buy you'll start the morning off with some friendly competition on the voleyball courts with some other folks on 
+        your tour. Say your goodbyes and reminisce about the awesome time you've had in Hawaii!",
     ]
 )
 
@@ -141,26 +182,44 @@ Entry.new(
         "MN do something on day 1",
 
         "Day 2", 
-        "MN do something on day 2"
+        "MN do something on day 2",
+
+        "Day 2", 
+        "MN do something on day 2",
+
+        "Day 2", 
+        "MN do something on day 2",
     ]
 )
 
 Entry.new(
     pUser_id: nil,
-    pName: "Rock Climbing Overnight",
+    pName: "Rock Climbing / Rafting Overnight",
     pLocation: "Vail, Colorado",
     pDate: "2022-07-04",
     pHighlightImageURL: "CO highlight image .com",
     pDescription: "Camp in remote territory and conquer your fear of heights while climbing towering cliffs for two days",
-    pActivities: ["Rock climbing", "Camping"],
+    pActivities: ["Rock climbing", "Camping", "White water rafting"],
     pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
     pItineraries: 
     [
         "Day 1", 
-        "CO do something on day 1",
+        "Start the trip off by playing Big Bootie Mix by Two Friends in the car (the perfect roadtrip soundtrack). You'll arrive at 
+        the campsite in the afternoon and have some time to setup camp. Make sure not to step in any cow patties! This is one of the 
+        most remote campsites you'll ever see. This is Bureau of Land Management Land so you dont have to worry about permits. Build 
+        a fire and roast some weenies while you meet some new friends. Just across the field you're camping in is an incredible view 
+        of a giant canyon which you'll be climbing in tomorrow so get a good nights sleep.",
 
         "Day 2", 
-        "CO do something on day 2"
+        "Take your time in the morning and relax around the morning campfire for breakfast. After that head on over to the crag to 
+        start the day off. This will be your first day attempting to lead a climb (a climbing technique whereby you clip in to points 
+        on the wall as you climb up instead of having the anchor already set up at the top). This technique is more dangerous but 
+        comes with a massive adrenaline rush! Finish off the day with another relaxing campfire, some drinks, and a beautiful sunset.",
+
+        "Day 3",
+        "You know how they say you should find a friend with a boat? Well you finally found one. Someone on the trip has recently bought 
+        his own river raft and brings you along for the ride on the Colorado River. The rapids arent very high at this point so it turns 
+        into a relaxing drink and float trip."
     ]
 )
 
@@ -176,10 +235,17 @@ Entry.new(
     pItineraries: 
     [
         "Day 1", 
-        "CO do something on day 1",
+        "Nothing produces flat tires like a rocky dirt road, and thats just what you'll be driving on to get to the trailhead of 
+        the Decalibron Loop. Once you change the flat tire on one of your group's two cars, leave that car in a hostel's parking 
+        lot and cram into one car. Its more fun that way anyways right. Drive through the night looking for a spot to setup camp 
+        and enjoy the Dominos pizza you brought along for dinner. ",
 
         "Day 2", 
-        "CO do something on day 2"
+        "Since your 2 wheel drive car couldnt get up the hill, you had to camp a mile down the road so you get to hike extra today! 
+        The Decalibron Loop is one trail that conects four 14ers. Start with Mt. Democrat, the tallest one. This climb will test you. 
+        It will be steep, rocky, snowy, and icy. On the bright side, you'll get to slide down coming back! Once you finish Mt. Democrat 
+        you and your group will be way more tired than anticipated. Going home seems like a solid idea, especially since you have to drive 
+        a car with a donut for 2 hours on a highway. "
     ]
 )
 
@@ -271,7 +337,14 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "CO do something on day 1",
+        "Not sure what you were thinking when you had the brilliant idea of biking up Pikes Peak in Colorado. And on top of that, 
+        you only just moved to Colorado like two weeks ago. Can you spell Oxygen deprivation? This will be a tough ride. 17 miles 
+        and 7,000 ft of elevation gain. Good thing you'll have a great friend biking with you who is also a sucker for the pain. 
+        The last few miles will be the most difficult as the winds will be strong, the temperatures will be in the 30s, and your 
+        fear of heights will be taking over because the roads have steep dropoffs and no guard rails, but you get cheers from every 
+        car that passes you. Once at the top, make sure to celebrate and then start asking some nice folks for a ride down because 
+        you cannot handle another minute on that bike. Even though you got a ride down, you leave the mountain proud that you just 
+        completed a monster ride!",
     ]
 )
 
@@ -325,7 +398,14 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "PR do something on day 1",
+        "For a spontaneous adventure, look no further than 30 minutes away from Denver. You and a friend can grab your gear head 
+        over to Clear Creek Canyon. The wall you want to get to is guarded by a fast moving river so to get there you'll start by 
+        climbing 20 feet up in a tree and clip into a cable that connects the tree, runs over the river, and attaches to the wall 
+        on the other side. Once you're clipped in, pull yourself accross the river in whats know as a Tyrolean Traverse (look it up).
+        Once at the wall, you can begin climbing. These routes are 130 ft tall! Great for someone with a fear of heights. After a few 
+        ascents, the sun sets and you'll quickly realize that you ant see the next bolt to clip into on the wall. You'll have to 
+        carefully downclimb a couple feet to the last bolt in order be lowered. Now you have to traverse the river and climb down 
+        the tree in the dark. Bring a headlamp next time!",
     ]
 )
 
@@ -341,7 +421,14 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "PR do something on day 1",
+        "Leave at 3am from Denvr to start a 3 hour drive to Great Sand Dunes National Park. Enteratain yourselves with 2000s pop 
+        and Nickleback on the way there. If you arrive before the park opens take a short hike to Zapata Falls outside the park. 
+        By this time of year it is completely frozen over as well as the creek below it. To get to the falls you'll need to walk 
+        on the frozen creek which can be quite scary. Take it slow and try not to slip on the ice. Once finished with the hike 
+        drive into the park to climb the sand dunes. Enjoy the miles of sand dune scenery because it is unlike anything else 
+        you'll see in Colorado. Bring face protetion since the winds are very strong and tend to pick up a lot of sand. You can 
+        sandboard during the summer months but if you're there in the winter, you can try to tube down if you have something 
+        slipery enough.",
     ]
 )
 
@@ -408,7 +495,7 @@ Entry.new(
     pLocation: "Mt. Quandary (14,271 ft)",
     pDate: "2022-09-24",
     pHighlightImageURL: "PR highlight image .com",
-    pDescription: "Enjoy the peaceful and quiet night as you gaze up at the stars throughout the trek up Mt. Quandary (14,271 ft). If you're lucky, a mountain goat will walk right up to you and say hi",
+    pDescription: "Enjoy the peaceful and quiet night as you gaze up at the stars on the trek up Mt. Quandary (14,271 ft). If you're lucky, a mountain goat will walk right up to you and say hi",
     pActivities: ["Hiking", "Star gazing"],
     pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
     pItineraries: 
@@ -468,10 +555,33 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "PR do something on day 1",
+        "You're signed up for a full Ironman! Fly into Indianapolis two days early to get enough time to settle in and pickup your 
+        race packet. Explore Indianapolis for a few hours on your own today since your friends who are also doing the race are arriving 
+        after you. Don't tell anyone but theres not much to see in Indianapolis. Once everyone arrives, gather the squad into a van and 
+        head over to your Airbnb outside of Muncie, IN, the city where the race will take place.",
 
         "Day 2", 
-        "PR do something on day 2"
+        "Today you'll pick up your race packet, attend an information session for all participants, and check out part of the race course. 
+        Test out the wetsuit you're renting, take your bike for a quick ride to make sure it rides nicely after being shipped, and shakeout 
+        your legs on a brief run. At night, organize all your gear into the proper transition bags and try to get a good night's sleep (you 
+        wont be able to)",
+
+        "Day 3",
+        "The moment you've been training for has finally arrived - Race day! A hurricane of emotions is swirling through your mind 
+        at this point - fear and excitemnt among the most prevalent. You've trained hard for 9 months and made sacrifices in your 
+        lifestyle for this, and now it's time to earn your reward. The race starts with a 2.4 mile swim at sunrise through open water. 
+        Get comfortable with being punched and kicked as you're swimming in a crowd of hundreds of people. After the swim, run over to 
+        your bike in the transition area, put on your bike jersey, eat a quick snack and you're off on a 112 mile bike ride. After about 
+        30 miles you start to feel some pain in your left knee. You trained hard and experienced this injury during your trining just a 
+        few weeks before and unfortuntley it has found you agian. Good thing you're a sucker for the pain. Start making up some songs 
+        about corn or something becuase biking 112 miles alone in Indiana with knee pain isn't the most entertaining thing in this world. 
+        Finishing the bike ride is a fantastic feeling! Lay down at your transition area and take a quick break. Try not to think about 
+        the whole ass marathon you have to run to finish the race. If you thought biking with a hurting knee was bad, you're infor a 
+        surprise when you start running. Soon it gets dark and those feelings of doubt that you pushed through so many times in training 
+        start piling up in your head, only this time far worse than you've experienced before. All you can think about is putting one 
+        foot after the other and never stopping because if you stop you know you might never start again. Keep your pace in mind since there 
+        is a 16.5 hour cutoff before being disqualified. After 15 hours and 56 minutes, the occasional tears, and hundreds of training miles 
+        later, you are crossing the finish line and it feels more incredible than you ever could have imagined."
     ]
 )
 
@@ -494,25 +604,6 @@ Entry.new(
     ]
 )
 
-Entry.new(
-    pUser_id: nil,
-    pName: "Lost Maples Backpacking",
-    pLocation: "Lost Maples St. Park, Texas",
-    pDate: "2021-04-09",
-    pHighlightImageURL: "PR highlight image .com",
-    pDescription: "Do a quick and spontaneous one nighter trip at Lost Maples.",
-    pActivities: ["Backpacking"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
-    pItineraries: 
-    [
-        "Day 1",
-        "PR do something on day 1",
-
-        "Day 2", 
-        "PR do something on day 2"
-    ]
-)
-
 # Entry.new(
 #     pUser_id: nil,
 #     pName: "",
@@ -521,6 +612,25 @@ Entry.new(
 #     pHighlightImageURL: "PR highlight image .com",
 #     pDescription: "",
 #     pActivities: ["", ""],
+#     pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+#     pItineraries: 
+#     [
+#         "Day 1",
+#         "PR do something on day 1",
+
+#         "Day 2", 
+#         "PR do something on day 2"
+#     ]
+# )
+
+# Entry.new(
+#     pUser_id: nil,
+#     pName: "Lost Maples Backpacking",
+#     pLocation: "Lost Maples St. Park, Texas",
+#     pDate: "2021-04-09",
+#     pHighlightImageURL: "PR highlight image .com",
+#     pDescription: "Do a quick and spontaneous one nighter trip at Lost Maples.",
+#     pActivities: ["Backpacking"],
 #     pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
 #     pItineraries: 
 #     [
