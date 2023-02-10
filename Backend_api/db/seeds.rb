@@ -96,7 +96,7 @@ Entry.new(
         "Glacier Nat. Park, MT -> Smithers, British Columbia",
 
         "Day 50-59", 
-        "Smithers, British Columbia -> WHitehorse, YT",
+        "Smithers, British Columbia -> Whitehorse, YT",
 
         "Day 60-70", 
         "Whitehorse, YT -> Anchorage, AK",
@@ -115,10 +115,34 @@ Entry.new(
     pItineraries: 
     [
         "Day 1", 
-        "AR do something on day 1",
+        "You and your buddies had such a blast last spring break that you thought you'd go for round two this spring break. This time 
+        you head out to Arkansas to do some backpacking around Buffal River. You've seen ome videos online about a secret spot to setup 
+        camp and watch the sunset and you're determined to find it. The drive isnt too bad so you get to campat the trailhead with 
+        some time to relax or explore before the sun goes down. Your buddy has the urge to cook beer boiled bratwursts. So half the 
+        night will be spent cleaning up after the boiled beer brats spill everywhere - a good laugh to get the trip started.",
 
         "Day 2",
-        "AR do something on day 2"
+        "First day of backpacking! Head out on the trail the next morning and begin your search of the fabled \"secret camping spot\" 
+        that you found on youtube during your research for this trip. After hiing a few miles you realize you have no clue where this 
+        spot is and that you also have been hiking for a few hours but have kind of been going in circles. Whoopsies. After a while, 
+        everyone questions why you built a whole trip around trying to find one secret spot that a youtube video told us about yet at 
+        the same time, everyone is having a great time. You soon find an abandoned cabin with a large fire ring and decide to camp there. 
+        Enjoy a nice dinner cooked over the fire while you admore the view over a few cliffs in the distance. It wasn't the spot you were 
+        hoping for but it certainly is beatiful.",
+
+        "Day 3",
+        "On your second day of hiking, take in the towering cliffs on either side of you as you cross a freezing cold river barefoot 
+        to not get your shoes wet. Take a nice break on the other side of the river and bust out the summer sausage you brough for lunch 
+        (no backpacking tip is complete without a summer sausage for lunch). Gain some elevation and setup camp at the top of one of the 
+        cliffs wth views in all directions. Turns out one of your more wild friends brought a few drinks in his backpack. As you're 
+        sitting around the campfire in the dark, you see two people coming though the woods towards you. Its pretty chily but all they are 
+        wearing are jeans and a long sleeve shirt, and all they have to guide them is the light of a DSLR camera. They claim theyve been 
+        hiking for hours and have gotten lost. Make some new friends tonight and let them stay with you guys overnight. Good thing you brought 
+        your hammock to sleep in while they take your tent.",
+
+        "Day 4",
+        "Head on back to your cars in the morning, which is also in the same direction as your new friends' car. ENjoy the final views 
+        of the Buffal National River as you arrive at your car and drive off concluding another successful spring break backpacking trip."
     ]
 )
 
@@ -174,21 +198,31 @@ Entry.new(
     pDate: "2016-03-20",
     pHighlightImageURL: "MN highlight image .com",
     pDescription: "Travel 50 miles canoeing, portaging, and camping out under the stars in the Minnesota wilderness",
-    pActivities: ["Canoeing"],
+    pActivities: ["Canoeing", "Fishing", "Cliff jumping"],
     pImageURLs: ["MN test 1 image url .com", "MN test 2 image url .com"],
     pItineraries: 
     [
         "Day 1", 
-        "MN do something on day 1",
+        "Grab your paddles, canoes, and enough food for 4 days out on the water. This trip will be like all the backpacking you've 
+        done before but instead of walking, you'll be canoeing and setting up camp along the sides of rivers and lakes, with the 
+        occasional portage (carrying your canoes over land). Also bring a fishing rod with you to tow behind the canoe since whatever 
+        you catch you can eat.",
 
         "Day 2", 
-        "MN do something on day 2",
+        "Wake up early in order to get to the campsite known for its cliff jumping! This will be your first clif jumping experience. 
+        The cliff is about 40 feet tall and somehow the first few times you jump you're not scared but after the first few, you start 
+        to rethink it all. Maybe your brain is finally catching up and realizing how dumb this is? But either way it's an incredible 
+        time so you dont want to stop. ",
 
-        "Day 2", 
-        "MN do something on day 2",
+        "Day 3", 
+        "Wake up in the middle of the night to the sound of one of your canoes falling into the river and floating away. Scramble to 
+        hop into another one to get it back. A great adrenaline inducing start to the day! At camp, gather some wild berries and learn 
+        how to gut and clean the fish that you caught earlier in the day. For dessert, experiment with making a gatorade cake by cooking 
+        gatorade powder. It'll turn out exactly as you're imagining it would right now. So maybe dont try it after all.",
 
-        "Day 2", 
-        "MN do something on day 2",
+        "Day 4", 
+        "Last day on the water! Enjoy good company and paddle through some pseudo rapids on your way back to basecamp to finish 
+        out the trip with a bang.",
     ]
 )
 
@@ -299,10 +333,21 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "CO do something on day 1",
+        "You will be splitting up the 15 mile roundtrip hike up Long's Peak (14,259ft) into two days. Today you will hike to the 
+        Boulderfields and setup camp in order to get a head start on the summit bid tomorrow. Along the way you'll see some stunning 
+        views of the mountain, plenty of wildlife, and even some Alpacas.",
 
         "Day 2", 
-        "CO do something on day 2"
+        "Today is summit day! Wake up in the middle of the night and look into the distance to see clusters of headlamps headed 
+        your way. These are all hikers who are doing all 15 miles in one day. Gather your gear and head off towards the keyhole. 
+        The real fun begins after you cross through the Keyhole. There are four sections on the hike to the summit - the ledges, 
+        the trough, the narrows, and the final summit climb. The ledges is retty scary at first but you slowly adjust and feel 
+        more comfortable as you move forward. Once you're through the ledges, you begin the 600 ft climb up the trough. Its more 
+        of a scramble than a hike. Bring a helmet to protect against falling rocks from the climbers above you. If you're afraid 
+        of heights then the next part is the worst. The Narrows are just that ... narrow! One wrong step and you could easily fall 
+        off the side of the mountain. After the Narrows is the final push to the summit, not as hard as the last few climbs but 
+        still a challenge. When you finally reach the summit, look for the tiny dots below you in the boulderfield that are your 
+        tents you left from the night before."
     ]
 )
 
@@ -318,10 +363,16 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "FL do something on day 1",
+        "Once all your gear is stowed away in the canoe, start paddling out into the Indian river and through the maze of islands 
+        that is Canaveral National Seashores. If you're lucky, you'll see some dolphins stick their heads out of the water near 
+        your canoe. Gp ahead and name them if you feel so inclined. Your permit is for a small island covered with some pretty 
+        thick mangroves except for a clearing for the tents and a fire ring. You wont be abe to do much eploring on the island 
+        since the vegetation is so thick but you can continue canoeing after camp has been setup. Make dinner over the fire and 
+        chill in a hammock ladder between two perfectly placed palm trees.",
 
         "Day 2", 
-        "FL do something on day 2"
+        "After a night on your own island, it's time to head home. Packup your gear and start paddling back to the car. Keep an eye 
+        out for Ollie and Kickflip (the dolphins you named yesterday) on the way back."
     ]
 )
 
@@ -462,11 +513,28 @@ Entry.new(
     pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
     pItineraries: 
     [
-        "Day 1",
-        "PR do something on day 1",
+        "Week 1",
+        "This month you will be staying in Milan for a study abroad class. You will be going to class in Milan for four days a week 
+        and over the three day weekends you will be able to travel to various cities aroud Italy! This first week you'll do some 
+        exploring around Milan. You can checkout Il Duomo, the Navigli District, and Sforzesco Castle among other things. This first 
+        weekend you will be traveling by train to Porto Venere and Cinque Terre, a group of beautiful towns along the cliffs overlooking 
+        the Mediterranean Sea. Hike between towns, swim in the Mediterranean, enjoy dinners at small local restuarants, and stay in a 
+        local hostel for the weekend.",
 
-        "Day 2", 
-        "PR do something on day 2"
+        "Week 2", 
+        "During your second week in Italy, along with the rest of your class, you will be attending an Italian cooking class in Milan. 
+        The most valuable lesson you will learn is called \"chef's touch\". Ove the weekend, take a train to Florence to do some more 
+        exploring. Take in the views from the top of Il Duomo and see the countryside.",
+
+        "Week 3", 
+        "For the third week in Itlay, try visiting Rome to see things like the Colosseum, Trevi Fountain, and Vatican City. Be ure to 
+        make plenty of \"when in rome\" jokes as well.",
+
+        "Week 4", 
+        "For your last weekend in Italy, your class will be traveling to the Alps. You'll be staying in a small hotel rihgt in the 
+        middle of the mountains with incredible views in every direction. Take a gondola to the peak of one of the mountains for some 
+        awesome views, find some secluded hiking trails, and in the evenings enjoy some excellent Italian dinners with your new friends 
+        and reminisce over the last month that you have spent together. This is a trip that you will truly remember.",
     ]
 )
 
@@ -501,7 +569,15 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "PR do something on day 1",
+        "It's just you, your headlamp, and the starlit night sky as you hike up Mt. Quandary (14,271 ft) in the middle of the night. This 
+        hike isnt easy but compared to most 14er hikes in Colorado it's not bad - perfect for a first midnight 14er ascent! Bundle up 
+        warmly as it will be below freezing for a large portion of the hike. If you stop along the way to listen to the woods around 
+        you, you'll hear the occasional animal scurrying around in the bushes but for the most part it's completely silent. The wind 
+        isnt bad at night except at the veryb top of the mountain. Once you get there hunker down next to some natural wind barriers 
+        and stare up at the stars. You will be the first person up the mountain today, and thats a pretty big accomplishment becuase 
+        most Coloradans wake up early and hike fast when it comes to 14ers. On the way down, watch the sky turn from black violet 
+        to dark blue to light blue as the sun peeks over the horizon. Mountain goats will come out around this time and if you're lucky 
+        they'll come right up to you.",
     ]
 )
 
@@ -536,10 +612,29 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "PR do something on day 1",
+        "Pile into Bluey (the name you gave your frined's car) and start the drive to the Ouachita Mountains in Arkansas. The 28 
+        mile loop you are about to take on is no joke. There is a huge amount of elevation gain and loss throughout the trail but 
+        the views and scenery are worth it. To get to the trailhead, you'll need to drive down a pretty rocky road, one that your 
+        car is certainly not meant to drive on, and you'll definitely deal with the consequences later, but for now you've arrived 
+        at the trailhead and are ready to begin the hike. Right off the bat you start breathing heavy as you climb up the first 
+        of many mountain ridges.",
 
         "Day 2", 
-        "PR do something on day 2"
+        "In the morning, climb up to a peak to take in the stuning Arkansas views and snag some pictures. Continue hiking through 
+        dense brush covering the trail and up and down the mountain ridges until you arrive at your next campsite. Build a big fire
+        and remove the ticks that you mot certainly picked up crawling through the brush.",
+
+        "Day 3", 
+        "Congratulations, you brought a broken water filter on this trip. Now it takes like 30 minutes to filter enough water for 
+        one water bottle. Just means you get to enjoy the rivers for longer. Find a nice campsite along the river for your thrid 
+        night. By this time the terrain is a bit different from the first two days but just as pretty.",
+
+        "Day 4", 
+        "Last day of hiking! Finish the hike strong and return to your car to see that you got a flat tire from the rocky road 
+        to the trailhead. Time for your first car tire change! After half an hour of figuring that out, youre off! Once you're back 
+        on paved road you realize you are low on gas, low on tire pressure, and are hungry for a snack. You're in the middle of 
+        nowehere so you keep driving and suddleny a miracle... you find a pie shop, gas station, and auto repair shop all right 
+        next to each other. After getting the tire fixed and loading up on fried pies, head on home and conclude a great trip."
     ]
 )
 
@@ -597,10 +692,16 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "PR do something on day 1",
+        "Bryce canyon",
 
         "Day 2", 
-        "PR do something on day 2"
+        "Grand Canyon",
+
+        "Day 3", 
+        "Zion",
+
+        "Day 4", 
+        "Angels Landing",
     ]
 )
 
