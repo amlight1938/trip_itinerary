@@ -338,10 +338,38 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "PR do something on day 1",
+        "Start your Puerto Rico trip with some drinks and lunch at a beach bar. Afterwards jump in on some pickup volleyball and
+        partake in wrestlemania with your travel companions in the ocean. After enjoying the beach head over to Old San Juan to explore 
+        and watch the sunset while sitting on the walls of Catillo San Felipe del Morro. See Puerto Rico's nightlife at La Placita, a 
+        group of streets with bars whos' parties extend out onto the streets.",
 
         "Day 2", 
-        "PR do something on day 2"
+        "Drive about 1.5 hours inland to ride 'The Monster' zipline course through the jungle at Toro Verde Adventure Park. You'll see 
+        incredible views of the jungle from above and zip right by the tips of trees, which are seemingly close enough to reach out 
+        and touch. After the ziplines, head back to San Juan and try some local fruits such as Guanabana or Passionfruit. Grab dinner 
+        in San Juan and play a surprise game of pickup basketball on the court that appeared in the 'Despacito' music video. After a 
+        fun and unexpected workout, head back to your Airbnb and introduce your travel companions to the TV show 'Scrubs' by watching 
+        the musical episode together.",
+
+        "Day 3", 
+        "Take Angelito Trail to reach a river within the only natural rainforest in the United States, El Yunque. After the hike, 
+        visit Las Pailas, a naturally formed rock water slide and swimming hole. Climb and walk on boulders upstream of the 
+        waterslide to explore less traveled parts of the jungle. Since you've been swimming in the river and are only wearing a swim 
+        suit, do your exploring in just shorts and no shoes or shirt and it will feel so freeing! On the drive out of Las Pailas be
+        sure to grab some fresh mangos hanging from the trees along the side of the road to snack on. For dinner, head to los Kioskos 
+        de Luquillo, a string of food shops along the beach. Try no to spend too much time at dinner becuase you have an appointemnt 
+        for bio bay kayaking in Fajardo! A bio bay contains water that illuinates when something moves through it and at night it is 
+        extremely beautiful. To get to the bio bay you will be kayaking through thick mangroves at dusk so bring your bug spray!",
+
+        "Day 4",
+        "Return to El Yunque today to see some different trails. Climb a tower for a nice view and hike a short trail to a waterfall. 
+        From El Yunque, head west along the north side of Puerto Rico to Cuevo del Indio, a cave system along the bech which was once 
+        lived in many centuries ago. after climbing into the caves and taking in the views, head to Parguera on the south west corner 
+        of the island to go bio bay swimming (kayaking just wasnt enough). You wont want to miss this becuase it will be one of the most
+        memorable experiences of the entire trip. You will be swimming in an inlet connecting to the ocean with nobody around for miles. 
+        Watch the water glow around you as you jump in and swim around. Gaze up at the stars as you float in the calm water, hearing nothing 
+        but the water muffled sounds of nature.",
+
     ]
 )
 
@@ -435,10 +463,25 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "CO do something on day 1",
+        "Start this 27 mile loop at Maroon Snowmass Trailhead. Keep an eye out for wildlife as moose are commonly seen in this area. 
+        Once you reach Maroon Lake, setup camp for the night and enjoy your first night in Colorado by taking in the vast night sky 
+        which is cluttered with stars.",
 
         "Day 2", 
-        "CO do something on day 2"
+        "You'll start feeling the the effects of elevation right at the beginning of the day as you make your way up Buckskin pass. 
+        Buckskin will be the first of four passes that you will hike over on this lopp. It won't be easy but you will certainly 
+        feel accomplished by the time you get to camp tonight at Snowmass Lake. Go for a swim in Snowmass Lake if you want to 
+        experience glacier water tmeperatures.  ",
+
+        "Day 3", 
+        "Attmept to conquer the second of four mountain passes today - Trail Rider Pass. Entertain yourselves by playing some Lord of 
+        the Rings soundtrack music since it fits with the landscape. Descend into a valley after this pass and follow a stream for a 
+        few miles until you find a good spot for camp.",
+
+        "Day 4",
+        "Today is your last day of hiking and you'll be completeing the loop. To do this you will climb over the last two mountain 
+        passes - Frigid Air Pass and West Maroon Pass. This will be the most challenging day in terms of legnth and elevation gain. 
+        After you finish the hike, celebrate with a cheeseburger, or two, in Aspen, CO, which is not far from the trailhead."
     ]
 )
 
