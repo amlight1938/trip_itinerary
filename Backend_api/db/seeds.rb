@@ -295,10 +295,34 @@ Entry.new(
     pItineraries: 
     [
         "Day 1", 
-        "WA do something on day 1",
+        "As you walk around the streets of Seattle, enjoy a crazy surprise when you run into a good friend from highschool that you 
+        havent seen in years! Spend the whole day catching up as you explore the city together. Some things you can do include kayaking 
+        on Lake Union with a fantastic view of the skyline, visiting Gasworks park, walking around downtown, visiting the famous Seattle 
+        bridge troll, and grabbing dinner. After you part ways with your old friend, you and the rest of your group will need to go 
+        grocery shopping to prepare for your upcoming backpaking trip in Olympic National Park tomorrow. Throw in some nice sweets as a 
+        top of the mountain surprise for those who weren't shopping with you.",
 
         "Day 2", 
-        "WA do something on day 2"
+        "Today is the day you've been waiting for since the dawn of time. Today you are going skydiving!! Stop along your way to Olympic 
+        National Park at the skydiving location. Try to keep your nerves under control as they strap the harness onto you and load you 
+        into the plane. If you're extra afraid dont sit near the door becuase it's not even a door. It's just a rickety piece of plastic 
+        they slide down and dont even lock. As you climb to 14,000 ft, listen closely to your instructor as he gives you direction but it's 
+        basically the scene from 'Finding Nemo' where the sea turtles are telling Marlin how to exit the EAC current and he can't hear a 
+        single thing. It'l be a thrill you never forget. Dont forget to take in the views of Olympic Park on the way down. After skydiving 
+        head over to Olympic where you'll begin the backpacking trip with a short hike to your first campsite.",
+        
+        "Day 3", 
+        "Today is a long day. 16 miles to be exact. Lots of elevation gain and loss but it'll all be worth it when you are rewarded with 
+        views of muntains and wildlife along the way. Keep an eye out for Clyde, a friendly black bear who hangs out around this trail. 
+        He'll want to come up close and say hi on the trail so make sure you stay together and get loud when he starts coming towards you. 
+        He's a subborn one. Enjoy some of nature's playground slides on the snowy hillside. Watch out for rocks on the way down though! 
+        The hardest part of today's hike is at the end - the last three miles is a few thousand feet straight uphill to your reserved 
+        campsite. Once you get there, enjoy the views it offers and relax after a hard of hiking!",
+        
+        "Day 4", 
+        "Today is your last day on the trail! Start the hike back to the car with a hike back down the mountain that caused your heart to race the day befroe, only this time it's 
+        way easier. Pass the time with your friends by playing some games like cheers to the governor or 20 questions. If you're feeling 
+        adventurous, finish the last half mile of the loop barefoot. Go and celebrate the completion of the hike with some real food now!" 
     ]
 )
 
