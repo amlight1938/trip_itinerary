@@ -80,26 +80,60 @@ Entry.new(
     pImageURLs: ["T4K test 1 image url .com", "T4K test 2 image url .com"],
     pItineraries: 
     [
-        "Day 0-9",
-        "Austin, TX -> Whichita, KS",
+        "Day 0-9: Austin, TX -> Whichita, KS",
+        "By this time you've put in over 2,000 training miles and spent countless hours on your bike, but 
+        regardless of the time you've spent training, you know that nothing can prepare you for this journey except actually starting 
+        the journey. These firt ten days of the trip will be challenging because you are getting used to your team dynamic, the nomadic 
+        lifestyle, and just being generally exhuasted all the time from biking. Each night you will be staying in host homes, churches, 
+        schools or camping. The very first day will be the hottest of the entire summer and the 10th day will be one of the windiest, 
+        but the entire time you will be on top of the world becuase what you have been imagining in your head for over a year and a 
+        half is finally becoming a reality. You're headed to Alaska... on a bicycle!",
 
-        "Day 10-19", 
-        "Whichita, KS -> Estes Park, CO",
+        "Day 10-19: Whichita, KS -> Estes Park, CO",    
+        "Even though you have been training on the bike for the past year, the first ten days has given you a new appreciation for 
+        biking because you realize that even though you're going a fraction of the speed of a car, you can see more on the bike than
+        you ever will in the car because you can see details that you wouldnt see when you zip by in a car. The first few days after 
+        Whichita, KS will put you to the test. The winds will be brutal, the smell of the cow slaughter houses will be rancid, and 
+        you will occasionally be sprayed with cow urine when the cattle trucks pass you. Kansas will take a toll on you and your team. 
+        Keep fighting. It wont last forever. The plains will slowly turn into rolling hills and once you reach the Colorado border you 
+        will feel a burst of energy. NOw comes a different type of hard - elevation. Colorado is beautiful and you will meet some amazing
+        hosts throughout the state who will encourage you along your journey. Your first mountain pass climb to Estes Park and lack of cell 
+        service will cause chaos and some flaring tempers among your team, but at the end of the day, you will all be closer to each other.",
 
-        "Day 20-29", 
-        "Estes Park, CO -> West Yellowstone, WY",
+        "Day 20-29: Estes Park, CO -> West Yellowstone, WY", 
+        "These few days will teach you to be resilient, be aware of and adaptive to your teammates' needs, and to be more flexible with 
+        plan changes. You will learn that everybody has good and bad days and sometimes it is necessary for you to step up and take action, but 
+        other times it might be better for you to take a backseat and follow along. Colorado and Utah hold in store for you some intense 
+        climbs, exhilarating descents, and nasty weather. Sleep in an authentic teepee on a host's ranch land, see Yellowstone National 
+        Park, and explore Salt Lake City, Jackson Hole, and and other cities along the way.",
 
-        "Day 30-39", 
-        "West Yellowstone, WY -> Glacier Nat. Park, MT",
+        "Day 30-39: West Yellowstone, WY -> Glacier Nat. Park, MT", 
+        "Montana is a big state and it'll pretty much take you all ten of these days to cross it. Spend some time exploring Glacier National 
+        Park on a white water rafting trip in glacial temperature rivers. You'll be biking by massive canola fields filled with yellow flowers and 
+        mountains in the background like a scene from The Sound Of Music. Spend your free time doing activities like fishing and cook up whaterever 
+        you catch for dinner, lighting fireworks for 4th of July, or playing footsol in a gym that is hosting your team.",
 
-        "Day 40-49", 
-        "Glacier Nat. Park, MT -> Smithers, British Columbia",
+        "Day 40-49: Glacier Nat. Park, MT -> Smithers, British Columbia", 
+        "British Columbia will be the most beautiful and most challenging section of the ride. There will be a five day stretch of freeing 
+        temperatures, rain and hail, and extremely rugged and bumpy roads all at the same time. You'll also have plenty of memorable host 
+        experiences throughout British Columbia. Have a Nerf war with a church youth group, try moose meat, and take in the memorable views 
+        at Banff and Jasper National Parks. Your longest day will be during this stretch - 144 miles! Oh and you better learn to love Clif bars, 
+        bread, and nutella because thats all you'll be eating for a few days straight.",
 
-        "Day 50-59", 
-        "Smithers, British Columbia -> Whitehorse, YT",
+        "Day 50-59: Smithers, British Columbia -> Whitehorse, YT", 
+        "Soon your team will be meeting up with two other teams that you started the journey with but took different routes - one through the Midwest and the other along the 
+        west coast. Your team dynamic has grown and shifted into a tight knit group of 27 people over the last 60 days and you're a bit 
+        nervouse to be meeting up with two other teams of the same size becuase ou worry it might change the group dynamic, but at the same 
+        time, you are excited to see your friends that you trained with before the journey began. When you reunite with the entire team 
+        catch up on stories and hear about their experiences that both contrast and parallel your own.",
 
-        "Day 60-70", 
-        "Whitehorse, YT -> Anchorage, AK",
+        "Day 60-70: Whitehorse, YT -> Anchorage, AK", 
+        "The final ten days are some of the most incredible days of the journey because you are surrounded by everybody you trained or over a 
+        year and a half with, and you are all just days away from accomplishing this incredible task you've put your minds to. At the same 
+        time though, you don't want it to end. A part of you wants it to go on forever. Over the past 70 days you have been surrounded by your 
+        close friends, you have seen incredible sights across the continent, you have met amazing strangers who have hosted your team in 
+        their own homes, and you have learned a lot about yourself along the way. When you arrive in Anchorage, AK, the end of your journey, 
+        look back on the most incredible experience of your life and then look forward to the next goal that you will pursue, whatever that may be.",
     ]
 )
 
@@ -497,10 +531,16 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "WA do something on day 1",
+        "Drive to trailhead right off the plane, start hike, setup camp in dark",
 
         "Day 2", 
-        "WA do something on day 2"
+        "hike up glacier, side hike to reflection pond",
+
+        "Day 3", 
+        "hike through sound of music fields and bees, watch the sunset at campsite",
+
+        "Day 4", 
+        "Finih hike and go to airbnb in seattle. Explore seattle, gasworks park, Meet some people aroud a lake, order pizza",
     ]
 )
 
@@ -562,10 +602,13 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "PR do something on day 1",
+        "lunch on east side , dinner in chinatown, speakeasy nightlife",
 
-        "Day 2", 
-        "PR do something on day 2"
+        "Day 2",
+        "Ice skate in prospect park, times square, christmas lights show at the rock, fishbowl at varuns",
+
+        "Day 3", 
+        "dumbo breafast, walk across brooklyn bridgd, Tour of mckinsey office, trivia"
     ]
 )
 
@@ -617,10 +660,17 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "PR do something on day 1",
+        "Boat ride kenai fjords ",
 
         "Day 2", 
-        "PR do something on day 2"
+        "glacier hike exit glacier",
+
+        "Day 3", 
+        "kayaking, fishing on beach of seward",
+
+        "Day 4", 
+        "PR do something on day 2",
+
     ]
 )
 
@@ -660,10 +710,16 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "PR do something on day 1",
+        "drive from SF, see tunnel overlook, glacier point, Stay in yurt in yosemite valley",
 
         "Day 2", 
-        "PR do something on day 2"
+        "start hike, camp and hear bear in middle of night, giant pinecones",
+
+        "Day 3", 
+        "clouds rest, half dome",
+
+        "Day 4", 
+        "san francisco exploring",
     ]
 )
 
@@ -765,10 +821,29 @@ Entry.new(
         "Grand Canyon",
 
         "Day 3", 
-        "Zion",
+        "Zion, narrows",
 
         "Day 4", 
         "Angels Landing",
+    ]
+)
+
+Entry.new(
+    pUser_id: nil,
+    pName: "Snow Cave Camping",
+    pLocation: "Rocky Mountain Nat. Park",
+    pDate: "2023-02-11",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Hike in the snowy wonderland of Rocky Mountain National Park. Dig a snow cave and sleep in it overnight",
+    pActivities: ["Hiking", "Build a snow cave"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "Hike from bear lake to the loch, star gaze, build snow cave and sleep in it",
+
+        "Day 2", 
+        "Hike from bear lake to dream lake ",
     ]
 )
 
