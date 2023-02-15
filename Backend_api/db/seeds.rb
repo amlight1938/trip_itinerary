@@ -710,16 +710,25 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "drive from SF, see tunnel overlook, glacier point, Stay in yurt in yosemite valley",
+        "Ever since you saw a picture of Yosemite on TV, you've been wanting to see it in person, and today is the day! See some 
+        incredible views of Yosemite Valley as you're driving into the park from the Tunnel View overlook as well as Glacier Point. 
+        You will even see your first bear on side of the road while you're driving into the park. Stay in a small cabin in the valley 
+        for your first night in the park. Organize your gear for tomorrow morning's backpacking trip before you go to bed.",
 
         "Day 2", 
-        "start hike, camp and hear bear in middle of night, giant pinecones",
+        "Enjoy the sights and smells of Yosemite's backcountry trail system while you hike today. Make sure to admire the giant pine 
+        cones along the trail and at camp. Setup your tents and enjoy a good nights sleep after a difficult hike.",
 
         "Day 3", 
-        "clouds rest, half dome",
+        "Today's theme is 'conquering your fear of heights'. Start the day off with a hike on top of Clouds Rest, a narrow stretch of 
+        rock at the top of a granite dome with steep drops on either side. After making it across Clouds Rest, head towards Half Dome 
+        for your next challenge. The climb up Half Dome is adrenaline inducing at times and if you can overcome your fear of heights, 
+        it is tottally worth it. You will be climbing straight up the side of the granite dome holding onto nothing but a steel cable 
+        bolted to the rock. The views at the top are breathtaking and unforgettable.",
 
         "Day 4", 
-        "san francisco exploring",
+        "After your backpacking trip, head over to San Francisco to do some exploring, take a tour of Alcatraz, and see the Golden 
+        Gate Bridge.",
     ]
 )
 
@@ -840,10 +849,17 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "Hike from bear lake to the loch, star gaze, build snow cave and sleep in it",
+        "Arrive at the park in the afternoon and claim your campsite on a first come first served basis. It's early February in the 
+        Rocky Mountains so you wont have to fight off to many other campers. Setup camp and then head over to the Glacier Gorge trailhead 
+        for a 6 mile hike through the snow to The Loch. Keep an eye out for some Stellar's Jays, blue birds that hang out around this area. 
+        Head back to camp after the hike to build a fire and make dinner. After dinner, grab the shovel and start digging yourself a 
+        snow cave. If it turns out well maybe you can sleep in it for the night. Snow is actually a great insulator, so the inside of 
+        the snow cave is actually significantly warmer than the outside air.",
 
         "Day 2", 
-        "Hike from bear lake to dream lake ",
+        "Congratulations, you spent the night in the snow cave and can now check that box off yur bucket list! Watch the sunrise from 
+        camp nad then head out on a short hike to Dream Lake before leaiving the park. Grab some lunch in Estes Park nad call it a 
+        successful winter campout!",
     ]
 )
 
