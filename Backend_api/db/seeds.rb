@@ -602,13 +602,24 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "lunch on east side , dinner in chinatown, speakeasy nightlife",
+        "You've already seen all the touristy stuff in New York City so this trip is all about doing the stuff locals do. For your 
+        first day in the city, catch up with some friends over lunch on the lower east side. Do some exploring afterwards and find 
+        yourself in Chinatown for dinner. After dinner, check out a cool underground speakeasy. Go back to your friends apartment 
+        in Brooklyn and climb to the roof for a beautiful view of the Manhattan skyline.",
 
         "Day 2",
-        "Ice skate in prospect park, times square, christmas lights show at the rock, fishbowl at varuns",
-
+        "Time to cross some stuff off your bucket list. Go ice skating on the outdoor rink in the middle of the city at Prospect 
+        Park (Central park is closed today :( ). Prosect Park is just as cool as Central Park though, and ice skating in the 
+        middle of it is an awesome experience. You're in New York City in December so... how could you not visit time square and 
+        rockefeller for a christmas light show tonight.",
+        
         "Day 3", 
-        "dumbo breafast, walk across brooklyn bridgd, Tour of mckinsey office, trivia"
+        "For your last day in New York, cross off one more thing on your bucket list and see the famous Brooklyn Bridge picture 
+        spot in DUMBO. Start with breakfast in the area and then walk over to the picture spot. Walk accross the Brooklyn Bridge 
+        to the world trade center area. This time you wont just be seeing the tourist part of it, you'll be getting a tour of an 
+        office on the 60th floor of the 3rd world trade center - a whole new view of the city! Tonight assemble your trivia team 
+        and head to a local bar for trivia. This isn't just any trivia though... be prepared for physical activities! After a long 
+        fought battle of wits, claim the 1st place prize - a bottle of champagne!"
     ]
 )
 
@@ -660,17 +671,16 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "Boat ride kenai fjords ",
+        "Start the tri with a boat ride to view Kenai Fjords National Park, glaciers, and plenty of wildlife. You'll even see 
+        some glacier chunks falling into the water which is a cool sight."
 
         "Day 2", 
-        "glacier hike exit glacier",
+        "Today you'll be going for a guided hike on Exit Glacier (fun fact: Bear Grylls took President Obama here for his TV show). 
+        For this hike you'll be wearing spikes and a helmet to safely traverse the glacier.",
 
         "Day 3", 
-        "kayaking, fishing on beach of seward",
-
-        "Day 4", 
-        "PR do something on day 2",
-
+        "Take a guided kayak tour through the Alaskan wilderness and a plethora of beautiful views and wildlife sightings. Gain 
+        a better understanding of the Alaskan wilderness as you listen to your guide throughout the tour.",
     ]
 )
 
@@ -824,16 +834,26 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "Bryce canyon",
+        "Start the roadtrip at the top of whats known as 'The Grand Staircase', a large area west of the Rockies that contains 
+        Bryce Canyon, Zion, and Grand Canyon National Parks. Spend the day hiking in Bryce Canyon and admiring the brightly colored 
+        rock spires. Spend the night in a cabin and make sure to get enough sleep to wake up early to watch the sunrise over the 
+        canyon tomorrow morning.",
 
         "Day 2", 
-        "Grand Canyon",
+        "Wake up early to catch the sunrise over Bryce Canyon before hitting the road towards the North rim of the Grand Canyon 
+        (the less traveled rim). Hike part of the North Kaibab trail for most of the day and then spend the night in a cabin 
+        right near the rim.",
 
         "Day 3", 
-        "Zion, narrows",
+        "After staying a night on the North rim of the Grand Canyon, head over to Zion National Park. Today you'll be hiking the 
+        Narrows, or at least the part that's not closed. This area of the park is pretty busy so the earlier you get there the 
+        better.",
 
         "Day 4", 
-        "Angels Landing",
+        "Today is the day you've been waiting for. The day you climb Angels Landing, a 5.5 mile hike with 1500 ft of elevation gain 
+        culminating with a narrow scrambling section, only a few feet wide at times, with a 1000ft drop on either side and nothing to 
+        hold onto except a chain bolted to the rock. This is not for the faint of heart but if you complete it, you will remember 
+        this hike/climb for the rest of your life!",
     ]
 )
 
