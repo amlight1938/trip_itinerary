@@ -12,63 +12,51 @@ Image.destroy_all
 Activity.destroy_all
 Trip.destroy_all
 
+#Pacific Northwest Roadtrip
 Entry.new(
     pUser_id: nil,
-    pName: "West Texas Roadtrip",
-    pLocation: "Big Bend NP, Guadalupe Mtns. NP",
-    pDate: "2017-03-04",
-    pHighlightImageURL: "highlight image .com",
-    pDescription: "Go on a roadtrip in western Texas to go backpacking in Big Bend, climb the highet point in Texas, and surf down sand dunes",
-    pActivities: ["Backpacking", "Camping", "Sand surfing"],
-    pImageURLs: ["test 1 image url .com", "test 2 image url .com"],
+    pName: "Pacific Northwest Roadtrip",
+    pLocation: "Olympic National Park and Seattle",
+    pDate: "2021-07-15",
+    pHighlightImageURL: "WA highlight image .com",
+    pDescription: "Explore Olympic National Park's backcountry, Seattle, and Ruby Beach. Enjoy breathtaking views as you go skydiving over Olympic National Park",
+    pActivities: ["Skydiving", "Backpacking", "Kayaking"],
+    pImageURLs: ["WA test 1 image url .com", "WA test 2 image url .com"],
     pItineraries: 
     [
         "Day 1", 
-        "Get on the road before the sun rises and start eating those cookies Mom packed you as you begin the 9 hour car 
-            ride from Dallas to Big Bend National Park! Once you arrive at the park, drive along scenic roads and make sure to keep 
-            the drool in your mouth as you stare at the amazing Chisos Mountains. Before you can setup camp, you'll need to drive 
-            on the unpaved road to stash a few gallons of water for your upcoming backpacking trip. Be prepared for a water park as 
-            you picked out at Walmart the only two plastic water containers that had leaks, and this road is ... bumpy!! After a 
-            rollercoaster-like ride on that road, head to the Chisos Basin campground to setup camp, eat dinner, and chill around the 
-            fire as you and your gang prepare for the 30 mile backpacking trip you will embark on the next morning!",
+        "As you walk around the streets of Seattle, enjoy a crazy surprise when you run into a good friend from highschool that you 
+        havent seen in years! Spend the whole day catching up as you explore the city together. Some things you can do include kayaking 
+        on Lake Union with a fantastic view of the skyline, visiting Gasworks park, walking around downtown, visiting the famous Seattle 
+        bridge troll, and grabbing dinner. After you part ways with your old friend, you and the rest of your group will need to go 
+        grocery shopping to prepare for your upcoming backpaking trip in Olympic National Park tomorrow. Throw in some nice sweets as a 
+        top of the mountain surprise for those who weren't shopping with you.",
+
+        "Day 2", 
+        "Today is the day you've been waiting for since the dawn of time. Today you are going skydiving!! Stop along your way to Olympic 
+        National Park at the skydiving location. Try to keep your nerves under control as they strap the harness onto you and load you 
+        into the plane. If you're extra afraid dont sit near the door becuase it's not even a door. It's just a rickety piece of plastic 
+        they slide down and dont even lock. As you climb to 14,000 ft, listen closely to your instructor as he gives you direction but it's 
+        basically the scene from 'Finding Nemo' where the sea turtles are telling Marlin how to exit the EAC current and he can't hear a 
+        single thing. It'l be a thrill you never forget. Dont forget to take in the views of Olympic Park on the way down. After skydiving 
+        head over to Olympic where you'll begin the backpacking trip with a short hike to your first campsite.",
         
-        "Day 2",
-        "Wake up early to the news that one of your party is very sick and needs to go to the hospital (maybe hypothermia from 
-            a soaked sleeping bag on the waterpark car ride from the night before?). Some of your party will go with him in the ambulance 
-            to the hospital while the rest of your group begins exploring the park on the Lost Mines Trail. Once the rest of your group 
-            returns, you will embark on the Outer Mountain Loop. The loop starts with a steep incline but you and your buds dont mind because 
-            you are eager to see the views this park has to offer! Setup camp and race over to the East Rim Trail to take in the park's 
-            majestic landscape and pinkish-red skyline during sunset. Walk back to camp in the dark and take in the sounds of your first 
-            night in the Chisos Mountain ",
+        "Day 3", 
+        "Today is a long day. 16 miles to be exact. Lots of elevation gain and loss but it'll all be worth it when you are rewarded with 
+        views of muntains and wildlife along the way. Keep an eye out for Clyde, a friendly black bear who hangs out around this trail. 
+        He'll want to come up close and say hi on the trail so make sure you stay together and get loud when he starts coming towards you. 
+        He's a subborn one. Enjoy some of nature's playground slides on the snowy hillside. Watch out for rocks on the way down though! 
+        The hardest part of today's hike is at the end - the last three miles is a few thousand feet straight uphill to your reserved 
+        campsite. Once you get there, enjoy the views it offers and relax after a hard of hiking!",
         
-        "Day 3",
-        "Whats a good trip without a last minute audible? Wake up to realie that you and your group left half your food 
-            in the cars. :( Instead of the finishing the loop, turn the 3 day backapcking trip into a one night out and back. Once 
-            you get back to the cars, its time to get remote! You'll be car camping at a primitive campsite right near the Rio Grande
-            completely removed from civilization and any other people. Take a dip in the Rio Grande to stay cool and explore around 
-            your campsite. At night, play your favorite country playlist and enjoy each others company as you stare into the night sky. 
-            You've never seen this many stars in your life! This will easily be one of the most memorable nights of your life!",
-        
-        "Day 4",
-        "Today is a nice leisurely day. You'll be driving accross the park to hike the Santa Elena Canyon - a playground of climbing boulders, 
-            perfect skipping rocks, and gorgeous scenery. After the hike, drive into Terlingua Ghost Town just outside the park for lunch, 
-            then head on to Guadalupe Mountains National Park where you'll spend the night and prepare for climbing Texas' tallest 
-            mountain.",
-        
-        "Day 5",
-        "Make sure to get an early start on the trail up to Guadalupe Peak to avoid the heat. Take in the views and make 
-            sure to sign the peak registry. You're running out of food right now because you're traveling with 8 hungry highschool boys. 
-            To ration out the food, you'll be eating a delightful lunch consisting of uncooked Dak Ham and ketchup ...thats it, enjoy!",
-        
-        "Day 6",
-        "Since you're right next to it, might as well make a trip to Carlsbad Caverns right? Take a quick walk throughout the 
-            caves and admire the stagtites and stalagmites. After the cave, begin the long drive home as the trip comes to a close, but 
-            not before stopping at Monahan Sandhills State Park for some long awaited sand sledding. Make endless Star Wars Ep. 1 references 
-            and battle it out with you friends in wrestlemania/ king of the sandhill. Once you're all tapped out, its time to drive home 
-            and wrap up a truly memorable trip in west Texas."
+        "Day 4", 
+        "Today is your last day on the trail! Start the hike back to the car with a hike back down the mountain that caused your heart to race the day befroe, only this time it's 
+        way easier. Pass the time with your friends by playing some games like cheers to the governor or 20 questions. If you're feeling 
+        adventurous, finish the last half mile of the loop barefoot. Go and celebrate the completion of the hike with some real food now!" 
     ]
 )
 
+#Bike from Texas to Alaska
 Entry.new(
     pUser_id: nil,
     pName: "Bike from Texas to Alaska",
@@ -137,6 +125,157 @@ Entry.new(
     ]
 )
 
+#Rock Climbing and Rafting Overnight
+Entry.new(
+    pUser_id: nil,
+    pName: "Rock Climbing and Rafting Overnight",
+    pLocation: "Vail, Colorado",
+    pDate: "2022-07-04",
+    pHighlightImageURL: "CO highlight image .com",
+    pDescription: "Camp in remote territory and conquer your fear of heights while climbing towering cliffs for two days",
+    pActivities: ["Rock climbing", "Camping", "White water rafting"],
+    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1", 
+        "Start the trip off by playing Big Bootie Mix by Two Friends in the car (the perfect roadtrip soundtrack). You'll arrive at 
+        the campsite in the afternoon and have some time to setup camp. Make sure not to step in any cow patties! This is one of the 
+        most remote campsites you'll ever see. This is Bureau of Land Management Land so you dont have to worry about permits. Build 
+        a fire and roast some weenies while you meet some new friends. Just across the field you're camping in is an incredible view 
+        of a giant canyon which you'll be climbing in tomorrow so get a good nights sleep.",
+
+        "Day 2", 
+        "Take your time in the morning and relax around the morning campfire for breakfast. After that head on over to the crag to 
+        start the day off. This will be your first day attempting to lead a climb (a climbing technique whereby you clip in to points 
+        on the wall as you climb up instead of having the anchor already set up at the top). This technique is more dangerous but 
+        comes with a massive adrenaline rush! Finish off the day with another relaxing campfire, some drinks, and a beautiful sunset.",
+
+        "Day 3",
+        "You know how they say you should find a friend with a boat? Well you finally found one. Someone on the trip has recently bought 
+        his own river raft and brings you along for the ride on the Colorado River. The rapids arent very high at this point so it turns 
+        into a relaxing drink and float trip."
+    ]
+)
+
+#Guatemala Volcano Experience
+Entry.new(
+    pUser_id: nil,
+    pName: "Guatemala Volcano Hike",
+    pLocation: "Guatemala",
+    pDate: "2023-02-18",
+    pHighlightImageURL: "PR highlight image .com",
+    pDescription: "Climb an active volcano, explore Antigua and Panajachel, and experience Lake Atitlan from thousands of feet up while paragliding",
+    pActivities: ["Hiking", "Camping", "Paragliding"],
+    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1",
+        "Take a 1.5 hour Uber from the airport in Guatemala City to Antigua to meet up with the rest of your group. Drop your bags 
+        off at your Airbnb and get to exploring! Visit Parque Central, El ChocoMuseo, Santa Catalina Arch, and do a short hike to 
+        Cerro de la Cruz for a great view overlooking Antigua and its surrounding volcanoes. After the hike, go for dinner at Frida's. 
+        Rest up tonight as your hike tomorrow morning will be a real challenge!",
+
+        "Day 2", 
+        "Wake up early to meet your volcano tour guides at Wicho and Charlies at 7am. Collect gear and pack your bags at the meeting 
+        location before taking shuttles to the base of Volcan Acatenango. Begin the 5 hour, 5,000 ft hike to basecamp near the summit. 
+        Along the way, you can feed and pet many wild dogs that live on the mountain. They are acustomed to human interaction and are 
+        very friendly. Throughout the hike, the terrain will transition from open farmland to rainforest-like trails with dense fog 
+        setting in quickly. Once you get to basecamp, the clouds will disperse and you will be surprised with a magnificent view of 
+        Volcan Fuego erupting right in front of you, and it will be unlike anything you have ever seen before. Take a quick 30 minute 
+        break before packing a daybag with headlamps and warm clothes. You'll be hiking for 2 more hours to get to the Volcan Fuego 
+        ridge where the eruptions can be seen up close. As you climb over the final ridge, tbe volcano will violently release massive 
+        amounts of lava hundreds of feet into the night sky, and you will be staring in awe. Fear that you are not far enough away will 
+        quickly set in but after the lava falls to the ground you will become more comfortable. Wait on the ridge for another hour to 
+        catch as many eruptions as possible and enjoy the view over the cities in the distance. The raging winds and freezing temperatres 
+        discourage you from staying but you will never experience anything as incredible as this night again so you force yourself to 
+        stay as long as possible. Make the 2 hour trek back to basecamp for a warm dinner and campfire where you can continue to watch 
+        Fuego erupt throughout the night.",
+
+        "Day 3",
+        "At basecamp, you will be able to see the sunrise from above the clouds, and it will be one of the most magestic sunrises you 
+        will ever see. After breakfast, pack your bags and head back down Acatenango. The hike down takes about half the time it takes 
+        to get up (even less if you trail run it). Congratulate yourself and the rest of your group on completing a challenging hike, 
+        then Say goodbye to your tour guides and take a shuttle back to the Wicho and Charlie's headquarters in Antigua. Grab lunch near 
+        the headquarters then take a 2 hour Uber to Panajachel (you might need to do some negotiating with your driver for this one). Once 
+        in Panajachel, hop on a public boat to Santa Cruz where you will stay at your first hostel, La Iguana Perdida. Take a seat for 
+        family dinner and trivia soon after you arrive and make some new friends at your table (if your team name is good you can win 
+        some shots!).", 
+
+        "Day 4",
+        "Sleep in at the hostel today to catch up on sleep since you didnt get much the night before on the mountain. After breakfast 
+        at the hostel, grab a boat back to Panajachel to explore the city before meeting up for your paragliding reservations at 1:30. 
+        Use this opportunity to practice your spanish at the local markets and shops. Take a van ride up to the cliffs over Lake Atitlan 
+        and hike down a dirt road to get to your launching point for paragliding. Saddle up and you're off! Take in the stunning views 
+        and hold on tight as you do some flips in the air thousands of feet above the lake. After the ride back into town, grab some dinner 
+        and gelato before racing to catch the last public boat back to Santa Cruz for the night. Once back at the hostel, make some more 
+        friends when you spontaneously join a percussion circle beating away into the night.",
+
+        "Day 5",
+        "Your last day in Guatemala :( Say goodbye to half of your group and head back to guatemala city to catch your flight home. Think 
+        back on how much you have seen and done over the past 5 days and how much you wish you still had time to do. You'll have to come 
+        back eventually for it!"
+    ]
+)
+
+#West Texas Roadtrip
+Entry.new(
+    pUser_id: nil,
+    pName: "West Texas Roadtrip",
+    pLocation: "Big Bend NP, Guadalupe Mtns. NP",
+    pDate: "2017-03-04",
+    pHighlightImageURL: "highlight image .com",
+    pDescription: "Go on a roadtrip in western Texas to go backpacking in Big Bend, climb the highet point in Texas, and surf down sand dunes",
+    pActivities: ["Backpacking", "Camping", "Sand surfing"],
+    pImageURLs: ["test 1 image url .com", "test 2 image url .com"],
+    pItineraries: 
+    [
+        "Day 1", 
+        "Get on the road before the sun rises and start eating those cookies Mom packed you as you begin the 9 hour car 
+            ride from Dallas to Big Bend National Park! Once you arrive at the park, drive along scenic roads and make sure to keep 
+            the drool in your mouth as you stare at the amazing Chisos Mountains. Before you can setup camp, you'll need to drive 
+            on the unpaved road to stash a few gallons of water for your upcoming backpacking trip. Be prepared for a water park as 
+            you picked out at Walmart the only two plastic water containers that had leaks, and this road is ... bumpy!! After a 
+            rollercoaster-like ride on that road, head to the Chisos Basin campground to setup camp, eat dinner, and chill around the 
+            fire as you and your gang prepare for the 30 mile backpacking trip you will embark on the next morning!",
+        
+        "Day 2",
+        "Wake up early to the news that one of your party is very sick and needs to go to the hospital (maybe hypothermia from 
+            a soaked sleeping bag on the waterpark car ride from the night before?). Some of your party will go with him in the ambulance 
+            to the hospital while the rest of your group begins exploring the park on the Lost Mines Trail. Once the rest of your group 
+            returns, you will embark on the Outer Mountain Loop. The loop starts with a steep incline but you and your buds dont mind because 
+            you are eager to see the views this park has to offer! Setup camp and race over to the East Rim Trail to take in the park's 
+            majestic landscape and pinkish-red skyline during sunset. Walk back to camp in the dark and take in the sounds of your first 
+            night in the Chisos Mountain ",
+        
+        "Day 3",
+        "Whats a good trip without a last minute audible? Wake up to realie that you and your group left half your food 
+            in the cars. :( Instead of the finishing the loop, turn the 3 day backapcking trip into a one night out and back. Once 
+            you get back to the cars, its time to get remote! You'll be car camping at a primitive campsite right near the Rio Grande
+            completely removed from civilization and any other people. Take a dip in the Rio Grande to stay cool and explore around 
+            your campsite. At night, play your favorite country playlist and enjoy each others company as you stare into the night sky. 
+            You've never seen this many stars in your life! This will easily be one of the most memorable nights of your life!",
+        
+        "Day 4",
+        "Today is a nice leisurely day. You'll be driving accross the park to hike the Santa Elena Canyon - a playground of climbing boulders, 
+            perfect skipping rocks, and gorgeous scenery. After the hike, drive into Terlingua Ghost Town just outside the park for lunch, 
+            then head on to Guadalupe Mountains National Park where you'll spend the night and prepare for climbing Texas' tallest 
+            mountain.",
+        
+        "Day 5",
+        "Make sure to get an early start on the trail up to Guadalupe Peak to avoid the heat. Take in the views and make 
+            sure to sign the peak registry. You're running out of food right now because you're traveling with 8 hungry highschool boys. 
+            To ration out the food, you'll be eating a delightful lunch consisting of uncooked Dak Ham and ketchup ...thats it, enjoy!",
+        
+        "Day 6",
+        "Since you're right next to it, might as well make a trip to Carlsbad Caverns right? Take a quick walk throughout the 
+            caves and admire the stagtites and stalagmites. After the cave, begin the long drive home as the trip comes to a close, but 
+            not before stopping at Monahan Sandhills State Park for some long awaited sand sledding. Make endless Star Wars Ep. 1 references 
+            and battle it out with you friends in wrestlemania/ king of the sandhill. Once you're all tapped out, its time to drive home 
+            and wrap up a truly memorable trip in west Texas."
+    ]
+)
+
+#Buffalo River Backpacking
 Entry.new(
     pUser_id: nil,
     pName: "Buffalo River Backpacking",
@@ -180,6 +319,7 @@ Entry.new(
     ]
 )
 
+#Hawaii Multisport
 Entry.new(
     pUser_id: nil,
     pName: "Hawaii Multisport",
@@ -225,6 +365,7 @@ Entry.new(
     ]
 )
 
+#Boundary Water Canoeing
 Entry.new(
     pUser_id: nil,
     pName: "Boundary Water Canoeing",
@@ -260,37 +401,7 @@ Entry.new(
     ]
 )
 
-Entry.new(
-    pUser_id: nil,
-    pName: "Rock Climbing / Rafting Overnight",
-    pLocation: "Vail, Colorado",
-    pDate: "2022-07-04",
-    pHighlightImageURL: "CO highlight image .com",
-    pDescription: "Camp in remote territory and conquer your fear of heights while climbing towering cliffs for two days",
-    pActivities: ["Rock climbing", "Camping", "White water rafting"],
-    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
-    pItineraries: 
-    [
-        "Day 1", 
-        "Start the trip off by playing Big Bootie Mix by Two Friends in the car (the perfect roadtrip soundtrack). You'll arrive at 
-        the campsite in the afternoon and have some time to setup camp. Make sure not to step in any cow patties! This is one of the 
-        most remote campsites you'll ever see. This is Bureau of Land Management Land so you dont have to worry about permits. Build 
-        a fire and roast some weenies while you meet some new friends. Just across the field you're camping in is an incredible view 
-        of a giant canyon which you'll be climbing in tomorrow so get a good nights sleep.",
-
-        "Day 2", 
-        "Take your time in the morning and relax around the morning campfire for breakfast. After that head on over to the crag to 
-        start the day off. This will be your first day attempting to lead a climb (a climbing technique whereby you clip in to points 
-        on the wall as you climb up instead of having the anchor already set up at the top). This technique is more dangerous but 
-        comes with a massive adrenaline rush! Finish off the day with another relaxing campfire, some drinks, and a beautiful sunset.",
-
-        "Day 3",
-        "You know how they say you should find a friend with a boat? Well you finally found one. Someone on the trip has recently bought 
-        his own river raft and brings you along for the ride on the Colorado River. The rapids arent very high at this point so it turns 
-        into a relaxing drink and float trip."
-    ]
-)
-
+#Climb Mt. Democrat
 Entry.new(
     pUser_id: nil,
     pName: "Climb Mt. Democrat",
@@ -317,49 +428,7 @@ Entry.new(
     ]
 )
 
-Entry.new(
-    pUser_id: nil,
-    pName: "Pacific Northwest Roadtrip",
-    pLocation: "Olympic National Park and Seattle",
-    pDate: "2021-07-15",
-    pHighlightImageURL: "WA highlight image .com",
-    pDescription: "Explore Olympic National Park's backcountry, Seattle, and Ruby Beach. Enjoy breathtaking views as you go skydiving over Olympic National Park",
-    pActivities: ["Skydiving", "Backpacking", "Kayaking"],
-    pImageURLs: ["WA test 1 image url .com", "WA test 2 image url .com"],
-    pItineraries: 
-    [
-        "Day 1", 
-        "As you walk around the streets of Seattle, enjoy a crazy surprise when you run into a good friend from highschool that you 
-        havent seen in years! Spend the whole day catching up as you explore the city together. Some things you can do include kayaking 
-        on Lake Union with a fantastic view of the skyline, visiting Gasworks park, walking around downtown, visiting the famous Seattle 
-        bridge troll, and grabbing dinner. After you part ways with your old friend, you and the rest of your group will need to go 
-        grocery shopping to prepare for your upcoming backpaking trip in Olympic National Park tomorrow. Throw in some nice sweets as a 
-        top of the mountain surprise for those who weren't shopping with you.",
-
-        "Day 2", 
-        "Today is the day you've been waiting for since the dawn of time. Today you are going skydiving!! Stop along your way to Olympic 
-        National Park at the skydiving location. Try to keep your nerves under control as they strap the harness onto you and load you 
-        into the plane. If you're extra afraid dont sit near the door becuase it's not even a door. It's just a rickety piece of plastic 
-        they slide down and dont even lock. As you climb to 14,000 ft, listen closely to your instructor as he gives you direction but it's 
-        basically the scene from 'Finding Nemo' where the sea turtles are telling Marlin how to exit the EAC current and he can't hear a 
-        single thing. It'l be a thrill you never forget. Dont forget to take in the views of Olympic Park on the way down. After skydiving 
-        head over to Olympic where you'll begin the backpacking trip with a short hike to your first campsite.",
-        
-        "Day 3", 
-        "Today is a long day. 16 miles to be exact. Lots of elevation gain and loss but it'll all be worth it when you are rewarded with 
-        views of muntains and wildlife along the way. Keep an eye out for Clyde, a friendly black bear who hangs out around this trail. 
-        He'll want to come up close and say hi on the trail so make sure you stay together and get loud when he starts coming towards you. 
-        He's a subborn one. Enjoy some of nature's playground slides on the snowy hillside. Watch out for rocks on the way down though! 
-        The hardest part of today's hike is at the end - the last three miles is a few thousand feet straight uphill to your reserved 
-        campsite. Once you get there, enjoy the views it offers and relax after a hard of hiking!",
-        
-        "Day 4", 
-        "Today is your last day on the trail! Start the hike back to the car with a hike back down the mountain that caused your heart to race the day befroe, only this time it's 
-        way easier. Pass the time with your friends by playing some games like cheers to the governor or 20 questions. If you're feeling 
-        adventurous, finish the last half mile of the loop barefoot. Go and celebrate the completion of the hike with some real food now!" 
-    ]
-)
-
+#Puerto Rico Exploring
 Entry.new(
     pUser_id: nil,
     pName: "Puerto Rico Exploring",
@@ -407,6 +476,7 @@ Entry.new(
     ]
 )
 
+#Backpack Long's Peak
 Entry.new(
     pUser_id: nil,
     pName: "Backpack Long's Peak",
@@ -437,6 +507,7 @@ Entry.new(
     ]
 )
 
+#Canaveral Nat. Seashores Canoeing
 Entry.new(
     pUser_id: nil,
     pName: "Canaveral Nat. Seashores Canoeing",
@@ -462,6 +533,7 @@ Entry.new(
     ]
 )
 
+#Biking up Pikes Peak
 Entry.new(
     pUser_id: nil,
     pName: "Biking up Pikes Peak",
@@ -485,6 +557,7 @@ Entry.new(
     ]
 )
 
+#Backpacking Four Pass Loop
 Entry.new(
     pUser_id: nil,
     pName: "Backpacking Four Pass Loop",
@@ -519,6 +592,7 @@ Entry.new(
     ]
 )
 
+#Buckcreek Pass Loop Backpacking
 Entry.new(
     pUser_id: nil,
     pName: "Buckcreek Pass Loop Backpacking",
@@ -531,19 +605,28 @@ Entry.new(
     pItineraries: 
     [
         "Day 1",
-        "Drive to trailhead right off the plane, start hike, setup camp in dark",
+        "Head over to the Buckcreek Pass Loop trailhead straight from the airport to try to get a few miles in before sunset. Right 
+        away you'll be greeted with beautiful scenery and lucious green forests. Make sure to rent a car that can handle tough dirt 
+        roads to get to the trailhead. Hike in about 3 miles from the dirt parking lot and setup your tent in the dark once you find 
+        a suitable spot.",
 
         "Day 2", 
-        "hike up glacier, side hike to reflection pond",
+        "Today you'll be hiking through beautiful green valleys, up and over spider glacier, and through forests. The hike up Spider 
+        glacier is tough but the way down the other side is a blast. With all the snow and steep slopes, you can slide down on your butt, 
+        just watch out for rocks.",
 
         "Day 3", 
-        "hike through sound of music fields and bees, watch the sunset at campsite",
+        "The trails you cross oday will remind you of the flower fields from \"The Sound of Music\". The famous Image lake is a small 
+        detour off of the main trail, but it is totally worth the extra mileage to see a perfect reflection of Glacier Peak in the 
+        distance.",
 
         "Day 4", 
-        "Finih hike and go to airbnb in seattle. Explore seattle, gasworks park, Meet some people aroud a lake, order pizza",
+        "Finish the 40 mile loop, wash yourself off in a freezing mountain river, and head back to an Airbnb in Seattle. Explore seattle 
+        and visit an old friend who live in Seattle for the day.",
     ]
 )
 
+#After work rock climbing
 Entry.new(
     pUser_id: nil,
     pName: "After work rock climbing",
@@ -567,6 +650,7 @@ Entry.new(
     ]
 )
 
+#Great Sand Dunes Day Trip
 Entry.new(
     pUser_id: nil,
     pName: "Great Sand Dunes Day Trip",
@@ -590,6 +674,7 @@ Entry.new(
     ]
 )
 
+#Weekend in New York City
 Entry.new(
     pUser_id: nil,
     pName: "Weekend in New York City",
@@ -623,6 +708,7 @@ Entry.new(
     ]
 )
 
+#Italy
 Entry.new(
     pUser_id: nil,
     pName: "Italy",
@@ -659,6 +745,7 @@ Entry.new(
     ]
 )
 
+#Alaska Multisport
 Entry.new(
     pUser_id: nil,
     pName: "Alaska Multisport",
@@ -672,7 +759,7 @@ Entry.new(
     [
         "Day 1",
         "Start the tri with a boat ride to view Kenai Fjords National Park, glaciers, and plenty of wildlife. You'll even see 
-        some glacier chunks falling into the water which is a cool sight."
+        some glacier chunks falling into the water which is a cool sight.",
 
         "Day 2", 
         "Today you'll be going for a guided hike on Exit Glacier (fun fact: Bear Grylls took President Obama here for his TV show). 
@@ -684,6 +771,7 @@ Entry.new(
     ]
 )
 
+#Midnight 14er Hike
 Entry.new(
     pUser_id: nil,
     pName: "Midnight 14er Hike",
@@ -708,6 +796,7 @@ Entry.new(
     ]
 )
 
+#Yosemite Backpacking and San Francisco
 Entry.new(
     pUser_id: nil,
     pName: "Yosemite Backpacking and San Francisco",
@@ -742,6 +831,7 @@ Entry.new(
     ]
 )
 
+#Eagle Rock Loop Backpacking
 Entry.new(
     pUser_id: nil,
     pName: "Eagle Rock Loop Backpacking",
@@ -780,6 +870,7 @@ Entry.new(
     ]
 )
 
+#IRONMAN Indiana
 Entry.new(
     pUser_id: nil,
     pName: "IRONMAN Indiana",
@@ -822,6 +913,7 @@ Entry.new(
     ]
 )
 
+#Grand Staircase Roadtrip
 Entry.new(
     pUser_id: nil,
     pName: "Grand Staircase Roadtrip",
@@ -857,6 +949,7 @@ Entry.new(
     ]
 )
 
+#Snow Cave Camping
 Entry.new(
     pUser_id: nil,
     pName: "Snow Cave Camping",
@@ -877,11 +970,13 @@ Entry.new(
         the snow cave is actually significantly warmer than the outside air.",
 
         "Day 2", 
-        "Congratulations, you spent the night in the snow cave and can now check that box off yur bucket list! Watch the sunrise from 
-        camp nad then head out on a short hike to Dream Lake before leaiving the park. Grab some lunch in Estes Park nad call it a 
+        "Congratulations, you spent the night in the snow cave and can now check that box off your bucket list! Watch the sunrise from 
+        camp and then head out on a short hike to Dream Lake before leaiving the park. Grab some lunch in Estes Park and call it a 
         successful winter campout!",
     ]
 )
+
+
 
 # Entry.new(
 #     pUser_id: nil,
