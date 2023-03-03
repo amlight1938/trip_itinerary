@@ -12,7 +12,7 @@ import { useState } from 'react'
 import { Button } from 'react-bootstrap'
 import ModalFunc from './ModalFunc'
 import CarouselFade from '../../CarouselFade'
-import { build_activity_list } from '../../Helper functions/utils'
+import { build_activity_list, build_img_URL_list } from '../../Helper functions/utils'
 import UpdateTripForm from './UpdateTripForm'
 import DeleteTripCheck from './DeleteTripCheck'
 import { useHistory } from 'react-router-dom'
@@ -29,8 +29,9 @@ const TripDetails = ({trip}) => {
     let handleSuccessfulDelete = () => {
         history.push("/my-custom-trips")
     }
-    //TODO make call to AWS to get pictures
 
+    //build list of aws links for pictures
+    const img_url_list = build_img_URL_list(trip.highlight_img_url, trip.images)
 
     //DisplayParagraph
     const alternateSides = false;
@@ -71,7 +72,8 @@ const TripDetails = ({trip}) => {
     <>
         <TopBanner 
             // image={trip.highlight_img} 
-            image={topo_dark}
+            // image={topo_dark}
+            image={trip.highlight_img_url}
             position={"50% 50%"}
             text={"TRIP HIGHLIGHT IMAGE"}/>
     
@@ -116,14 +118,16 @@ const TripDetails = ({trip}) => {
                         <ModalFunc
                             show={imageModalShow}
                             onHide={() => setImageModalShow(false)} 
-                            content={<ImageGallery slides={slides} />}
+                            // content={<ImageGallery slides={slides} />}
+                            content={<ImageGallery slides={img_url_list} />}
                             styles_header={{height: "20px", minWidth: "75%"}}
                             modal_width_class="image-gallery-modal-width"
                             styles_body={{height: "650px"}}
                         />
                         <div className="trip-details-carousel-container" style={carousel_css} onClick={() => setImageModalShow(true)}>
                             <CarouselFade 
-                                carousel_items={carousel_items} 
+                                // carousel_items={carousel_items} 
+                                carousel_items={img_url_list}
                                 controls_bool={controls_bool} 
                                 caption_bool={caption_bool}
                                 indicator_bool={indicator_bool}

@@ -20,4 +20,4 @@ export function build_img_URL_list(highlight_img_url, img_obj_list){
     });
 
     return img_URL_list;
-}
+};

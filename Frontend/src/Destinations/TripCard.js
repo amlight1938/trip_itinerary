@@ -10,7 +10,7 @@ const TripCard = (props) => {
        const card_img_styles = {
         height: "170px",
         width: "100%",
-        backgroundImage: `url('${trip.image}')`,
+        backgroundImage: `url('${trip.highlight_img_url}')`,
         backgroundSize: "cover",
         backgroundPosition: "50% 36%",
         border: "0px"
