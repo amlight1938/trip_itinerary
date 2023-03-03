@@ -7,10 +7,13 @@ const TripCard = (props) => {
     
     const trip = props.trip;
 
-       const card_img_styles = {
+    let image;
+    {trip.image === undefined ? image = trip.highlight_img_url : image = trip.image}
+
+    const card_img_styles = {
         height: "170px",
         width: "100%",
-        backgroundImage: `url('${trip.highlight_img_url}')`,
+        backgroundImage: `url('${image}')`,
         backgroundSize: "cover",
         backgroundPosition: "50% 36%",
         border: "0px"

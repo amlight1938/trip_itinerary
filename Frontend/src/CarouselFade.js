@@ -9,7 +9,6 @@ function CarouselFade({carousel_items, controls_bool, caption_bool, indicator_bo
       
         {carousel_items.map((item, index) => {
           let image;
-          console.log(item.image)
           {item.image === undefined ? image = item : image = item.image}
           return(
             <Carousel.Item interval={3000} key={index} style={{

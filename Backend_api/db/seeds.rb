@@ -18,10 +18,28 @@ Entry.new(
     pName: "Pacific Northwest Roadtrip",
     pLocation: "Olympic National Park and Seattle",
     pDate: "2021-07-15",
-    pHighlightImageURL: "WA highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/Pacific+Northwest+Roadtrip+highlight.jpg",
     pDescription: "Explore Olympic National Park's backcountry, Seattle, and Ruby Beach. Enjoy breathtaking views as you go skydiving over Olympic National Park",
     pActivities: ["Skydiving", "Backpacking", "Kayaking"],
-    pImageURLs: ["WA test 1 image url .com", "WA test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210722_015117070.MP.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210722_140704339.jpg", 
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210722_141512528.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210722_161326904.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210722_181232543.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210722_184233646.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210722_203742860.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210722_212313797.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210722_212325884.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210722_225026077.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210723_000423814.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210723_045633871.NIGHT.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210723_182833859.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210723_234059717.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210724_221357208.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Pacific+Northwest+Roadtrip/PXL_20210724_225800045.jpg",
+    ],
     pItineraries: 
     [
         "Day 1", 
@@ -192,10 +210,28 @@ Entry.new(
     pName: "Guatemala Volcano Hike",
     pLocation: "Guatemala",
     pDate: "2023-02-18",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/Guatemala+Volcano+Experience+highlight.JPG",
     pDescription: "Climb an active volcano, explore Antigua and Panajachel, and experience Lake Atitlan from thousands of feet up while paragliding",
     pActivities: ["Hiking", "Camping", "Paragliding"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/G0016428.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_0034.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_0232.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_0283.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_0308.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_0365.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_6080.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_6085.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_6086.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_6136.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_6150.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/IMG_9942.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/PXL_20230220_010142015_2.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/PXL_20230221_151011403.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/PXL_20230221_221336327.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Guatemala+Volcano+Experience/volcano.jpg",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -252,10 +288,22 @@ Entry.new(
     pName: "West Texas Roadtrip",
     pLocation: "Big Bend NP, Guadalupe Mtns. NP",
     pDate: "2017-03-04",
-    pHighlightImageURL: "highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/West+Texas+Roadtrip+highlight.JPG",
     pDescription: "Go on a roadtrip in western Texas to go backpacking in Big Bend, climb the highet point in Texas, and surf down sand dunes",
     pActivities: ["Backpacking", "Camping", "Sand surfing"],
-    pImageURLs: ["test 1 image url .com", "test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/20170305_105741_HDR.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/20170305_135431_HDR.jpg	",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/20170305_160506_HDR.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/20170305_171605_HDR.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/20170308_154046.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/IMG_4438.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/IMG_6526.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/IMG_6530.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/IMG_6793.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/West+Texas+Roadtrip/IMG_6911.JPG",
+    ],
     pItineraries: 
     [
         "Day 1", 
@@ -310,10 +358,16 @@ Entry.new(
     pName: "Buffalo River Backpacking",
     pLocation: "Buffalo River, Arkansas",
     pDate: "2018-03-14",
-    pHighlightImageURL: "AR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buffalo+River+Backpacking/Buffalo+River+Backpacking+highlight.jpg",
     pDescription: "Spend a few nights exploring the Arkansas backcountry",
     pActivities: ["Backpacking"],
-    pImageURLs: ["AR test 1 image url .com", "AR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buffalo+River+Backpacking/IMG_0332.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buffalo+River+Backpacking/IMG_0347.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buffalo+River+Backpacking/IMG_5611.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buffalo+River+Backpacking/IMG_5674.JPG",
+    ],
     pItineraries: 
     [
         "Day 1", 
@@ -354,10 +408,20 @@ Entry.new(
     pName: "Hawaii Multisport",
     pLocation: "Big Island of Hawaii",
     pDate: "2022-06-14",
-    pHighlightImageURL: "HI highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/Hawaii+Multisport+highlight.jpg",
     pDescription: "See Volcano National Park, black sand beaches, and explore the less traveled areas of Hawaii's Big Island by bike, foot, and kayak",
     pActivities: ["Biking", "Kayaking", "Hiking", "Snorkelling"],
-    pImageURLs: ["HI test 1 image url .com", "HI test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_3987.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_3992.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_3996.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_4002.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_4007.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_4017.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_4024.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_4032.jpg",
+    ],
     pItineraries: 
     [
         "Day 1", 
@@ -400,10 +464,14 @@ Entry.new(
     pName: "Boundary Water Canoeing",
     pLocation: "Minnesota Boundary Waters",
     pDate: "2016-03-20",
-    pHighlightImageURL: "MN highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Boundary+Water+Canoeing/Boundary+Water+Canoeing+highlight.JPG",
     pDescription: "Travel 50 miles canoeing, portaging, and camping out under the stars in the Minnesota wilderness",
     pActivities: ["Canoeing", "Fishing", "Cliff jumping"],
-    pImageURLs: ["MN test 1 image url .com", "MN test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Boundary+Water+Canoeing/IMG_2485.JPG	",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Boundary+Water+Canoeing/IMG_2926.JPG",
+    ],
     pItineraries: 
     [
         "Day 1", 
@@ -436,10 +504,17 @@ Entry.new(
     pName: "Climb Mt. Democrat",
     pLocation: "Decalibron Loop, Colorado",
     pDate: "2022-06-11",
-    pHighlightImageURL: "CO highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Climb+Mt.+Democrat/Climb+Mt.+Democrat+highlight.jpg",
     pDescription: "Camp at the base of Mt. Democrat (14,155ft) and hike 2,000ft of elevation to the summit in the early morning",
     pActivities: ["Hiking", "Camping"],
-    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Climb+Mt.+Democrat/IMG_4246.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Climb+Mt.+Democrat/mountain.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Climb+Mt.+Democrat/PXL_20220611_042959600.NIGHT.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Climb+Mt.+Democrat/PXL_20220611_132722359.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Climb+Mt.+Democrat/road.JPG",
+    ],
     pItineraries: 
     [
         "Day 1", 
@@ -463,10 +538,26 @@ Entry.new(
     pName: "Puerto Rico Exploring",
     pLocation: "Puerto Rico",
     pDate: "2022-06-27",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/Puerto+Rico+Exploring+highlight.jpg",
     pDescription: "Check out El Yunque rainforest, Old San Juan, swim in bioluminescent water while stargazing, slide down natural waterslides, and eat some street mangos",
     pActivities: ["Hiking", "Kayaking", "Ziplining", "Swimming"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/IMG_1080.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/IMG_1125.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/IMG_2211.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220624_165345384.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220624_175609137.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220624_215143958.MP.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220624_220409217.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220625_230955402.NIGHT.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220626_030308625.NIGHT.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220626_180704535.MP.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220627_184505586.MP.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220628_165050587.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220628_171809654.MP.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Puerto+Rico+Exploring/PXL_20220628_220101145.MP.jpg",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -511,10 +602,21 @@ Entry.new(
     pName: "Backpack Long's Peak",
     pLocation: "Rocky Mountain Nat. Park",
     pDate: "2022-08-06",
-    pHighlightImageURL: "CO highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/Backpack+Long's+Peak+highlight.jpg",
     pDescription: "Spend two days climbing Long's Peak (14,259ft), Colorado's deadliest 14er. Spend a night in Boulderfield before your summit bid through the keyhole the next morning",
     pActivities: ["Backpacking", "Climbing"],
-    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/20220805_090527.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/hiking.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_1169.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_3838.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_3849.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_5423.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_5431.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_5447 (1).jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_5450.jpg",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -542,10 +644,18 @@ Entry.new(
     pName: "Canaveral Nat. Seashores Canoeing",
     pLocation: "Canaveral Nat. Seashores, Florida",
     pDate: "2022-04-15",
-    pHighlightImageURL: "FL highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Canaveral+Nat.+Seashores+Canoeing/Canaveral+Nat.+Seashores+Canoeing+highlight.jpg",
     pDescription: "Throw all your gear in a canoe and paddle out amongst dolphins to a secluded island to spend the night next to a roaring campfire",
     pActivities: ["Canoeing", "Camping"],
-    pImageURLs: ["FL test 1 image url .com", "FL test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Canaveral+Nat.+Seashores+Canoeing/20220415_214112_Original.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Canaveral+Nat.+Seashores+Canoeing/IMG_4840.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Canaveral+Nat.+Seashores+Canoeing/IMG_4852.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Canaveral+Nat.+Seashores+Canoeing/IMG_4853.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Canaveral+Nat.+Seashores+Canoeing/IMG_4856.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Canaveral+Nat.+Seashores+Canoeing/Resized_20220415_164622.JPEG	",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -568,10 +678,17 @@ Entry.new(
     pName: "Biking up Pikes Peak",
     pLocation: "Pikes Peak, Colorado",
     pDate: "2022-05-28",
-    pHighlightImageURL: "CO highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Biking+up+Pikes+Peak/Biking+up+Pikes+Peak+highlight.jpg",
     pDescription: "Grab your roadbike and fight the urge to quit on this grueling 17 mile and 7,000ft elevation gain bike ride up Pikes Peak (14,115ft)",
     pActivities: ["Biking", "Questioning your life choices"],
-    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Biking+up+Pikes+Peak/IMG_5075.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Biking+up+Pikes+Peak/IMG_5081.jpg	",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Biking+up+Pikes+Peak/IMG_5083.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Biking+up+Pikes+Peak/IMG_5087.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Biking+up+Pikes+Peak/IMG_5090.jpg", 
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -592,10 +709,18 @@ Entry.new(
     pName: "Backpacking Four Pass Loop",
     pLocation: "Maroon Bells, Colorado",
     pDate: "2020-08-11",
-    pHighlightImageURL: "CO highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/Backpacking+Four+Pass+Loop+highlight.jpg",
     pDescription: "Climb four different mountain passses, swim in frigid mountain lakes, and enjoy good company on this 30 mile loop near Aspen, Colorado",
     pActivities: ["Backpacking", "Swimming"],
-    pImageURLs: ["CO test 1 image url .com", "CO test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/colorado.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/IMG_1154.HEIC",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/IMG_1231.HEIC",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/IMG_1243.HEIC",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/IMG_1373 (1).HEIC",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/IMG_20200813_083102.jpg",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -627,10 +752,23 @@ Entry.new(
     pName: "Buckcreek Pass Loop Backpacking",
     pLocation: "Leavenworth and Seattle, Washington",
     pDate: "2020-08-23",
-    pHighlightImageURL: "WA highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/Buckcreek+Pass+Loop+Backpacking+highlight.jpg",
     pDescription: "Buy plane tickets one day in advance for this spantaneous 40 mile backpacking trip with some of the most gorgeous views you'll ever see. Explore Seattle after the hike",
     pActivities: ["Backpacking", "Exploring Seattle"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_0021.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_0146.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_3009 (1).jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_9188.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_9211.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_9249.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_9296.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_9308.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_9332.jpg	",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_9360.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buckcreek+Pass+Loop+Backpacking/IMG_9577.jpg",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -661,10 +799,15 @@ Entry.new(
     pName: "After work rock climbing",
     pLocation: "Clear Creek Canyon, Colorado",
     pDate: "2022-10-05",
-    pHighlightImageURL: "CO highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/After+work+rock+climbing/After+work+rock+climbing+highlight.jpg",
     pDescription: "To get to this climbing crag, you'll need to climb a tree, hook into a cable, and pull yourself across a river. Make sure you bring a headlamp since the sun is going down",
     pActivities: ["Rock climbing"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/After+work+rock+climbing/IMG_5690.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/After+work+rock+climbing/IMG_5719.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/After+work+rock+climbing/IMG_6187.jpg",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -685,10 +828,18 @@ Entry.new(
     pName: "Great Sand Dunes Day Trip",
     pLocation: "Great Sand Dunes Nat. Park",
     pDate: "2023-01-15",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Great+Sand+Dunes+Day+Trip/Great+Sand+Dunes+Day+Trip+highlight.jpg",
     pDescription: "Experience a real life game of Settlers of Catan as you explore the park's sand dunes, mountains, forests, plains, and frozen waterfalls all in one day",
     pActivities: ["Hiking"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Great+Sand+Dunes+Day+Trip/IMG_5955.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Great+Sand+Dunes+Day+Trip/IMG_5958.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Great+Sand+Dunes+Day+Trip/IMG_5962.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Great+Sand+Dunes+Day+Trip/IMG_5963.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Great+Sand+Dunes+Day+Trip/IMG_5969.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Great+Sand+Dunes+Day+Trip/IMG_8820.JPG",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -709,10 +860,15 @@ Entry.new(
     pName: "Weekend in New York City",
     pLocation: "New York, New York",
     pDate: "2021-12-10",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Weekend+in+New+York+City/Weekend+in+New+York+City+highlight.jpg",
     pDescription: "Ice skate in Brooklyn, get a tour of the 3rd World Trade Center, discover an underground speakeasy, and win an extremely competitive game of bar trivia with your team",
     pActivities: ["Ice skating", "Walking", "Nightlife"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Weekend+in+New+York+City/IMG_0513.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Weekend+in+New+York+City/IMG_3574.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Weekend+in+New+York+City/IMG_4594.jpg", 
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -743,10 +899,22 @@ Entry.new(
     pName: "Italy",
     pLocation: "Italy",
     pDate: "2018-05-01",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/Italy+highlight.JPG",
     pDescription: "Spend a month in Italy traveling to Cinque Terre, the Alps, Florence, Rome, and Milan. Take a cooking class, swim in the Mediterranean, and hike along the coast",
     pActivities: ["Swimming", "Hiking", "Cooking", "Nightlife"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/IMG_5967.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/IMG_6011.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/IMG_6065.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/IMG_6078.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/IMG_6199.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/IMG_6231.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/IMG_6247.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/IMG_6285.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/IMG_6667.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Italy/italy_hike.jpg",
+    ],
     pItineraries: 
     [
         "Week 1",
@@ -780,10 +948,18 @@ Entry.new(
     pName: "Alaska Multisport",
     pLocation: "Anchorage, Kenai Fjords, Seward, AK",
     pDate: "2019-08-10",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Alaska+Multisport/Alaska+Multisport+highlight.jpg",
     pDescription: "Take in magnificent views of a pristine wilderness and wildlife at Kenai Fjords Nat. Park, go fishing on the beach, kayak in the bay, and hike on Exit Glacier",
     pActivities: ["Kayaking", "Hiking", "Wildlife watching", "Fishing"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Alaska+Multisport/IMG_1814.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Alaska+Multisport/IMG_1842.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Alaska+Multisport/IMG_1849.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Alaska+Multisport/IMG_1923.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Alaska+Multisport/IMG_1935.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Alaska+Multisport/IMG_1962.jpg", 
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -806,10 +982,16 @@ Entry.new(
     pName: "Midnight 14er Hike",
     pLocation: "Mt. Quandary (14,271 ft)",
     pDate: "2022-09-24",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Midnight+14er+Hike/Midnight+14er+Hike+highlight.jpg",
     pDescription: "Enjoy the peaceful and quiet night as you gaze up at the stars on the trek up Mt. Quandary (14,271 ft). If you're lucky, a mountain goat will walk right up to you and say hi",
     pActivities: ["Hiking", "Star gazing"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Midnight+14er+Hike/goat.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Midnight+14er+Hike/IMG_4659.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Midnight+14er+Hike/IMG_4687.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Midnight+14er+Hike/IMG_5650.jpg",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -831,10 +1013,24 @@ Entry.new(
     pName: "Yosemite Backpacking and San Francisco",
     pLocation: "Yosemite Nat. Park, San Francisco, California",
     pDate: "2015-06-01",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/Yosemite+Backpacking+and+San+Francisco+highlight.JPG",
     pDescription: "Backpack through Yosemite's beautiful wilderness, walk across cloud's rest, and top off the trip with a climb up Half Dome. Afterwards, travel to San Francisco to see Alcatraz",
     pActivities: ["Backpacking"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/686.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/733.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/754.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/SAM_3385.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/SAM_3389 - Copy.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/SAM_3416.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/SAM_3418 - Copy.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/SAM_3516.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/SAM_3529.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/SAM_3538.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/SAM_3588.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Yosemite+Backpacking+and+San+Francisco/SAM_3641.JPG",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -866,10 +1062,16 @@ Entry.new(
     pName: "Eagle Rock Loop Backpacking",
     pLocation: "Ouachita Mountains, Arkansas",
     pDate: "2017-06-06",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Eagle+Rock+Loop+Backpacking/Eagle+Rock+Loop+Backpacking+highloght.JPG",
     pDescription: "Experience rugged Arkansas on this 28 mile steep up and down loop in the Ouachita Mountains",
     pActivities: ["Backpacking"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Eagle+Rock+Loop+Backpacking/IMG_4728.JPG	",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Eagle+Rock+Loop+Backpacking/IMG_4736.JPG	",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Eagle+Rock+Loop+Backpacking/IMG_4760.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Eagle+Rock+Loop+Backpacking/IMG_4770.JPG",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -905,10 +1107,19 @@ Entry.new(
     pName: "IRONMAN Indiana",
     pLocation: "Muncie, Indiana",
     pDate: "2021-10-02",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/IRONMAN+Indiana/IRONMAN+Indiana+highlight.JPG",
     pDescription: "Travel to the middle of nowehere Indiana to race in Indiana's first full Ironman! Swim 2.4 miles, Bike 112 miles, and run 26.2 miles? Easy right...",
     pActivities: ["Swimming", "Biking", "Running", "Questioning your life choices"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/IRONMAN+Indiana/Capture.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/IRONMAN+Indiana/DSCN4594.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/IRONMAN+Indiana/IMG_0139.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/IRONMAN+Indiana/IMG_2058.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/IRONMAN+Indiana/IMG_2097.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/IRONMAN+Indiana/IMG_2134.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/IRONMAN+Indiana/IMG_4411.jpg",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -948,10 +1159,21 @@ Entry.new(
     pName: "Grand Staircase Roadtrip",
     pLocation: "Grand Canyon, Bryce Canyon and Zion Nat. Parks, Utah",
     pDate: "2017-07-31",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Grand+Staircase+Roadtrip/Grand+Staircase+Roadtrip+highlight.JPG",
     pDescription: "Travel to the Grand Canyon, Bryce Canyon and Zion National Parks. Conquer your fear of hieghts at Zion on the Angle's Landing trail, which is not for the faint of heart.",
     pActivities: ["Hiking"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Grand+Staircase+Roadtrip/IMG_4953.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Grand+Staircase+Roadtrip/IMG_4960.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Grand+Staircase+Roadtrip/IMG_4968.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Grand+Staircase+Roadtrip/IMG_5016.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Grand+Staircase+Roadtrip/IMG_5105.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Grand+Staircase+Roadtrip/IMG_5114.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Grand+Staircase+Roadtrip/IMG_5134.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Grand+Staircase+Roadtrip/IMG_5136.JPG",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Grand+Staircase+Roadtrip/IMG_5138.JPG",
+    ],
     pItineraries: 
     [
         "Day 1",
@@ -984,10 +1206,20 @@ Entry.new(
     pName: "Snow Cave Camping",
     pLocation: "Rocky Mountain Nat. Park",
     pDate: "2023-02-11",
-    pHighlightImageURL: "PR highlight image .com",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Snow+Cave+Camping/Snow+Cave+Camping+highlight.jpg",
     pDescription: "Hike in the snowy wonderland of Rocky Mountain National Park. Dig a snow cave and sleep in it overnight",
     pActivities: ["Hiking", "Build a snow cave"],
-    pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
+    pImageURLs: 
+    [
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Snow+Cave+Camping/IMG_6022.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Snow+Cave+Camping/IMG_6032.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Snow+Cave+Camping/IMG_6042.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Snow+Cave+Camping/IMG_7489.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Snow+Cave+Camping/PXL_20230211_223856484.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Snow+Cave+Camping/PXL_20230211_224815093.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Snow+Cave+Camping/PXL_20230212_024308388.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Snow+Cave+Camping/PXL_20230212_134940885.jpg", 
+    ],
     pItineraries: 
     [
         "Day 1",
