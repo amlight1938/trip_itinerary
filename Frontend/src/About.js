@@ -1,7 +1,7 @@
 import DisplayParagraphAndImage from "./Paragraph and image section/DisplayParagraphAndImage"
 import utah from "./Assets/utah.jpg"
 import portrait from "./Assets/portrait.jpg"
-import canyon_2 from "./Assets/canyon_2.jpg"
+import volcano_2 from "./Assets/volcano_2.jpg"
 import TopBanner from "./TopBanner";
 
 
@@ -32,8 +32,8 @@ const About = () => {
     return(
         <>
             <TopBanner 
-                image={canyon_2} 
-                position={"40% 55%"}
+                image={volcano_2} 
+                position={"40% 62%"}
                 text={"ABOUT"}/>
 
             <div className="container">

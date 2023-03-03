@@ -8,13 +8,15 @@ function CarouselFade({carousel_items, controls_bool, caption_bool, indicator_bo
       <Carousel controls={controls_bool} indicators={indicator_bool} fade style={{height: "100%", width: "100%"}}>
       
         {carousel_items.map((item, index) => {
-          console.log(item)
+          let image;
+          console.log(item.image)
+          {item.image === undefined ? image = item : image = item.image}
           return(
             <Carousel.Item interval={3000} key={index} style={{
               height: "100%",
               width: "100%",
               // backgroundImage: `url('${item.image}')`,
-              backgroundImage: `url('${item}')`,
+              backgroundImage: `url('${image}')`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "50% 45%"

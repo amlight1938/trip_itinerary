@@ -74,8 +74,8 @@ const TripDetails = ({trip}) => {
             // image={trip.highlight_img} 
             // image={topo_dark}
             image={trip.highlight_img_url}
-            position={"50% 50%"}
-            text={"TRIP HIGHLIGHT IMAGE"}/>
+            position={"50% 45%"}
+            text={trip.name}/>
     
         <div className="container">
             <div className="trip-details-content">
