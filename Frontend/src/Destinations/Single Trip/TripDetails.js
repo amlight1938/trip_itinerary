@@ -1,4 +1,4 @@
-import new_york from '../../Assets/new_york.jpg'
+import guatemala_sunrise from '../../Assets/guatemala_sunrise.jpg'
 import colorado from '../../Assets/colorado.jpg'
 import biking from '../../Assets/biking.jpg'
 import longs_peak from '../../Assets/longs_peak.jpg'
@@ -30,9 +30,6 @@ const TripDetails = ({trip}) => {
         history.push("/my-custom-trips")
     }
 
-    //build list of aws links for pictures
-    const img_url_list = build_img_URL_list(trip.highlight_img_url, trip.images)
-
     //DisplayParagraph
     const alternateSides = false;
     const noImage = true;
@@ -59,21 +56,31 @@ const TripDetails = ({trip}) => {
         overflow: "hidden",
         backgroundColor: "rgb(0,0,0,.7)",
     }
-    const carousel_items = [
-        {id: 1, image: new_york},
-        {id: 2, image: colorado},
-        {id: 3, image: longs_peak}
-    ]
+
+    // const carousel_items = [
+    //     {id: 1, image: new_york},
+    //     {id: 2, image: colorado},
+    //     {id: 3, image: longs_peak}
+    // ]
     
-    //ImageGallery
-    const slides = [new_york, colorado, biking, longs_peak, puerto_rico, italy_hike];
+    //build list of aws links for pictures
+    const img_url_list = build_img_URL_list(trip.highlight_img_url, trip.images)
+
+    //Default images list
+    const default_img = [guatemala_sunrise];
+
+    let img_list;
+
+    {trip.user !== null 
+        ? img_list = default_img 
+        : img_list = img_url_list
+    }
 
     return(
     <>
         <TopBanner 
-            // image={trip.highlight_img} 
-            // image={topo_dark}
-            image={trip.highlight_img_url}
+            // image={trip.highlight_img_url}
+            image={img_list[0]}
             position={"50% 45%"}
             text={trip.name}/>
     
@@ -119,7 +126,7 @@ const TripDetails = ({trip}) => {
                             show={imageModalShow}
                             onHide={() => setImageModalShow(false)} 
                             // content={<ImageGallery slides={slides} />}
-                            content={<ImageGallery slides={img_url_list} />}
+                            content={<ImageGallery slides={img_list} />}
                             styles_header={{height: "20px", minWidth: "75%"}}
                             modal_width_class="image-gallery-modal-width"
                             styles_body={{height: "650px"}}
@@ -127,7 +134,7 @@ const TripDetails = ({trip}) => {
                         <div className="trip-details-carousel-container" style={carousel_css} onClick={() => setImageModalShow(true)}>
                             <CarouselFade 
                                 // carousel_items={carousel_items} 
-                                carousel_items={img_url_list}
+                                carousel_items={img_list}
                                 controls_bool={controls_bool} 
                                 caption_bool={caption_bool}
                                 indicator_bool={indicator_bool}

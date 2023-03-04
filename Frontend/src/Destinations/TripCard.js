@@ -1,4 +1,4 @@
-import longs_peak from "../Assets/longs_peak.jpg"
+import guatemala_sunrise from "../Assets/guatemala_sunrise.jpg"
 import new_york from "../Assets/new_york.jpg"
 import { build_activity_list } from "../Helper functions/utils";
 import { Link } from "react-router-dom";
@@ -7,8 +7,15 @@ const TripCard = (props) => {
     
     const trip = props.trip;
 
+    const default_img = guatemala_sunrise;
+
     let image;
-    {trip.image === undefined ? image = trip.highlight_img_url : image = trip.image}
+    {trip.image === undefined 
+        ?   trip.user_id !== null 
+                ? image = default_img
+                : image = trip.highlight_img_url           
+        :   image = trip.image
+    }
 
     const card_img_styles = {
         height: "170px",
