@@ -419,7 +419,7 @@ Entry.new(
         "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_4002.jpg",
         "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_4007.jpg",
         "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_4017.jpg",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_4024.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/turtle.jpg",
         "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Hawaii+Multisport/IMG_4032.jpg",
     ],
     pItineraries: 
@@ -715,11 +715,11 @@ Entry.new(
     pImageURLs: 
     [
         "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/colorado.jpg",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/IMG_1154.HEIC",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/IMG_1231.HEIC",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/IMG_1243.HEIC",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/IMG_1373 (1).HEIC",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/IMG_20200813_083102.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/FPL1.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/FPL2.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/FPL3.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/FPL4.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpacking+Four+Pass+Loop/FPL5.jpg",
     ],
     pItineraries: 
     [
