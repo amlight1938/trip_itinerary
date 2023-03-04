@@ -363,7 +363,7 @@ Entry.new(
     pActivities: ["Backpacking"],
     pImageURLs: 
     [
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buffalo+River+Backpacking/IMG_0332.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buffalo+River+Backpacking/river.JPG",
         "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buffalo+River+Backpacking/IMG_0347.jpg",
         "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buffalo+River+Backpacking/IMG_5611.JPG",
         "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Buffalo+River+Backpacking/IMG_5674.JPG",
@@ -602,20 +602,20 @@ Entry.new(
     pName: "Backpack Long's Peak",
     pLocation: "Rocky Mountain Nat. Park",
     pDate: "2022-08-06",
-    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/Backpack+Long's+Peak+highlight.jpg",
+    pHighlightImageURL: "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Longs+Peak/highlight_longs.jpg",
     pDescription: "Spend two days climbing Long's Peak (14,259ft), Colorado's deadliest 14er. Spend a night in Boulderfield before your summit bid through the keyhole the next morning",
     pActivities: ["Backpacking", "Climbing"],
     pImageURLs: 
     [
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/20220805_090527.jpg",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/hiking.jpg",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_1169.jpg",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_3838.jpg",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_3849.jpg",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_5423.jpg",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_5431.jpg",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_5447 (1).jpg",
-        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Long's+Peak/IMG_5450.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Longs+Peak/hiking.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Longs+Peak/IMG_1169.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Longs+Peak/IMG_3838.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Longs+Peak/IMG_3849.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Longs+Peak/IMG_5423.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Longs+Peak/IMG_5431.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Longs+Peak/IMG_5447 (1).jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Longs+Peak/IMG_5450.jpg",
+        "https://tripitinerarywebsitephotos.s3.us-west-1.amazonaws.com/Backpack+Longs+Peak/view.jpg",
     ],
     pItineraries: 
     [
