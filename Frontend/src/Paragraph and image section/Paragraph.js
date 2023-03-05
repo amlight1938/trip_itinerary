@@ -22,6 +22,8 @@ const Paragraph = ({title, pgraph, image, img_left_bool, about_bool}) => {
                                             <li>Implements SQL on relational database with associations between users, trips, activities, itineraries, and images</li>
                                             <li>Users can securely create accounts, login, and create, update, or delete custom trips using Bcrypt (password salting and hashing library)</li>
                                             <li>Integrates AWS S3 for storage of images</li>
+                                            <li>Ability to search by name, location, activity, date, or description</li>
+                                            <li>CSS accomodates both computer and smartphone screens</li>
                                         </ul>
                                     </>
                                     }
