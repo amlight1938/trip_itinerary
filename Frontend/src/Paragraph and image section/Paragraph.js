@@ -45,10 +45,8 @@ const Paragraph = ({title, pgraph, image, img_left_bool, about_bool}) => {
                                         </div>
                                     }
                                 </div>                        
-                            </div>
-                    
-            }
-           
+                            </div>        
+            }  
         </div>
     );
 }

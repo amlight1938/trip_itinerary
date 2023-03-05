@@ -2,7 +2,6 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function MyNavbar(props) {
@@ -35,12 +34,10 @@ function MyNavbar(props) {
                       <p className="login-status-text">{"No user signed in" }</p>
                       <Link to="/my-custom-trips">
                         <Button variant="outline-primary">Login</Button>
-                      </Link>
-                      
+                      </Link>                    
                     </> 
                 }
             </div>
-
         </Navbar.Collapse>
       </Container>
     </Navbar>

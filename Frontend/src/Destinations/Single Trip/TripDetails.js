@@ -1,11 +1,4 @@
 import guatemala_sunrise from '../../Assets/guatemala_sunrise.jpg'
-import colorado from '../../Assets/colorado.jpg'
-import biking from '../../Assets/biking.jpg'
-import longs_peak from '../../Assets/longs_peak.jpg'
-import puerto_rico from '../../Assets/puerto_rico.jpg'
-import italy_hike from '../../Assets/italy_hike.jpg'
-import topo_dark from '../../Assets/topo_dark.jpg'
-
 import DisplayParagraphAndImage from "../../Paragraph and image section/DisplayParagraphAndImage"
 import ImageGallery from './ImageGallery.js'
 import { useState } from 'react'
@@ -56,12 +49,6 @@ const TripDetails = ({trip}) => {
         overflow: "hidden",
         backgroundColor: "rgb(0,0,0,.7)",
     }
-
-    // const carousel_items = [
-    //     {id: 1, image: new_york},
-    //     {id: 2, image: colorado},
-    //     {id: 3, image: longs_peak}
-    // ]
     
     //build list of aws links for pictures
     const img_url_list = build_img_URL_list(trip.highlight_img_url, trip.images)
@@ -125,7 +112,6 @@ const TripDetails = ({trip}) => {
                         <ModalFunc
                             show={imageModalShow}
                             onHide={() => setImageModalShow(false)} 
-                            // content={<ImageGallery slides={slides} />}
                             content={<ImageGallery slides={img_list} />}
                             styles_header={{height: "20px", minWidth: "75%"}}
                             modal_width_class="image-gallery-modal-width"
@@ -133,7 +119,6 @@ const TripDetails = ({trip}) => {
                         />
                         <div className="trip-details-carousel-container" style={carousel_css} onClick={() => setImageModalShow(true)}>
                             <CarouselFade 
-                                // carousel_items={carousel_items} 
                                 carousel_items={img_list}
                                 controls_bool={controls_bool} 
                                 caption_bool={caption_bool}

@@ -17,7 +17,6 @@ const DisplayParagraphAndImage = ({obj_list, idField, titleField, pgraphField, i
     
     return ( 
         <>    
-        {/* <div className="container"> */}
             {obj_list.map((obj) => {
                 if(alternate_sides){
                     iteration_count % 2 !== 0 ? left_pic = true : left_pic = false;
@@ -40,7 +39,6 @@ const DisplayParagraphAndImage = ({obj_list, idField, titleField, pgraphField, i
                     </div>
                 )               
             })}
-        {/* </div> */}
         </>
     );
 }

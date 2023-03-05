@@ -1,8 +1,6 @@
 import TripCard from "./TripCard";
 import SearchBar from "../Helper functions/SearchBar";
-import { getActivity } from "../Helper functions/utils";
 import { useState } from "react";
-import new_york from "../Assets/new_york.jpg"
 
 const TripCardList = (props) => {
     let trips = props.trips;
@@ -23,7 +21,6 @@ const TripCardList = (props) => {
             ?   <h1 style={{textAlign: "center"}}>No results found</h1>    
             :   <div className="row row-cols-1 row-cols-md-4 g-4">   
                     {filteredTripList.map(trip => {
-                        // trip.image = new_york;
                         return (
                             <div className="col" key={trip.id}>    
                                 <TripCard trip={trip} />

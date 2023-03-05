@@ -14,7 +14,6 @@ class UserCustomTripsPage extends Component {
 
     handleSuccessfulAuthentication(data){
         this.props.handleLogin(data)
-        //this.props.history.push("/my-custom-trips")
     };
     
     render() {
@@ -44,7 +43,6 @@ class UserCustomTripsPage extends Component {
 
                         <hr />
 
-                        {/* <CallApiTripList api_url={`http://localhost:3001/api/v1/trips${}`}/> */}
                         <CallApiTripList api_url={`http://localhost:3001/api/v1/search-by-user/${this.props.session.user.id}`}/>
                         </>
                     }

@@ -26,7 +26,6 @@ const SearchBar = ({data, filterTripsFunc}) => {
         }else{
             filterTripsFunc(filter);
         }
-        // console.log(filteredData)
     };
 
     const clearSearch = () => {

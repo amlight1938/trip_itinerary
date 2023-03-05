@@ -21,7 +21,6 @@ const NotFound = () => {
                     <Button variant="primary">Go Home</Button>
                 </Link>
             </div>
-            
         </div>
     );
 }

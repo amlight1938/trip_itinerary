@@ -1,5 +1,4 @@
 import Home from "./Home";
-import CallApiTripList from "./Destinations/CallApiTripList";
 import CallApiSingleTrip from "./Destinations/Single Trip/CallApiSingleTrip";
 import About from "./About";
 import './index.css';
@@ -76,70 +75,56 @@ class App extends Component {
   render(){
     return (   
       <Router>
-
-          {/* <Route
+        <Switch>
+          <Route exact path='/'
             render={props => (
+              <>
               <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
-            )}/> */}
+              <Home {...props} session={this.state}/>
+              <BottomBanner {...props} session={this.state}/>
+              </>
+            )}/>
+            
+          <Route exact path='/about'
+            render={props => (
+              <>
+              <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
+              <About {...props} session={this.state}/>
+              <BottomBanner {...props} session={this.state}/>
+              </>
+            )}/>
 
-              <Switch>
-                <Route exact path='/'
-                  render={props => (
-                    <>
-                    <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
-                    <Home {...props} session={this.state}/>
-                    <BottomBanner {...props} session={this.state}/>
-                    </>
-                  )}/>
-                  
-                <Route exact path='/about'
-                  render={props => (
-                    <>
-                    <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
-                    <About {...props} session={this.state}/>
-                    <BottomBanner {...props} session={this.state}/>
-                    </>
-                  )}/>
-
-                <Route exact path='/destinations'
-                  render={props => (
-                    <>
-                    <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
-                    <DestinationsPage {...props} session={this.state}/>
-                    <BottomBanner {...props} session={this.state}/>
-                    </>
-                  )}/> 
+          <Route exact path='/destinations'
+            render={props => (
+              <>
+              <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
+              <DestinationsPage {...props} session={this.state}/>
+              <BottomBanner {...props} session={this.state}/>
+              </>
+            )}/> 
+    
+          <Route exact path='/destinations/:tripId'
+            render={props => (
+              <>
+              <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
+              <CallApiSingleTrip {...props} session={this.state}/>
+              <BottomBanner {...props} session={this.state}/>
+              </>
+            )}/>
           
-                <Route exact path='/destinations/:tripId'
-                  render={props => (
-                    <>
-                    <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
-                    <CallApiSingleTrip {...props} session={this.state}/>
-                    <BottomBanner {...props} session={this.state}/>
-                    </>
-                  )}/>
-               
-                <Route exact path='/my-custom-trips'
-                  render={props => (
-                    <>
-                    <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
-                    <UserCustomTripsPage {...props} handleLogin={this.handleLogin} handleLogout={this.handleLogout} session={this.state}/>
-                    <BottomBanner {...props} session={this.state}/>
-                    </>
-                  )}/>
-                
-                <Route>
-                  <NotFound />
-                </Route>
-              </Switch>
-
-              {/* <Route
-                render={props => (
-                  <BottomBanner {...props} session={this.state}/>
-                )}/> */}
-
-                  
-              
+          <Route exact path='/my-custom-trips'
+            render={props => (
+              <>
+              <MyNavbar {...props} handleLogout={this.handleLogout} session={this.state}/>
+              <UserCustomTripsPage {...props} handleLogin={this.handleLogin} handleLogout={this.handleLogout} session={this.state}/>
+              <BottomBanner {...props} session={this.state}/>
+              </>
+            )}/>
+          
+          <Route>
+            <NotFound />
+          </Route>
+        </Switch>
       </Router>
     )
   }

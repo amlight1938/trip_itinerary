@@ -1,5 +1,4 @@
 import bike_road_1 from './Assets/bike_road_1.jpg'
-import lake from './Assets/lake.jpg'
 import topo_dark from './Assets/topo_dark.jpg'
 import { Link } from 'react-router-dom'
 

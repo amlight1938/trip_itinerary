@@ -1,6 +1,4 @@
-import { useState } from "react";
 import CarouselFade from "./CarouselFade";
-
 import goat from './Assets/goat.jpg';
 import puerto_rico from './Assets/puerto_rico.jpg';
 import longs_peak from './Assets/longs_peak.jpg'

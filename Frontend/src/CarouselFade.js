@@ -14,7 +14,6 @@ function CarouselFade({carousel_items, controls_bool, caption_bool, indicator_bo
             <Carousel.Item interval={3000} key={index} style={{
               height: "100%",
               width: "100%",
-              // backgroundImage: `url('${item.image}')`,
               backgroundImage: `url('${image}')`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",

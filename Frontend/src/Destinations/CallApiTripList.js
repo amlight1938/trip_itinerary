@@ -3,9 +3,7 @@ import useApiRequest from "../Helper functions/useApiRequest";
 import TripCardList from "./TripCardList";
 
 const CallApiTripList = ({api_url}) => {
-    // const api_url = 'http://localhost:3001/api/v1/trips'
     const {data: trips, isLoading, errors} = useApiRequest(api_url)
-
 
     return (
         <div className="container">

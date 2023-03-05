@@ -41,9 +41,6 @@ const About = () => {
                     pgraphField={pgraph} imageField={image} alternate_sides={alternateSides} no_image={noImage} about_bool={about_bool}/> 
             </div>
         </>
-
-
-        
     );
 }
  
