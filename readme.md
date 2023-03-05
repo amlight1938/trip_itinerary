@@ -13,9 +13,6 @@ Taking the form of a professional tour guide company's website, this project is 
 - Ability to search all trips for keywords
 - CSS accomodates both computer and smartphone screens
 
-### User Authentication
-https://user-images.githubusercontent.com/102883052/222938742-c0f4221e-ae64-488e-81d8-0ea66f226d6c.mp4
-
 
 ### Home Page 
 https://user-images.githubusercontent.com/102883052/222938804-db6afd09-078c-40a6-8b86-bc302fabe1f1.mp4
@@ -27,6 +24,10 @@ https://user-images.githubusercontent.com/102883052/222938842-824f4af5-65dc-4f14
 
 ### Search trips by name, location, activity, date, or description
 https://user-images.githubusercontent.com/102883052/222938884-6e6f37f6-0937-4967-8d08-7a3352e28d07.mp4
+
+
+### User Authentication
+https://user-images.githubusercontent.com/102883052/222938742-c0f4221e-ae64-488e-81d8-0ea66f226d6c.mp4
 
 
 ### Create, read, update, and delete data from database
