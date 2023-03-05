@@ -24,18 +24,23 @@ https://user-images.githubusercontent.com/102883052/222938804-db6afd09-078c-40a6
 ### Scroll through trips and view trip details
 https://user-images.githubusercontent.com/102883052/222938842-824f4af5-65dc-4f14-9079-9ac8b7e939f2.mp4
 
+
 ### Search trips by name, location, activity, date, or description
 https://user-images.githubusercontent.com/102883052/222938884-6e6f37f6-0937-4967-8d08-7a3352e28d07.mp4
+
 
 ### Create, read, update, and delete data from database
 #### Create a trip
 https://user-images.githubusercontent.com/102883052/222938929-4ca43805-96c1-4df2-9a91-0959e40974f0.mp4
 
+
 #### Update a trip
 https://user-images.githubusercontent.com/102883052/222938954-a40cd982-b461-45e4-a416-2e9e9983c8f0.mp4
 
+
 #### Delete a trip
 https://user-images.githubusercontent.com/102883052/222938973-30238c23-8f2c-4adf-89c8-63b01b2fee3b.mp4
+
 
 ### CSS for both computer and phone screens
 https://user-images.githubusercontent.com/102883052/222939128-e94c68bf-892c-47d3-80df-aecb58a9cb61.mp4
