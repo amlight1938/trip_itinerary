@@ -1,9 +1,9 @@
-##About This Website
+## About This Website
 
 Taking the form of a professional tour guide company's website, this project is a digital journal of vacations, day trips, or adventurous activities that I have done in the past. Every trip, sample itinerary, and photo is from my own past experiences. Hopefully this journal will inspire future adventures for its users!
 
 
-##Features of this website
+## Features of this website
 
 -React JS frontend communicates with Ruby on Rails backend API
 -RESTful web application utilizes CRUD (create, read, update, destroy) operations between frontend and backend API
