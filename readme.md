@@ -16,8 +16,10 @@ Taking the form of a professional tour guide company's website, this project is 
 ### User Authentication
 https://user-images.githubusercontent.com/102883052/222938742-c0f4221e-ae64-488e-81d8-0ea66f226d6c.mp4
 
+
 ### Home Page 
 https://user-images.githubusercontent.com/102883052/222938804-db6afd09-078c-40a6-8b86-bc302fabe1f1.mp4
+
 
 ### Scroll through trips and view trip details
 https://user-images.githubusercontent.com/102883052/222938842-824f4af5-65dc-4f14-9079-9ac8b7e939f2.mp4
