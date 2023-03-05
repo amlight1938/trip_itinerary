@@ -60,8 +60,6 @@ class App extends Component {
             user: {}
           })
         }
-
-        //console.log(response)
       })
       .catch(error => {
         console.log('initial check response', error)

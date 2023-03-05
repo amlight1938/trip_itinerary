@@ -17,13 +17,9 @@ class DeleteTripCheck extends Component {
     }
 
     handleDeleteTripSubmit(event) {
-        console.log(this.state)
-
         const {trip_id} = this.state;
 
         const api_url = `http://localhost:3001/api/v1/trips/${trip_id}`;
-
-        console.log("delete trip id" , trip_id)
 
         axios
             .delete(api_url,

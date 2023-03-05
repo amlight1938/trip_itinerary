@@ -51,7 +51,6 @@ class CustomTripForm extends Component {
 
         const api_url = 'http://localhost:3001/api/v1/trips';
 
-        console.log("custom trip" , custom_trip)
         axios
             .post(api_url, 
                 {custom_trip},
