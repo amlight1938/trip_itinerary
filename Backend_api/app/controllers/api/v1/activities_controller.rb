@@ -4,14 +4,11 @@ class Api::V1::ActivitiesController < ApplicationController
   # GET /activities
   def index
     @activities = Activity.all
-
-    #render json: @activities
     render json: ActivitySerializer.new(@activities)
   end
 
   # GET /activities/1
   def show
-    #render json: @activity
     render json: ActivitySerializer.new(@activity)
   end
 

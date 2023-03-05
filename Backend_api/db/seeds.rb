@@ -1258,23 +1258,3 @@ Entry.new(
 #     ]
 # )
 
-# Entry.new(
-#     pUser_id: nil,
-#     pName: "Lost Maples Backpacking",
-#     pLocation: "Lost Maples St. Park, Texas",
-#     pDate: "2021-04-09",
-#     pHighlightImageURL: "PR highlight image .com",
-#     pDescription: "Do a quick and spontaneous one nighter trip at Lost Maples.",
-#     pActivities: ["Backpacking"],
-#     pImageURLs: ["PR test 1 image url .com", "PR test 2 image url .com"],
-#     pItineraries: 
-#     [
-#         "Day 1",
-#         "PR do something on day 1",
-
-#         "Day 2", 
-#         "PR do something on day 2"
-#     ]
-# )
-
-
