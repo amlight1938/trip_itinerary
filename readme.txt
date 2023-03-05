@@ -10,3 +10,4 @@ Taking the form of a professional tour guide company's website, this project is 
 -Implements SQL on relational database with associations between users, trips, activities, itineraries, and images
 -Users can securely create accounts, login, and create, update, or delete custom trips using -Bcrypt (password salting and hashing library)
 -Integrates AWS S3 for storage of images
+-Ability to search all trips for keywords
