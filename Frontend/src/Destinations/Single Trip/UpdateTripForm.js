@@ -34,7 +34,7 @@ class UpdateTripForm extends Component {
             ...(description.trim() !== "" && {description: description}),
         };
 
-        const api_url = `http://localhost:3001/api/v1/trips/${this.props.trip.id}`;
+        const api_url = `https://trip-itinerary-backend-api.herokuapp.com/api/v1/trips/${this.props.trip.id}`;
 
         console.log("updated trip" , updated_trip)
         axios

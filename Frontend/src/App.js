@@ -32,7 +32,7 @@ class App extends Component {
 
   handleLogout(){
     axios
-      .delete('http://localhost:3001/api/v1/logout', {withCredentials: true})
+      .delete('https://trip-itinerary-backend-api.herokuapp.com/api/v1/logout', {withCredentials: true})
       .then(response => {
         this.setState({
           isLoggedIn: false,
@@ -47,7 +47,7 @@ class App extends Component {
 
   initialLoginStatusCheck(){
     axios
-      .get('http://localhost:3001/api/v1/logged_in', {withCredentials: true})
+      .get('https://trip-itinerary-backend-api.herokuapp.com/api/v1/logged_in', {withCredentials: true})
       .then(response => {
         if( response.data.logged_in && !this.state.isLoggedIn ){
           this.setState({

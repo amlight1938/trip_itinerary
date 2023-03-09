@@ -3,7 +3,7 @@ import campfire_field from '../Assets/campfire_field.jpg'
 import TopBanner from "../TopBanner";
 
 const DestinationsPage = () => {
-    const api_url = 'http://localhost:3001/api/v1/trips'
+    const api_url = 'https://trip-itinerary-backend-api.herokuapp.com/api/v1/trips'
 
     return (
         <>

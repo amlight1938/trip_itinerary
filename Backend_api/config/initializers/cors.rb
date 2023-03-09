@@ -8,7 +8,8 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
    allow do
     #  origins "*"
-    origins 'http://localhost:3000'
+    # origins 'http://localhost:3000'
+    origins 'https://deploy-branch.d3dbk0hi3hye47.amplifyapp.com'
 
      resource "*",
        headers: :any,

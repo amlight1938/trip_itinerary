@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_20_053202) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_08_051639) do
   create_table "activities", force: :cascade do |t|
     t.string "trip_activity"
     t.integer "trip_id", null: false
@@ -56,7 +56,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_20_053202) do
   end
 
   add_foreign_key "activities", "trips"
+  add_foreign_key "activities", "trips"
   add_foreign_key "images", "trips"
+  add_foreign_key "images", "trips"
+  add_foreign_key "itineraries", "trips"
   add_foreign_key "itineraries", "trips"
   add_foreign_key "trips", "users"
 end

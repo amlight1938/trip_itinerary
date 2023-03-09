@@ -5,7 +5,6 @@ class CreateTrips < ActiveRecord::Migration[7.0]
       t.string :location
       t.date :date
       t.string :description
-      t.has_many :activities
 
       t.timestamps
     end

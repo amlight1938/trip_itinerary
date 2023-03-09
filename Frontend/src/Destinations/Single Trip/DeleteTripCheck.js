@@ -19,7 +19,7 @@ class DeleteTripCheck extends Component {
     handleDeleteTripSubmit(event) {
         const {trip_id} = this.state;
 
-        const api_url = `http://localhost:3001/api/v1/trips/${trip_id}`;
+        const api_url = `https://trip-itinerary-backend-api.herokuapp.com/api/v1/trips/${trip_id}`;
 
         axios
             .delete(api_url,

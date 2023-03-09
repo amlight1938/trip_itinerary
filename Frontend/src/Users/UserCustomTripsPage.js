@@ -43,7 +43,7 @@ class UserCustomTripsPage extends Component {
 
                         <hr />
 
-                        <CallApiTripList api_url={`http://localhost:3001/api/v1/search-by-user/${this.props.session.user.id}`}/>
+                        <CallApiTripList api_url={`https://trip-itinerary-backend-api.herokuapp.com/api/v1/search-by-user/${this.props.session.user.id}`}/>
                         </>
                     }
                 </div>

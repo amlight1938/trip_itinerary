@@ -49,7 +49,7 @@ class CustomTripForm extends Component {
             img_urls: img_urls
         };
 
-        const api_url = 'http://localhost:3001/api/v1/trips';
+        const api_url = 'https://trip-itinerary-backend-api.herokuapp.com/api/v1/trips';
 
         axios
             .post(api_url, 

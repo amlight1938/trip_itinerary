@@ -30,9 +30,9 @@ class RegistrationOrLoginForm extends Component {
 
     let api_url;
     if(this.state.isRegistration){
-      api_url = 'http://localhost:3001/api/v1/registrations'
+      api_url = 'https://trip-itinerary-backend-api.herokuapp.com/api/v1/registrations'
     }else{
-      api_url = 'http://localhost:3001/api/v1/sessions'
+      api_url = 'https://trip-itinerary-backend-api.herokuapp.com/api/v1/sessions'
     }
 
     axios

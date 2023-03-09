@@ -5,7 +5,7 @@ import TripDetails from "./TripDetails";
 
 const CallApiSingleTrip = (props) => {
     const {tripId} = useParams();
-    const api_url = `http://localhost:3001/api/v1/trips/${tripId}`;
+    const api_url = `https://trip-itinerary-backend-api.herokuapp.com/api/v1/trips/${tripId}`;
     const {data: trip, isLoading, errors} = useApiRequest(api_url)
 
     return (
