@@ -51,7 +51,7 @@ const BottomBanner = () => {
                     <div className="banner-text-section" style={{flex: ".7"}}>
                         <p><b>ABOUT THE AUTHOR</b></p>
                         <p>
-                            I am a self-taught software engineer with a background in Aerospace Engineering from The University of Texas at Austin. I have been a fulltime engineer at Northrop Grumman since 8/2021. My skills include React, Ruby on Rails, Python, Java, C, C#, SQL, HTML/CSS, Matlab, and Object-Oriented Programming.
+                            I am a self-taught software engineer with a background in Aerospace Engineering from The University of Texas at Austin. I have been a fulltime engineer since 8/2021. My skills include React, Ruby on Rails, Python, Java, C, C#, SQL, HTML/CSS, Matlab, and OOP.
                         </p>
                         <div className="profile_link_styles">   
                             <a href="https://www.linkedin.com/in/aaronmlight/" style={{color: "white"}}><p>LinkedIn</p></a>

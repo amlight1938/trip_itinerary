@@ -43,7 +43,7 @@ height: 100%;
 
 .profile_link_styles{
   margin: auto; 
-  width: 50%; 
+  width: 60%; 
   display: grid; 
   grid-template-columns: 30% 30%;
   justify-content: space-evenly
@@ -179,6 +179,8 @@ height: 100%;
   .bottom-banner-writing-strip{
     display: grid;
     grid-template-columns: 70% 30%;  
+    position: relative;
+    z-index: 2;
   }
 
   .bottom-banner-strip{
@@ -216,6 +218,8 @@ height: 100%;
 .bottom-banner-writing-strip{
   word-wrap: break-word;
   height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .search_bar{
