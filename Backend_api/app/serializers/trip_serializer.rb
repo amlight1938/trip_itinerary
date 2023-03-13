@@ -5,5 +5,7 @@ class TripSerializer < ActiveModel::Serializer
   belongs_to :user
   has_many :activities
   has_many :images
-  has_many :itineraries
+  has_many :itineraries do
+    object.itineraries.order(:id)
+  end
 end
